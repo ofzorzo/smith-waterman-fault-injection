@@ -1,0 +1,6 @@
+Variable Name;Variable File;Variable Line;Fault Injection Time(s);Injection Time Interval;Fault Model
+y_num;smith_waterman.c;82;0.5591545104980469;0-6;Single bit-flip
+i;smith_waterman.c;86;2.289959192276001;0-6;Single bit-flip
+y_num;smith_waterman.c;82;2.0969161987304688;0-6;Random bit-flip
+matrix;smith_waterman.c;84;3.797689199447632;0-6;Random bit-flip
+_dl_skip_args;rtld.c;84;1.1477844715118408;0-6;Random bit-flip

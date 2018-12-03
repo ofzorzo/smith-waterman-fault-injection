@@ -1,0 +1,56 @@
+[INFO -- 2018-12-03 16:06:35]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-03 16:06:35]
+Initialization strings:
+[INFO -- 2018-12-03 16:06:35]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-03 16:06:35]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-03 16:06:35]
+initSignal:0
+[INFO -- 2018-12-03 16:06:35]
+endSignal:6
+[INFO -- 2018-12-03 16:06:35]
+faultModel:2
+[INFO -- 2018-12-03 16:06:36]
+Backtrace BEGIN:
+#0  0x00005555555550d5 in smith_waterman (x_num=9900, y_num=15000, str_x=0x5555557586c0 "KKSNNFTDOOKKPPXXLLWMMFFOOOEJIIZUTOOIGGAWHMRRYPPBBHOOITEYYNNIOODDRNNAZQAZZOYCCGENXUDHHHGGWPPXSSQQPQKKHSIGYYJEFPPUJZZKHHSDDHMQQHKKHZWOFFXDDDJJYYFJJFKKRZZTOKZETLMMSCKMMJRRDSDNTIAEZZQQQXXQJJRCCAAMDHAAEUJM"..., str_y=0x55555575ad80 "LKNSNFSTDOCKTPCXCLSWMFJFOOEJIIZUTPOIUGDAWHMRYOPABHZOOITEYXNHIODDDRNAZQAWZOPYCGYENXUDHPHGNWPXLSCQJPQKHSIGGYEJEFPUCJZKYHSNDHMQZQHKHZWOSFXYDDJJIYFNJFZKORZTYOKZETLMSHCKMZJRDSDNTIAEPZQDQSXQIJRMCCAUMDHAESUJ"...) at smith_waterman.c:102
+#1  0x0000555555555cbf in execute (file_x_name=0x7fffffffe0b7 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe0d9 "/tmp/smith_waterman/randInputY") at smith_waterman.c:263
+#2  0x0000555555555f08 in main (argc=9, argv=0x7fffffffdc98) at smith_waterman.c:314
+
+97	    double max_score=0.0;
+98	    for(i=1; i<x_num+1; i++){
+99	        for(j=1; j<y_num+1; j++){
+100	            if(str_x[i-1]==str_y[j-1]){diff=match_score;}
+101	            else{diff=mismatch_score;}
+102	            matrix[i][j]=my_maxof(matrix[i-1][j-1]+diff, matrix[i-1][j]+gap_score, matrix[i][j-1]+gap_score,0);
+103	            if(matrix[i][j]>max_score)
+104	                max_score=matrix[i][j];
+105	        }
+106	    }
+
+Backtrace END
+Fliping a bit of the value pointed by a pointer
+Fliping value of field: _IO_save_end
+Fliping a bit of the pointer
+Memory content before bitflip:0x000x000x000x000x000x000x000x00
+Fault Model: Random bit-flip
+base address to flip value: 0x5555557582b8
+address max offset: 8
+Memory content after  bitflip:0x920x070xce0x7f0xf10x6c0xc90x1f
+frame name: execute
+symbol name: fpy
+symbol filename: smith_waterman.c
+symbol line: 250
+value: 0x555555758260
+value address: 0x7fffffffdaf8
+Type: The type is a pointer.
+Type sizeof: 8
+
+[INFO -- 2018-12-03 16:06:36]
+Fault Injection Successful after 1.5895490646362305s
+[INFO -- 2018-12-03 16:06:43]
+event type: exit
+[INFO -- 2018-12-03 16:06:43]
+exit code: 0

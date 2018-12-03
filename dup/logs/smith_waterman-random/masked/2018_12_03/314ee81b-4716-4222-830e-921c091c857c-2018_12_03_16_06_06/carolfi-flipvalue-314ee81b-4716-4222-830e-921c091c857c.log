@@ -1,0 +1,54 @@
+[INFO -- 2018-12-03 16:05:57]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-03 16:05:57]
+Initialization strings:
+[INFO -- 2018-12-03 16:05:57]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-03 16:05:57]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-03 16:05:57]
+initSignal:0
+[INFO -- 2018-12-03 16:05:57]
+endSignal:6
+[INFO -- 2018-12-03 16:05:57]
+faultModel:2
+[INFO -- 2018-12-03 16:06:00]
+Backtrace BEGIN:
+#0  0x0000555555554d71 in my_maxof (a=-1, b=-2, c=-2, d=0) at smith_waterman.c:68
+#1  0x00005555555550d0 in smith_waterman (x_num=9900, y_num=15000, str_x=0x5555557586c0 "KKSNNFTDOOKKPPXXLLWMMFFOOOEJIIZUTOOIGGAWHMRRYPPBBHOOITEYYNNIOODDRNNAZQAZZOYCCGENXUDHHHGGWPPXSSQQPQKKHSIGYYJEFPPUJZZKHHSDDHMQQHKKHZWOFFXDDDJJYYFJJFKKRZZTOKZETLMMSCKMMJRRDSDNTIAEZZQQQXXQJJRCCAAMDHAAEUJM"..., str_y=0x55555575ad80 "LKNSNFSTDOCKTPCXCLSWMFJFOOEJIIZUTPOIUGDAWHMRYOPABHZOOITEYXNHIODDDRNAZQAWZOPYCGYENXUDHPHGNWPXLSCQJPQKHSIGGYEJEFPUCJZKYHSNDHMQZQHKHZWOSFXYDDJJIYFNJFZKORZTYOKZETLMSHCKMZJRDSDNTIAEPZQDQSXQIJRMCCAUMDHAESUJ"...) at smith_waterman.c:102
+#2  0x0000555555555cbf in execute (file_x_name=0x7fffffffe0b7 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe0d9 "/tmp/smith_waterman/randInputY") at smith_waterman.c:263
+#3  0x0000555555555f08 in main (argc=9, argv=0x7fffffffdc98) at smith_waterman.c:314
+
+63	}
+64	
+65	double my_maxof(double a, double b, double c, double d)
+66	{
+67	    double ans=a;
+68	    if(ans<b) ans=b;
+69	    if(ans<c) ans=c;
+70	    if(ans<d) ans=d;
+71	    return ans;
+72	}
+
+Backtrace END
+Memory content before bitflip:0x000x000x000x000x000x000x000xc0
+Fault Model: Random bit-flip
+base address to flip value: 0x7fffffffd9c8
+address max offset: 8
+Memory content after  bitflip:0xde0x5e0x4a0x890x4d0x310x040xe9
+frame name: my_maxof
+symbol name: c
+symbol filename: smith_waterman.c
+symbol line: 65
+value: -7.5470839702010816e+197
+value address: 0x7fffffffd9c8
+Type: A floating point type.
+Type sizeof: 8
+
+[INFO -- 2018-12-03 16:06:00]
+Fault Injection Successful after 3.143097162246704s
+[INFO -- 2018-12-03 16:06:05]
+event type: exit
+[INFO -- 2018-12-03 16:06:05]
+exit code: 0

@@ -1,0 +1,16 @@
+Variable Name;Variable File;Variable Line;Fault Injection Time(s);Injection Time Interval;Fault Model;Detected
+sdc_occurred2;smith_waterman.c;15;3.372174024581909;0-6;Double bit-flip;1
+i;smith_waterman.c;102;1.9117114543914795;0-6;Double bit-flip;1
+mismatch_score2;smith_waterman.c;10;2.252720355987549;0-6;Double bit-flip;1
+i2;smith_waterman.c;102;1.9708905220031738;0-6;Double bit-flip;1
+gap_score2;smith_waterman.c;12;2.3943490982055664;0-6;Single bit-flip;1
+match_score2;smith_waterman.c;8;2.593008279800415;0-6;Single bit-flip;1
+gap_score2;smith_waterman.c;12;1.5597774982452393;0-6;Single bit-flip;1
+match_score2;smith_waterman.c;8;1.4731929302215576;0-6;Single bit-flip;1
+sdc_occurred;smith_waterman.c;14;0.862250804901123;0-6;Single bit-flip;1
+mismatch_score2;smith_waterman.c;10;3.0017035007476807;0-6;Random bit-flip;1
+match_score2;smith_waterman.c;8;1.7712087631225586;0-6;Random bit-flip;1
+gap_score2;smith_waterman.c;12;1.1660997867584229;0-6;Random bit-flip;1
+sdc_occurred2;smith_waterman.c;15;3.713639974594116;0-6;Random bit-flip;1
+match_score2;smith_waterman.c;8;0.8784463405609131;0-6;Random bit-flip;1
+sdc_occurred2;smith_waterman.c;15;2.395908832550049;0-6;Random bit-flip;1

@@ -1,0 +1,50 @@
+[INFO -- 2018-12-03 16:04:34]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-03 16:04:34]
+Initialization strings:
+[INFO -- 2018-12-03 16:04:34]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-03 16:04:34]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-03 16:04:34]
+initSignal:0
+[INFO -- 2018-12-03 16:04:34]
+endSignal:6
+[INFO -- 2018-12-03 16:04:34]
+faultModel:1
+[INFO -- 2018-12-03 16:04:36]
+Backtrace BEGIN:
+#0  0x0000555555554daf in my_maxof (a=-1, b=-2, c=-2, d=0) at smith_waterman.c:72
+#1  0x00005555555550d0 in smith_waterman (x_num=9900, y_num=15000, str_x=0x5555557586c0 "KKSNNFTDOOKKPPXXLLWMMFFOOOEJIIZUTOOIGGAWHMRRYPPBBHOOITEYYNNIOODDRNNAZQAZZOYCCGENXUDHHHGGWPPXSSQQPQKKHSIGYYJEFPPUJZZKHHSDDHMQQHKKHZWOFFXDDDJJYYFJJFKKRZZTOKZETLMMSCKMMJRRDSDNTIAEZZQQQXXQJJRCCAAMDHAAEUJM"..., str_y=0x55555575ad80 "LKNSNFSTDOCKTPCXCLSWMFJFOOEJIIZUTPOIUGDAWHMRYOPABHZOOITEYXNHIODDDRNAZQAWZOPYCGYENXUDHPHGNWPXLSCQJPQKHSIGGYEJEFPUCJZKYHSNDHMQZQHKHZWOSFXYDDJJIYFNJFZKORZTYOKZETLMSHCKMZJRDSDNTIAEPZQDQSXQIJRMCCAUMDHAESUJ"...) at smith_waterman.c:102
+#2  0x0000555555555cbf in execute (file_x_name=0x7fffffffe0b7 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe0d9 "/tmp/smith_waterman/randInputY") at smith_waterman.c:263
+#3  0x0000555555555f08 in main (argc=9, argv=0x7fffffffdc98) at smith_waterman.c:314
+
+67	    double ans=a;
+68	    if(ans<b) ans=b;
+69	    if(ans<c) ans=c;
+70	    if(ans<d) ans=d;
+71	    return ans;
+72	}
+73	
+74	double matchMisScore(long i, long j, char* str_y, char* str_x)
+75	{
+76	    if (str_y[j] == str_x[i])
+
+Backtrace END
+Memory content before bitflip:0x000x000x000x000x000x000x000xc0
+Fault Model: Double bit-flip
+base address to flip value: 0x555555757030 
+address max offset: 8
+Memory content after  bitflip:0x180x000x000x000x000x000x000xc0
+frame name: my_maxof
+symbol name: gap_score
+symbol filename: smith_waterman.c
+symbol line: 11
+value: -2.0000000000000107
+value address: 0x555555757030 <gap_score>
+Type: A floating point type.
+Type sizeof: 8
+
+[INFO -- 2018-12-03 16:04:36]
+Fault Injection Successful after 2.019753932952881s

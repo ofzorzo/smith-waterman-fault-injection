@@ -1,0 +1,4 @@
+Variable Name;Variable File;Variable Line;Fault Injection Time(s);Injection Time Interval;Fault Model
+str_x;smith_waterman.c;298;1.5845074653625488;0-6;Double bit-flip
+user_entry;../elf/dl-sysdep.c;91;1.240044355392456;0-6;Double bit-flip
+matrix;smith_waterman.c;100;1.418200969696045;0-6;Random bit-flip

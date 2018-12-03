@@ -1,0 +1,54 @@
+[INFO -- 2018-12-03 16:00:59]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-03 16:00:59]
+Initialization strings:
+[INFO -- 2018-12-03 16:00:59]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-03 16:00:59]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-03 16:00:59]
+initSignal:0
+[INFO -- 2018-12-03 16:00:59]
+endSignal:6
+[INFO -- 2018-12-03 16:00:59]
+faultModel:0
+[INFO -- 2018-12-03 16:01:03]
+Backtrace BEGIN:
+#0  smith_waterman (x_num=9900, y_num=15000, str_x=0x5555557586c0 "KKSNNFTDOOKKPPXXLLWMMFFOOOEJIIZUTOOIGGAWHMRRYPPBBHOOITEYYNNIOODDRNNAZQAZZOYCCGENXUDHHHGGWPPXSSQQPQKKHSIGYYJEFPPUJZZKHHSDDHMQQHKKHZWOFFXDDDJJYYFJJFKKRZZTOKZETLMMSCKMMJRRDSDNTIAEZZQQQXXQJJRCCAAMDHAAEUJM"..., str_y=0x55555575ad80 "LKNSNFSTDOCKTPCXCLSWMFJFOOEJIIZUTPOIUGDAWHMRYOPABHZOOITEYXNHIODDDRNAZQAWZOPYCGYENXUDHPHGNWPXLSCQJPQKHSIGGYEJEFPUCJZKYHSNDHMQZQHKHZWOSFXYDDJJIYFNJFZKORZTYOKZETLMSHCKMZJRDSDNTIAEPZQDQSXQIJRMCCAUMDHAESUJ"...) at smith_waterman.c:124
+#1  0x0000555555555cbf in execute (file_x_name=0x7fffffffe0b7 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe0d9 "/tmp/smith_waterman/randInputY") at smith_waterman.c:263
+#2  0x0000555555555f08 in main (argc=9, argv=0x7fffffffdc98) at smith_waterman.c:314
+
+119	    long y=-1, x=-1;
+120	    long height = x_num;
+121	    long width = y_num;
+122	
+123	    for(i=0; i<height+1; i++){
+124	        for(j=0; j<width+1; j++){
+125	            if(i==0 && j==0){
+126	                maxValue = matrix[i][j];
+127	                y = i;
+128	                x = j;
+
+Backtrace END
+Fliping a bit of the value pointed by a pointer
+Memory content before bitflip:0x41
+Fault Model: Single bit-flip
+base address to flip value: 0x555555556050  
+address max offset: 1
+Memory content after  bitflip:0x51
+frame name: main
+symbol name: answer1
+symbol filename: smith_waterman.c
+symbol line: 314
+value: 0x555555556050 <__libc_csu_init> "QWAVI\211\327AUATL\215%\336\f "
+value address: 0x7fffffffdb90
+Type: The type is a pointer.
+Type sizeof: 8
+
+[INFO -- 2018-12-03 16:01:03]
+Fault Injection Successful after 4.4170897006988525s
+[INFO -- 2018-12-03 16:01:07]
+event type: exit
+[INFO -- 2018-12-03 16:01:07]
+exit code: 0

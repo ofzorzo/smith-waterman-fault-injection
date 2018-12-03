@@ -1,0 +1,1791 @@
+[SUMMARY -- 2018-12-02 21:32:35]
+FI-uniqueID=458a85f1-63b1-4b7c-a1cc-7a41a39ddeac
+smith_waterman-single - SDC
+[SUMMARY -- 2018-12-02 21:32:41]
+FI-uniqueID=458a85f1-63b1-4b7c-a1cc-7a41a39ddeac
+smith_waterman-double - Crash
+[SUMMARY -- 2018-12-02 21:32:47]
+FI-uniqueID=458a85f1-63b1-4b7c-a1cc-7a41a39ddeac
+smith_waterman-random - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:32:53]
+FI-uniqueID=458a85f1-63b1-4b7c-a1cc-7a41a39ddeac
+smith_waterman-single - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:32:59]
+FI-uniqueID=458a85f1-63b1-4b7c-a1cc-7a41a39ddeac
+smith_waterman-double - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:33:05]
+FI-uniqueID=458a85f1-63b1-4b7c-a1cc-7a41a39ddeac
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-02 21:33:12]
+FI-uniqueID=458a85f1-63b1-4b7c-a1cc-7a41a39ddeac
+smith_waterman-single - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:33:18]
+FI-uniqueID=458a85f1-63b1-4b7c-a1cc-7a41a39ddeac
+smith_waterman-double - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:33:19]
+FI-uniqueID=458a85f1-63b1-4b7c-a1cc-7a41a39ddeac
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-02 21:33:25]
+FI-uniqueID=458a85f1-63b1-4b7c-a1cc-7a41a39ddeac
+smith_waterman-single - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:33:34]
+FI-uniqueID=458a85f1-63b1-4b7c-a1cc-7a41a39ddeac
+smith_waterman-double - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:33:40]
+FI-uniqueID=458a85f1-63b1-4b7c-a1cc-7a41a39ddeac
+smith_waterman-random - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:34:00]
+FI-uniqueID=458a85f1-63b1-4b7c-a1cc-7a41a39ddeac
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-02 21:34:03]
+FI-uniqueID=458a85f1-63b1-4b7c-a1cc-7a41a39ddeac
+smith_waterman-double - Crash
+[SUMMARY -- 2018-12-02 21:34:12]
+FI-uniqueID=458a85f1-63b1-4b7c-a1cc-7a41a39ddeac
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-02 21:34:37]
+FI-uniqueID=b62036ca-5e17-46a3-9a23-80054db9bf89
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-02 21:34:42]
+FI-uniqueID=b62036ca-5e17-46a3-9a23-80054db9bf89
+smith_waterman-double - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:34:47]
+FI-uniqueID=b62036ca-5e17-46a3-9a23-80054db9bf89
+smith_waterman-random - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:35:08]
+FI-uniqueID=b62036ca-5e17-46a3-9a23-80054db9bf89
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-02 21:35:28]
+FI-uniqueID=b62036ca-5e17-46a3-9a23-80054db9bf89
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-02 21:35:33]
+FI-uniqueID=b62036ca-5e17-46a3-9a23-80054db9bf89
+smith_waterman-random - Fault Injection Failed
+[SUMMARY -- 2018-12-02 21:35:39]
+FI-uniqueID=b62036ca-5e17-46a3-9a23-80054db9bf89
+smith_waterman-single - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:35:44]
+FI-uniqueID=b62036ca-5e17-46a3-9a23-80054db9bf89
+smith_waterman-double - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:35:46]
+FI-uniqueID=b62036ca-5e17-46a3-9a23-80054db9bf89
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-02 21:35:55]
+FI-uniqueID=b62036ca-5e17-46a3-9a23-80054db9bf89
+smith_waterman-single - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:36:01]
+FI-uniqueID=b62036ca-5e17-46a3-9a23-80054db9bf89
+smith_waterman-double - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:36:06]
+FI-uniqueID=b62036ca-5e17-46a3-9a23-80054db9bf89
+smith_waterman-random - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:36:41]
+FI-uniqueID=d556d62a-e1ef-48d8-a754-4a140d0165ce
+smith_waterman-single - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:36:46]
+FI-uniqueID=d556d62a-e1ef-48d8-a754-4a140d0165ce
+smith_waterman-double - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:36:52]
+FI-uniqueID=d556d62a-e1ef-48d8-a754-4a140d0165ce
+smith_waterman-random - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:36:57]
+FI-uniqueID=d556d62a-e1ef-48d8-a754-4a140d0165ce
+smith_waterman-single - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:37:02]
+FI-uniqueID=d556d62a-e1ef-48d8-a754-4a140d0165ce
+smith_waterman-double - Crash
+[SUMMARY -- 2018-12-02 21:37:07]
+FI-uniqueID=d556d62a-e1ef-48d8-a754-4a140d0165ce
+smith_waterman-random - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:37:12]
+FI-uniqueID=d556d62a-e1ef-48d8-a754-4a140d0165ce
+smith_waterman-single - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:37:15]
+FI-uniqueID=d556d62a-e1ef-48d8-a754-4a140d0165ce
+smith_waterman-double - Crash
+[SUMMARY -- 2018-12-02 21:37:38]
+FI-uniqueID=d556d62a-e1ef-48d8-a754-4a140d0165ce
+smith_waterman-random - Hang
+[SUMMARY -- 2018-12-02 21:37:41]
+FI-uniqueID=d556d62a-e1ef-48d8-a754-4a140d0165ce
+smith_waterman-single - Crash
+[SUMMARY -- 2018-12-02 21:37:47]
+FI-uniqueID=d556d62a-e1ef-48d8-a754-4a140d0165ce
+smith_waterman-double - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:37:52]
+FI-uniqueID=d556d62a-e1ef-48d8-a754-4a140d0165ce
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-02 21:37:58]
+FI-uniqueID=d556d62a-e1ef-48d8-a754-4a140d0165ce
+smith_waterman-single - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:42:36]
+FI-uniqueID=11c4fdac-a798-455f-959f-818b80862888
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-02 21:42:41]
+FI-uniqueID=11c4fdac-a798-455f-959f-818b80862888
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-02 21:42:46]
+FI-uniqueID=11c4fdac-a798-455f-959f-818b80862888
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-02 21:42:51]
+FI-uniqueID=11c4fdac-a798-455f-959f-818b80862888
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-02 21:43:11]
+FI-uniqueID=11c4fdac-a798-455f-959f-818b80862888
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-02 21:43:31]
+FI-uniqueID=11c4fdac-a798-455f-959f-818b80862888
+smith_waterman-random - Hang
+[SUMMARY -- 2018-12-02 21:43:36]
+FI-uniqueID=11c4fdac-a798-455f-959f-818b80862888
+smith_waterman-single - Crash
+[SUMMARY -- 2018-12-02 21:43:41]
+FI-uniqueID=11c4fdac-a798-455f-959f-818b80862888
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-02 21:43:46]
+FI-uniqueID=11c4fdac-a798-455f-959f-818b80862888
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-02 21:43:51]
+FI-uniqueID=11c4fdac-a798-455f-959f-818b80862888
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-02 21:44:12]
+FI-uniqueID=11c4fdac-a798-455f-959f-818b80862888
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-02 21:44:32]
+FI-uniqueID=11c4fdac-a798-455f-959f-818b80862888
+smith_waterman-random - Hang
+[SUMMARY -- 2018-12-02 21:44:37]
+FI-uniqueID=11c4fdac-a798-455f-959f-818b80862888
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-02 21:44:43]
+FI-uniqueID=11c4fdac-a798-455f-959f-818b80862888
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-02 21:44:48]
+FI-uniqueID=11c4fdac-a798-455f-959f-818b80862888
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-02 21:44:56]
+FI-uniqueID=54b3f266-19d8-47f2-9a31-57a493aa2557
+smith_waterman-single - Crash
+[SUMMARY -- 2018-12-02 21:45:02]
+FI-uniqueID=54b3f266-19d8-47f2-9a31-57a493aa2557
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-02 21:45:04]
+FI-uniqueID=54b3f266-19d8-47f2-9a31-57a493aa2557
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-02 21:45:11]
+FI-uniqueID=54b3f266-19d8-47f2-9a31-57a493aa2557
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-02 21:45:33]
+FI-uniqueID=54b3f266-19d8-47f2-9a31-57a493aa2557
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-02 21:45:34]
+FI-uniqueID=54b3f266-19d8-47f2-9a31-57a493aa2557
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-02 21:45:56]
+FI-uniqueID=54b3f266-19d8-47f2-9a31-57a493aa2557
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-02 21:46:16]
+FI-uniqueID=54b3f266-19d8-47f2-9a31-57a493aa2557
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-02 21:46:20]
+FI-uniqueID=54b3f266-19d8-47f2-9a31-57a493aa2557
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-02 21:46:26]
+FI-uniqueID=54b3f266-19d8-47f2-9a31-57a493aa2557
+smith_waterman-single - Crash
+[SUMMARY -- 2018-12-02 21:46:48]
+FI-uniqueID=54b3f266-19d8-47f2-9a31-57a493aa2557
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-02 21:47:08]
+FI-uniqueID=54b3f266-19d8-47f2-9a31-57a493aa2557
+smith_waterman-random - Hang
+[SUMMARY -- 2018-12-02 21:47:12]
+FI-uniqueID=54b3f266-19d8-47f2-9a31-57a493aa2557
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-02 21:47:17]
+FI-uniqueID=54b3f266-19d8-47f2-9a31-57a493aa2557
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-02 21:47:22]
+FI-uniqueID=54b3f266-19d8-47f2-9a31-57a493aa2557
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-02 21:49:26]
+FI-uniqueID=7eafd162-160c-4b5b-a096-7ce8aa499144
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-02 21:49:32]
+FI-uniqueID=7eafd162-160c-4b5b-a096-7ce8aa499144
+smith_waterman-double - Crash
+[SUMMARY -- 2018-12-02 21:49:38]
+FI-uniqueID=7eafd162-160c-4b5b-a096-7ce8aa499144
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-02 21:50:32]
+FI-uniqueID=f103b22e-9fa6-4f4b-b69c-66a9425f08a2
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-02 21:50:38]
+FI-uniqueID=f103b22e-9fa6-4f4b-b69c-66a9425f08a2
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-02 21:50:44]
+FI-uniqueID=f103b22e-9fa6-4f4b-b69c-66a9425f08a2
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-02 21:50:50]
+FI-uniqueID=f103b22e-9fa6-4f4b-b69c-66a9425f08a2
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-02 21:50:56]
+FI-uniqueID=f103b22e-9fa6-4f4b-b69c-66a9425f08a2
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-02 21:51:00]
+FI-uniqueID=f103b22e-9fa6-4f4b-b69c-66a9425f08a2
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-02 21:51:07]
+FI-uniqueID=f103b22e-9fa6-4f4b-b69c-66a9425f08a2
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-02 21:51:13]
+FI-uniqueID=f103b22e-9fa6-4f4b-b69c-66a9425f08a2
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-02 21:51:17]
+FI-uniqueID=f103b22e-9fa6-4f4b-b69c-66a9425f08a2
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-02 21:51:25]
+FI-uniqueID=f103b22e-9fa6-4f4b-b69c-66a9425f08a2
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-02 21:51:45]
+FI-uniqueID=f103b22e-9fa6-4f4b-b69c-66a9425f08a2
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-02 21:51:51]
+FI-uniqueID=f103b22e-9fa6-4f4b-b69c-66a9425f08a2
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-02 21:51:57]
+FI-uniqueID=f103b22e-9fa6-4f4b-b69c-66a9425f08a2
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-02 21:52:04]
+FI-uniqueID=f103b22e-9fa6-4f4b-b69c-66a9425f08a2
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-02 21:52:10]
+FI-uniqueID=f103b22e-9fa6-4f4b-b69c-66a9425f08a2
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-02 21:52:20]
+FI-uniqueID=882e2fd7-28bd-4500-a6cc-bddd25b00dac
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-02 21:52:26]
+FI-uniqueID=882e2fd7-28bd-4500-a6cc-bddd25b00dac
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-02 21:52:32]
+FI-uniqueID=882e2fd7-28bd-4500-a6cc-bddd25b00dac
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-02 21:52:38]
+FI-uniqueID=882e2fd7-28bd-4500-a6cc-bddd25b00dac
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-02 21:52:44]
+FI-uniqueID=882e2fd7-28bd-4500-a6cc-bddd25b00dac
+smith_waterman-double - SDC
+[SUMMARY -- 2018-12-02 21:52:50]
+FI-uniqueID=882e2fd7-28bd-4500-a6cc-bddd25b00dac
+smith_waterman-random - SDC
+[SUMMARY -- 2018-12-02 21:53:10]
+FI-uniqueID=882e2fd7-28bd-4500-a6cc-bddd25b00dac
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-02 21:53:16]
+FI-uniqueID=882e2fd7-28bd-4500-a6cc-bddd25b00dac
+smith_waterman-double - Crash
+[SUMMARY -- 2018-12-02 21:53:22]
+FI-uniqueID=882e2fd7-28bd-4500-a6cc-bddd25b00dac
+smith_waterman-random - SDC
+[SUMMARY -- 2018-12-02 21:53:27]
+FI-uniqueID=882e2fd7-28bd-4500-a6cc-bddd25b00dac
+smith_waterman-single - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:53:33]
+FI-uniqueID=882e2fd7-28bd-4500-a6cc-bddd25b00dac
+smith_waterman-double - SDC
+[SUMMARY -- 2018-12-02 21:53:39]
+FI-uniqueID=882e2fd7-28bd-4500-a6cc-bddd25b00dac
+smith_waterman-random - SDC
+[SUMMARY -- 2018-12-02 21:53:59]
+FI-uniqueID=882e2fd7-28bd-4500-a6cc-bddd25b00dac
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-02 21:54:16]
+FI-uniqueID=6e446298-7828-4e61-9335-d181c7cfd476
+smith_waterman-single - Crash
+[SUMMARY -- 2018-12-02 21:54:22]
+FI-uniqueID=6e446298-7828-4e61-9335-d181c7cfd476
+smith_waterman-double - SDC
+[SUMMARY -- 2018-12-02 21:54:26]
+FI-uniqueID=6e446298-7828-4e61-9335-d181c7cfd476
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-02 21:54:55]
+FI-uniqueID=c0e60289-ba05-4aa5-af2e-3764eeac6dc9
+smith_waterman-single - SDC
+[SUMMARY -- 2018-12-02 21:55:01]
+FI-uniqueID=c0e60289-ba05-4aa5-af2e-3764eeac6dc9
+smith_waterman-double - Crash
+[SUMMARY -- 2018-12-02 21:55:19]
+FI-uniqueID=a2df37d8-3d48-4a04-90d0-6faa79e3dbca
+smith_waterman-single - NoOutputGenerated
+[SUMMARY -- 2018-12-02 21:55:25]
+FI-uniqueID=a2df37d8-3d48-4a04-90d0-6faa79e3dbca
+smith_waterman-double - SDC
+[SUMMARY -- 2018-12-02 21:55:44]
+FI-uniqueID=298617f9-c2bb-4cd9-9647-0bbfe1610969
+smith_waterman-single - SDC
+[SUMMARY -- 2018-12-02 22:09:56]
+FI-uniqueID=53e0cb6b-dca4-47d5-a63b-1bc49311e83c
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-02 22:10:16]
+FI-uniqueID=53e0cb6b-dca4-47d5-a63b-1bc49311e83c
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-02 22:10:23]
+FI-uniqueID=53e0cb6b-dca4-47d5-a63b-1bc49311e83c
+smith_waterman-random - SDC
+[SUMMARY -- 2018-12-02 22:10:29]
+FI-uniqueID=53e0cb6b-dca4-47d5-a63b-1bc49311e83c
+smith_waterman-single - SDC
+[SUMMARY -- 2018-12-02 22:10:35]
+FI-uniqueID=53e0cb6b-dca4-47d5-a63b-1bc49311e83c
+smith_waterman-double - SDC
+[SUMMARY -- 2018-12-02 22:10:41]
+FI-uniqueID=53e0cb6b-dca4-47d5-a63b-1bc49311e83c
+smith_waterman-random - SDC
+[SUMMARY -- 2018-12-02 22:11:24]
+FI-uniqueID=35ddb282-11aa-43af-917b-05631d7b3878
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-02 22:11:29]
+FI-uniqueID=35ddb282-11aa-43af-917b-05631d7b3878
+smith_waterman-double - SDC
+[SUMMARY -- 2018-12-02 22:11:35]
+FI-uniqueID=35ddb282-11aa-43af-917b-05631d7b3878
+smith_waterman-random - SDC
+[SUMMARY -- 2018-12-03 06:26:29]
+FI-uniqueID=8b10aeaa-df05-479a-9aa5-a888c76cc3df
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 06:26:33]
+FI-uniqueID=8b10aeaa-df05-479a-9aa5-a888c76cc3df
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 06:26:53]
+FI-uniqueID=8b10aeaa-df05-479a-9aa5-a888c76cc3df
+smith_waterman-random - Hang
+[SUMMARY -- 2018-12-03 06:27:13]
+FI-uniqueID=8b10aeaa-df05-479a-9aa5-a888c76cc3df
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-03 06:27:17]
+FI-uniqueID=8b10aeaa-df05-479a-9aa5-a888c76cc3df
+smith_waterman-double - SDC
+[SUMMARY -- 2018-12-03 06:27:22]
+FI-uniqueID=8b10aeaa-df05-479a-9aa5-a888c76cc3df
+smith_waterman-random - SDC
+[SUMMARY -- 2018-12-03 06:27:27]
+FI-uniqueID=8b10aeaa-df05-479a-9aa5-a888c76cc3df
+smith_waterman-single - SDC
+[SUMMARY -- 2018-12-03 06:27:31]
+FI-uniqueID=8b10aeaa-df05-479a-9aa5-a888c76cc3df
+smith_waterman-double - SDC
+[SUMMARY -- 2018-12-03 06:27:37]
+FI-uniqueID=8b10aeaa-df05-479a-9aa5-a888c76cc3df
+smith_waterman-random - SDC
+[SUMMARY -- 2018-12-03 06:27:40]
+FI-uniqueID=8b10aeaa-df05-479a-9aa5-a888c76cc3df
+smith_waterman-single - Crash
+[SUMMARY -- 2018-12-03 06:27:46]
+FI-uniqueID=8b10aeaa-df05-479a-9aa5-a888c76cc3df
+smith_waterman-double - SDC
+[SUMMARY -- 2018-12-03 06:27:52]
+FI-uniqueID=8b10aeaa-df05-479a-9aa5-a888c76cc3df
+smith_waterman-random - SDC Detected
+[SUMMARY -- 2018-12-03 06:27:56]
+FI-uniqueID=8b10aeaa-df05-479a-9aa5-a888c76cc3df
+smith_waterman-single - SDC
+[SUMMARY -- 2018-12-03 06:28:02]
+FI-uniqueID=8b10aeaa-df05-479a-9aa5-a888c76cc3df
+smith_waterman-double - SDC
+[SUMMARY -- 2018-12-03 06:28:06]
+FI-uniqueID=8b10aeaa-df05-479a-9aa5-a888c76cc3df
+smith_waterman-random - SDC
+[SUMMARY -- 2018-12-03 06:30:38]
+FI-uniqueID=d1e842da-86f8-46fe-a65d-cfa93444ed0f
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 06:30:43]
+FI-uniqueID=d1e842da-86f8-46fe-a65d-cfa93444ed0f
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 06:30:48]
+FI-uniqueID=d1e842da-86f8-46fe-a65d-cfa93444ed0f
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 06:30:53]
+FI-uniqueID=d1e842da-86f8-46fe-a65d-cfa93444ed0f
+smith_waterman-single - Crash
+[SUMMARY -- 2018-12-03 06:31:00]
+FI-uniqueID=d1e842da-86f8-46fe-a65d-cfa93444ed0f
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 06:31:05]
+FI-uniqueID=d1e842da-86f8-46fe-a65d-cfa93444ed0f
+smith_waterman-random - SDC
+[SUMMARY -- 2018-12-03 06:31:10]
+FI-uniqueID=d1e842da-86f8-46fe-a65d-cfa93444ed0f
+smith_waterman-single - SDC
+[SUMMARY -- 2018-12-03 06:31:16]
+FI-uniqueID=d1e842da-86f8-46fe-a65d-cfa93444ed0f
+smith_waterman-double - SDC
+[SUMMARY -- 2018-12-03 06:31:21]
+FI-uniqueID=d1e842da-86f8-46fe-a65d-cfa93444ed0f
+smith_waterman-random - SDC
+[SUMMARY -- 2018-12-03 06:31:23]
+FI-uniqueID=d1e842da-86f8-46fe-a65d-cfa93444ed0f
+smith_waterman-single - Crash
+[SUMMARY -- 2018-12-03 06:31:31]
+FI-uniqueID=d1e842da-86f8-46fe-a65d-cfa93444ed0f
+smith_waterman-double - SDC
+[SUMMARY -- 2018-12-03 06:31:34]
+FI-uniqueID=d1e842da-86f8-46fe-a65d-cfa93444ed0f
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-03 06:31:40]
+FI-uniqueID=d1e842da-86f8-46fe-a65d-cfa93444ed0f
+smith_waterman-single - SDC
+[SUMMARY -- 2018-12-03 06:31:46]
+FI-uniqueID=d1e842da-86f8-46fe-a65d-cfa93444ed0f
+smith_waterman-double - SDC
+[SUMMARY -- 2018-12-03 06:31:51]
+FI-uniqueID=d1e842da-86f8-46fe-a65d-cfa93444ed0f
+smith_waterman-random - SDC
+[SUMMARY -- 2018-12-03 06:34:10]
+FI-uniqueID=d4944a4a-b240-4ffc-856a-12808aecf00b
+smith_waterman-single - SDC
+[SUMMARY -- 2018-12-03 06:34:12]
+FI-uniqueID=d4944a4a-b240-4ffc-856a-12808aecf00b
+smith_waterman-double - Crash
+[SUMMARY -- 2018-12-03 06:34:20]
+FI-uniqueID=d4944a4a-b240-4ffc-856a-12808aecf00b
+smith_waterman-random - SDC
+[SUMMARY -- 2018-12-03 06:34:24]
+FI-uniqueID=d4944a4a-b240-4ffc-856a-12808aecf00b
+smith_waterman-single - Crash
+[SUMMARY -- 2018-12-03 06:35:00]
+FI-uniqueID=8be7b25b-b119-4250-8792-81af7bb6cc13
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 06:35:04]
+FI-uniqueID=8be7b25b-b119-4250-8792-81af7bb6cc13
+smith_waterman-double - Crash
+[SUMMARY -- 2018-12-03 06:35:08]
+FI-uniqueID=8be7b25b-b119-4250-8792-81af7bb6cc13
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-03 06:35:29]
+FI-uniqueID=8be7b25b-b119-4250-8792-81af7bb6cc13
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-03 06:35:34]
+FI-uniqueID=8be7b25b-b119-4250-8792-81af7bb6cc13
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 06:35:36]
+FI-uniqueID=8be7b25b-b119-4250-8792-81af7bb6cc13
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-03 06:35:57]
+FI-uniqueID=8be7b25b-b119-4250-8792-81af7bb6cc13
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-03 06:35:58]
+FI-uniqueID=8be7b25b-b119-4250-8792-81af7bb6cc13
+smith_waterman-double - Crash
+[SUMMARY -- 2018-12-03 06:36:07]
+FI-uniqueID=8be7b25b-b119-4250-8792-81af7bb6cc13
+smith_waterman-random - SDC Detected
+[SUMMARY -- 2018-12-03 06:36:11]
+FI-uniqueID=8be7b25b-b119-4250-8792-81af7bb6cc13
+smith_waterman-single - Crash
+[SUMMARY -- 2018-12-03 06:36:16]
+FI-uniqueID=8be7b25b-b119-4250-8792-81af7bb6cc13
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 06:36:21]
+FI-uniqueID=8be7b25b-b119-4250-8792-81af7bb6cc13
+smith_waterman-random - SDC Detected
+[SUMMARY -- 2018-12-03 06:36:26]
+FI-uniqueID=8be7b25b-b119-4250-8792-81af7bb6cc13
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 06:36:31]
+FI-uniqueID=8be7b25b-b119-4250-8792-81af7bb6cc13
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 06:36:52]
+FI-uniqueID=8be7b25b-b119-4250-8792-81af7bb6cc13
+smith_waterman-random - Hang
+[SUMMARY -- 2018-12-03 06:37:44]
+FI-uniqueID=31ec09d4-4984-4b7e-90d0-baf93de6c8a5
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 06:37:48]
+FI-uniqueID=31ec09d4-4984-4b7e-90d0-baf93de6c8a5
+smith_waterman-double - NoOutputGenerated
+[SUMMARY -- 2018-12-03 06:37:54]
+FI-uniqueID=31ec09d4-4984-4b7e-90d0-baf93de6c8a5
+smith_waterman-random - SDC Detected
+[SUMMARY -- 2018-12-03 06:37:59]
+FI-uniqueID=31ec09d4-4984-4b7e-90d0-baf93de6c8a5
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 06:38:04]
+FI-uniqueID=31ec09d4-4984-4b7e-90d0-baf93de6c8a5
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 06:38:09]
+FI-uniqueID=31ec09d4-4984-4b7e-90d0-baf93de6c8a5
+smith_waterman-random - SDC Detected
+[SUMMARY -- 2018-12-03 06:53:05]
+FI-uniqueID=4b1aa37e-c5eb-4443-981b-c294cb59d552
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-03 06:53:09]
+FI-uniqueID=4b1aa37e-c5eb-4443-981b-c294cb59d552
+smith_waterman-double - SDC
+[SUMMARY -- 2018-12-03 06:53:12]
+FI-uniqueID=4b1aa37e-c5eb-4443-981b-c294cb59d552
+smith_waterman-random - NoOutputGenerated
+[SUMMARY -- 2018-12-03 06:53:18]
+FI-uniqueID=4b1aa37e-c5eb-4443-981b-c294cb59d552
+smith_waterman-single - SDC
+[SUMMARY -- 2018-12-03 06:53:23]
+FI-uniqueID=4b1aa37e-c5eb-4443-981b-c294cb59d552
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 06:53:29]
+FI-uniqueID=4b1aa37e-c5eb-4443-981b-c294cb59d552
+smith_waterman-random - SDC
+[SUMMARY -- 2018-12-03 06:53:33]
+FI-uniqueID=4b1aa37e-c5eb-4443-981b-c294cb59d552
+smith_waterman-single - SDC
+[SUMMARY -- 2018-12-03 06:53:37]
+FI-uniqueID=4b1aa37e-c5eb-4443-981b-c294cb59d552
+smith_waterman-double - SDC
+[SUMMARY -- 2018-12-03 06:53:41]
+FI-uniqueID=4b1aa37e-c5eb-4443-981b-c294cb59d552
+smith_waterman-random - SDC
+[SUMMARY -- 2018-12-03 06:53:45]
+FI-uniqueID=4b1aa37e-c5eb-4443-981b-c294cb59d552
+smith_waterman-single - SDC
+[SUMMARY -- 2018-12-03 06:54:05]
+FI-uniqueID=4b1aa37e-c5eb-4443-981b-c294cb59d552
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 06:54:09]
+FI-uniqueID=4b1aa37e-c5eb-4443-981b-c294cb59d552
+smith_waterman-random - SDC Detected
+[SUMMARY -- 2018-12-03 06:54:14]
+FI-uniqueID=4b1aa37e-c5eb-4443-981b-c294cb59d552
+smith_waterman-single - SDC
+[SUMMARY -- 2018-12-03 06:54:20]
+FI-uniqueID=4b1aa37e-c5eb-4443-981b-c294cb59d552
+smith_waterman-double - SDC
+[SUMMARY -- 2018-12-03 06:54:24]
+FI-uniqueID=4b1aa37e-c5eb-4443-981b-c294cb59d552
+smith_waterman-random - SDC
+[SUMMARY -- 2018-12-03 07:00:10]
+FI-uniqueID=37ff6231-acfd-47e8-98ac-69daf5b0a9ad
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-03 07:00:16]
+FI-uniqueID=37ff6231-acfd-47e8-98ac-69daf5b0a9ad
+smith_waterman-double - SDC
+[SUMMARY -- 2018-12-03 07:00:19]
+FI-uniqueID=37ff6231-acfd-47e8-98ac-69daf5b0a9ad
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-03 07:00:26]
+FI-uniqueID=37ff6231-acfd-47e8-98ac-69daf5b0a9ad
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 07:00:32]
+FI-uniqueID=37ff6231-acfd-47e8-98ac-69daf5b0a9ad
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 07:00:38]
+FI-uniqueID=37ff6231-acfd-47e8-98ac-69daf5b0a9ad
+smith_waterman-random - SDC
+[SUMMARY -- 2018-12-03 07:00:58]
+FI-uniqueID=37ff6231-acfd-47e8-98ac-69daf5b0a9ad
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-03 07:01:04]
+FI-uniqueID=37ff6231-acfd-47e8-98ac-69daf5b0a9ad
+smith_waterman-double - SDC
+[SUMMARY -- 2018-12-03 07:01:10]
+FI-uniqueID=37ff6231-acfd-47e8-98ac-69daf5b0a9ad
+smith_waterman-random - SDC
+[SUMMARY -- 2018-12-03 07:01:13]
+FI-uniqueID=37ff6231-acfd-47e8-98ac-69daf5b0a9ad
+smith_waterman-single - NoOutputGenerated
+[SUMMARY -- 2018-12-03 07:01:21]
+FI-uniqueID=37ff6231-acfd-47e8-98ac-69daf5b0a9ad
+smith_waterman-double - SDC
+[SUMMARY -- 2018-12-03 07:01:22]
+FI-uniqueID=37ff6231-acfd-47e8-98ac-69daf5b0a9ad
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-03 07:01:33]
+FI-uniqueID=37ff6231-acfd-47e8-98ac-69daf5b0a9ad
+smith_waterman-single - SDC
+[SUMMARY -- 2018-12-03 07:01:39]
+FI-uniqueID=37ff6231-acfd-47e8-98ac-69daf5b0a9ad
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 07:01:59]
+FI-uniqueID=37ff6231-acfd-47e8-98ac-69daf5b0a9ad
+smith_waterman-random - Hang
+[SUMMARY -- 2018-12-03 07:03:56]
+FI-uniqueID=0ea25e33-0399-4df5-adf0-ff4f94f46ecd
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-03 07:04:01]
+FI-uniqueID=0ea25e33-0399-4df5-adf0-ff4f94f46ecd
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 07:04:06]
+FI-uniqueID=0ea25e33-0399-4df5-adf0-ff4f94f46ecd
+smith_waterman-random - SDC
+[SUMMARY -- 2018-12-03 07:04:11]
+FI-uniqueID=0ea25e33-0399-4df5-adf0-ff4f94f46ecd
+smith_waterman-single - SDC
+[SUMMARY -- 2018-12-03 07:04:16]
+FI-uniqueID=0ea25e33-0399-4df5-adf0-ff4f94f46ecd
+smith_waterman-double - SDC
+[SUMMARY -- 2018-12-03 07:04:19]
+FI-uniqueID=0ea25e33-0399-4df5-adf0-ff4f94f46ecd
+smith_waterman-random - NoOutputGenerated
+[SUMMARY -- 2018-12-03 07:04:26]
+FI-uniqueID=0ea25e33-0399-4df5-adf0-ff4f94f46ecd
+smith_waterman-single - SDC
+[SUMMARY -- 2018-12-03 07:04:30]
+FI-uniqueID=0ea25e33-0399-4df5-adf0-ff4f94f46ecd
+smith_waterman-double - NoOutputGenerated
+[SUMMARY -- 2018-12-03 07:04:35]
+FI-uniqueID=0ea25e33-0399-4df5-adf0-ff4f94f46ecd
+smith_waterman-random - SDC Detected
+[SUMMARY -- 2018-12-03 07:04:55]
+FI-uniqueID=0ea25e33-0399-4df5-adf0-ff4f94f46ecd
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-03 07:05:00]
+FI-uniqueID=0ea25e33-0399-4df5-adf0-ff4f94f46ecd
+smith_waterman-double - SDC
+[SUMMARY -- 2018-12-03 07:05:05]
+FI-uniqueID=0ea25e33-0399-4df5-adf0-ff4f94f46ecd
+smith_waterman-random - SDC
+[SUMMARY -- 2018-12-03 07:05:09]
+FI-uniqueID=0ea25e33-0399-4df5-adf0-ff4f94f46ecd
+smith_waterman-single - NoOutputGenerated
+[SUMMARY -- 2018-12-03 07:05:14]
+FI-uniqueID=0ea25e33-0399-4df5-adf0-ff4f94f46ecd
+smith_waterman-double - SDC
+[SUMMARY -- 2018-12-03 07:05:20]
+FI-uniqueID=0ea25e33-0399-4df5-adf0-ff4f94f46ecd
+smith_waterman-random - SDC
+[SUMMARY -- 2018-12-03 07:06:14]
+FI-uniqueID=3209817a-b410-4ff3-871b-59d1037c1d79
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:06:20]
+FI-uniqueID=3209817a-b410-4ff3-871b-59d1037c1d79
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 07:06:21]
+FI-uniqueID=3209817a-b410-4ff3-871b-59d1037c1d79
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-03 07:06:28]
+FI-uniqueID=3209817a-b410-4ff3-871b-59d1037c1d79
+smith_waterman-single - NoOutputGenerated
+[SUMMARY -- 2018-12-03 07:06:37]
+FI-uniqueID=3209817a-b410-4ff3-871b-59d1037c1d79
+smith_waterman-double - SDC
+[SUMMARY -- 2018-12-03 07:06:43]
+FI-uniqueID=3209817a-b410-4ff3-871b-59d1037c1d79
+smith_waterman-random - SDC
+[SUMMARY -- 2018-12-03 07:06:50]
+FI-uniqueID=3209817a-b410-4ff3-871b-59d1037c1d79
+smith_waterman-single - SDC
+[SUMMARY -- 2018-12-03 07:06:56]
+FI-uniqueID=3209817a-b410-4ff3-871b-59d1037c1d79
+smith_waterman-double - SDC
+[SUMMARY -- 2018-12-03 07:07:02]
+FI-uniqueID=3209817a-b410-4ff3-871b-59d1037c1d79
+smith_waterman-random - SDC
+[SUMMARY -- 2018-12-03 07:10:30]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 07:10:36]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 07:10:42]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:10:48]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:10:54]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 07:11:14]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-random - Hang
+[SUMMARY -- 2018-12-03 07:11:19]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:11:39]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 07:11:45]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:11:51]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:11:57]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 07:12:03]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-03 07:12:09]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-single - Crash
+[SUMMARY -- 2018-12-03 07:12:15]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-double - Crash
+[SUMMARY -- 2018-12-03 07:12:18]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-03 07:12:27]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:12:33]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 07:12:39]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:12:45]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:12:51]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 07:12:56]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-random - SDC Detected
+[SUMMARY -- 2018-12-03 07:13:03]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:13:23]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 07:13:29]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-random - SDC Detected
+[SUMMARY -- 2018-12-03 07:13:35]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:13:41]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-double - Crash
+[SUMMARY -- 2018-12-03 07:13:47]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-random - SDC Detected
+[SUMMARY -- 2018-12-03 07:13:53]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:13:59]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 07:14:05]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:14:12]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 07:14:18]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 07:14:24]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:14:30]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 07:14:36]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 07:14:42]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:14:48]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:14:51]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 07:14:59]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-random - SDC Detected
+[SUMMARY -- 2018-12-03 07:15:05]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:15:11]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 07:15:13]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-03 07:15:23]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:15:29]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 07:15:35]
+FI-uniqueID=68a77a91-72e7-4425-acbb-6fb5bd7808dc
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:15:44]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 07:15:50]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 07:15:55]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:16:00]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:16:05]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 07:16:11]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-random - SDC Detected
+[SUMMARY -- 2018-12-03 07:16:16]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 07:16:22]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 07:16:42]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-random - Hang
+[SUMMARY -- 2018-12-03 07:16:47]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:16:53]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 07:16:58]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:17:03]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 07:17:09]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-double - Fault Injection Failed
+[SUMMARY -- 2018-12-03 07:17:10]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-03 07:17:18]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:17:23]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 07:17:28]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:17:33]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 07:17:37]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-double - NoOutputGenerated
+[SUMMARY -- 2018-12-03 07:17:45]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:17:50]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:17:55]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 07:18:00]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:18:05]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 07:18:08]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-double - Crash
+[SUMMARY -- 2018-12-03 07:18:15]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:18:20]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:18:40]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 07:18:45]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-03 07:18:50]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-single - Crash
+[SUMMARY -- 2018-12-03 07:18:55]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 07:19:00]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:19:05]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:19:10]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 07:19:12]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-03 07:19:20]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:19:25]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 07:19:31]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:19:36]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:19:42]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 07:19:48]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:20:08]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-03 07:20:28]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 07:20:33]
+FI-uniqueID=82f730b4-3743-49bf-a236-6aba2e53c951
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:29:42]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-single - Crash
+[SUMMARY -- 2018-12-03 07:30:03]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 07:30:08]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:30:13]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:30:18]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 07:30:39]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-random - Hang
+[SUMMARY -- 2018-12-03 07:30:40]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-single - Crash
+[SUMMARY -- 2018-12-03 07:30:44]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 07:30:50]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-03 07:30:55]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-single - Crash
+[SUMMARY -- 2018-12-03 07:31:16]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 07:31:19]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:31:27]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:31:32]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 07:31:33]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-03 07:31:41]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 07:31:42]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-double - Crash
+[SUMMARY -- 2018-12-03 07:31:51]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:31:57]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:32:17]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 07:32:22]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:32:27]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:32:33]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 07:32:38]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-03 07:32:44]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-single - Crash
+[SUMMARY -- 2018-12-03 07:32:50]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 07:33:11]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-random - Hang
+[SUMMARY -- 2018-12-03 07:33:16]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:33:21]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 07:33:24]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:33:31]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 07:33:37]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 07:33:43]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:33:49]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 07:33:52]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-double - NoOutputGenerated
+[SUMMARY -- 2018-12-03 07:33:59]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:34:19]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-03 07:34:25]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 07:34:32]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:34:37]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 07:34:57]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 07:35:02]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 07:35:22]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-03 07:35:27]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 07:35:33]
+FI-uniqueID=631e4e46-6c1f-4fb7-b94b-54208a887dcd
+smith_waterman-random - SDC Detected
+[SUMMARY -- 2018-12-03 15:38:43]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-single - Crash
+[SUMMARY -- 2018-12-03 15:39:03]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 15:39:10]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 15:39:17]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 15:39:37]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 15:39:44]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 15:39:51]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 15:39:59]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 15:40:19]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-random - Hang
+[SUMMARY -- 2018-12-03 15:40:26]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 15:40:46]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 15:40:53]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 15:41:13]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-03 15:41:23]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 15:41:30]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-random - SDC
+[SUMMARY -- 2018-12-03 15:41:37]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-single - SDC
+[SUMMARY -- 2018-12-03 15:41:44]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 15:41:47]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-03 15:41:57]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 15:42:17]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 15:42:24]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 15:42:31]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 15:42:38]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 15:42:46]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 15:42:47]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-single - Crash
+[SUMMARY -- 2018-12-03 15:42:55]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 15:43:02]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 15:43:10]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 15:43:17]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 15:43:24]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 15:43:31]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 15:43:38]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 15:43:45]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 15:43:52]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 15:43:59]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 15:44:19]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-random - Hang
+[SUMMARY -- 2018-12-03 15:44:26]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 15:44:33]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-double - Crash
+[SUMMARY -- 2018-12-03 15:44:40]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 15:44:47]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 15:44:54]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 15:45:01]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 15:45:09]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 15:45:16]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 15:45:23]
+FI-uniqueID=4df2596a-acb7-43ee-9a3a-6e805a559f00
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 15:51:08]
+FI-uniqueID=ac950d02-4e94-4a6d-850d-8d291e8e59d6
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 15:51:28]
+FI-uniqueID=ac950d02-4e94-4a6d-850d-8d291e8e59d6
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 15:51:34]
+FI-uniqueID=ac950d02-4e94-4a6d-850d-8d291e8e59d6
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 15:53:56]
+FI-uniqueID=2c26dce5-64b7-49d2-997a-2e670e6f8fc8
+smith_waterman-single - Crash
+[SUMMARY -- 2018-12-03 15:54:04]
+FI-uniqueID=2c26dce5-64b7-49d2-997a-2e670e6f8fc8
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 15:54:10]
+FI-uniqueID=2c26dce5-64b7-49d2-997a-2e670e6f8fc8
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 15:54:49]
+FI-uniqueID=5e8d78a3-ab85-4c26-9e10-f78047fe2d33
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 15:55:09]
+FI-uniqueID=5e8d78a3-ab85-4c26-9e10-f78047fe2d33
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 15:55:29]
+FI-uniqueID=5e8d78a3-ab85-4c26-9e10-f78047fe2d33
+smith_waterman-random - Hang
+[SUMMARY -- 2018-12-03 15:57:15]
+FI-uniqueID=19a11d24-c806-481c-aad4-059c73493aca
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 15:57:35]
+FI-uniqueID=19a11d24-c806-481c-aad4-059c73493aca
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 15:57:40]
+FI-uniqueID=19a11d24-c806-481c-aad4-059c73493aca
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 15:58:34]
+FI-uniqueID=53cbeacc-e0c6-42c0-b34f-9afd28d96329
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 15:58:44]
+FI-uniqueID=53cbeacc-e0c6-42c0-b34f-9afd28d96329
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 15:58:50]
+FI-uniqueID=53cbeacc-e0c6-42c0-b34f-9afd28d96329
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 15:59:30]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-03 15:59:39]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 15:59:50]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:00:01]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:00:11]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:00:20]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-random - SDC Detected
+[SUMMARY -- 2018-12-03 16:00:41]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-03 16:00:50]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 16:00:59]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:01:08]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:01:17]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:01:27]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:01:28]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-single - Crash
+[SUMMARY -- 2018-12-03 16:01:40]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 16:01:49]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:02:09]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-03 16:02:18]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:02:19]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-03 16:02:26]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-single - Crash
+[SUMMARY -- 2018-12-03 16:02:35]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:02:55]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-random - Hang
+[SUMMARY -- 2018-12-03 16:03:04]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:03:24]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 16:03:33]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:03:42]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:03:52]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:04:01]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:04:10]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:04:19]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:04:23]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-03 16:04:34]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:04:54]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 16:04:57]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-03 16:05:20]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-03 16:05:29]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 16:05:38]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:05:47]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:05:57]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 16:06:06]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:06:15]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:06:35]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 16:06:44]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:06:49]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:07:11]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 16:07:20]
+FI-uniqueID=314ee81b-4716-4222-830e-921c091c857c
+smith_waterman-random - SDC Detected
+[SUMMARY -- 2018-12-03 16:31:31]
+FI-uniqueID=dde96061-43b8-41b3-85dc-7ee5b4ce9bf0
+smith_waterman-single - Crash
+[SUMMARY -- 2018-12-03 16:31:52]
+FI-uniqueID=dde96061-43b8-41b3-85dc-7ee5b4ce9bf0
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 16:32:12]
+FI-uniqueID=dde96061-43b8-41b3-85dc-7ee5b4ce9bf0
+smith_waterman-random - Fault Injection Failed
+[SUMMARY -- 2018-12-03 16:32:33]
+FI-uniqueID=dde96061-43b8-41b3-85dc-7ee5b4ce9bf0
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-03 16:32:44]
+FI-uniqueID=dde96061-43b8-41b3-85dc-7ee5b4ce9bf0
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:32:52]
+FI-uniqueID=dde96061-43b8-41b3-85dc-7ee5b4ce9bf0
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:33:00]
+FI-uniqueID=dde96061-43b8-41b3-85dc-7ee5b4ce9bf0
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:33:08]
+FI-uniqueID=dde96061-43b8-41b3-85dc-7ee5b4ce9bf0
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:33:15]
+FI-uniqueID=dde96061-43b8-41b3-85dc-7ee5b4ce9bf0
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:33:22]
+FI-uniqueID=dde96061-43b8-41b3-85dc-7ee5b4ce9bf0
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:33:30]
+FI-uniqueID=dde96061-43b8-41b3-85dc-7ee5b4ce9bf0
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:33:37]
+FI-uniqueID=dde96061-43b8-41b3-85dc-7ee5b4ce9bf0
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:33:44]
+FI-uniqueID=dde96061-43b8-41b3-85dc-7ee5b4ce9bf0
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:33:51]
+FI-uniqueID=dde96061-43b8-41b3-85dc-7ee5b4ce9bf0
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:33:58]
+FI-uniqueID=dde96061-43b8-41b3-85dc-7ee5b4ce9bf0
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:35:47]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:35:53]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:35:54]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-03 16:36:18]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-03 16:36:24]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:36:30]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:36:36]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:36:42]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:36:48]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-random - Fault Injection Failed
+[SUMMARY -- 2018-12-03 16:36:55]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:37:01]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:37:07]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:37:27]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-03 16:37:47]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 16:37:53]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:38:00]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:38:06]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:38:26]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-random - Hang
+[SUMMARY -- 2018-12-03 16:38:32]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:38:38]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:38:44]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:38:50]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:38:51]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-double - Crash
+[SUMMARY -- 2018-12-03 16:39:01]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:39:07]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:39:14]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:39:20]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:39:26]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:39:32]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:39:52]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-random - Hang
+[SUMMARY -- 2018-12-03 16:39:54]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-single - Crash
+[SUMMARY -- 2018-12-03 16:40:15]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 16:40:21]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:40:27]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:40:34]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:40:36]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-03 16:40:46]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:41:06]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 16:41:12]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:41:18]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:41:19]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-double - Crash
+[SUMMARY -- 2018-12-03 16:41:26]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-03 16:41:34]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:41:40]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:41:46]
+FI-uniqueID=fffa864e-24cb-4754-9325-70c690ef323b
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:42:55]
+FI-uniqueID=2bca7fdb-a946-40fd-8b7f-ea942614e7e2
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 16:43:02]
+FI-uniqueID=2bca7fdb-a946-40fd-8b7f-ea942614e7e2
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 16:43:09]
+FI-uniqueID=2bca7fdb-a946-40fd-8b7f-ea942614e7e2
+smith_waterman-random - SDC Detected
+[SUMMARY -- 2018-12-03 16:43:16]
+FI-uniqueID=2bca7fdb-a946-40fd-8b7f-ea942614e7e2
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 16:44:20]
+FI-uniqueID=8576a842-e8b9-4ee7-b608-04a8dfc4e168
+smith_waterman-single - Crash
+[SUMMARY -- 2018-12-03 16:44:40]
+FI-uniqueID=8576a842-e8b9-4ee7-b608-04a8dfc4e168
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 16:44:45]
+FI-uniqueID=8576a842-e8b9-4ee7-b608-04a8dfc4e168
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:44:51]
+FI-uniqueID=8576a842-e8b9-4ee7-b608-04a8dfc4e168
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:44:56]
+FI-uniqueID=8576a842-e8b9-4ee7-b608-04a8dfc4e168
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:45:02]
+FI-uniqueID=8576a842-e8b9-4ee7-b608-04a8dfc4e168
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:45:08]
+FI-uniqueID=8576a842-e8b9-4ee7-b608-04a8dfc4e168
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:51:34]
+FI-uniqueID=b9426208-7bb5-4a2a-9728-4e02f7be54a6
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 16:51:54]
+FI-uniqueID=b9426208-7bb5-4a2a-9728-4e02f7be54a6
+smith_waterman-double - Hang
+[SUMMARY -- 2018-12-03 16:52:00]
+FI-uniqueID=b9426208-7bb5-4a2a-9728-4e02f7be54a6
+smith_waterman-random - SDC Detected
+[SUMMARY -- 2018-12-03 16:52:06]
+FI-uniqueID=b9426208-7bb5-4a2a-9728-4e02f7be54a6
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 16:52:12]
+FI-uniqueID=b9426208-7bb5-4a2a-9728-4e02f7be54a6
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 16:52:13]
+FI-uniqueID=b9426208-7bb5-4a2a-9728-4e02f7be54a6
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-03 16:52:23]
+FI-uniqueID=b9426208-7bb5-4a2a-9728-4e02f7be54a6
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 16:52:30]
+FI-uniqueID=b9426208-7bb5-4a2a-9728-4e02f7be54a6
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 16:52:36]
+FI-uniqueID=b9426208-7bb5-4a2a-9728-4e02f7be54a6
+smith_waterman-random - SDC Detected
+[SUMMARY -- 2018-12-03 16:52:42]
+FI-uniqueID=b9426208-7bb5-4a2a-9728-4e02f7be54a6
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 16:52:48]
+FI-uniqueID=b9426208-7bb5-4a2a-9728-4e02f7be54a6
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 16:52:54]
+FI-uniqueID=b9426208-7bb5-4a2a-9728-4e02f7be54a6
+smith_waterman-random - SDC Detected
+[SUMMARY -- 2018-12-03 16:53:00]
+FI-uniqueID=b9426208-7bb5-4a2a-9728-4e02f7be54a6
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 16:53:06]
+FI-uniqueID=b9426208-7bb5-4a2a-9728-4e02f7be54a6
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 16:53:25]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:53:32]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 16:53:38]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:53:44]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:53:50]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-double - Crash
+[SUMMARY -- 2018-12-03 16:53:56]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:54:02]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:54:08]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:54:14]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-random - SDC Detected
+[SUMMARY -- 2018-12-03 16:54:21]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 16:54:27]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:54:33]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:54:53]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-03 16:54:59]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:55:01]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-random - Crash
+[SUMMARY -- 2018-12-03 16:55:09]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:55:15]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:55:21]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-random - SDC Detected
+[SUMMARY -- 2018-12-03 16:55:27]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:55:28]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-double - Crash
+[SUMMARY -- 2018-12-03 16:55:52]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-random - Hang
+[SUMMARY -- 2018-12-03 16:55:59]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 16:56:05]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:56:11]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-random - SDC Detected
+[SUMMARY -- 2018-12-03 16:56:17]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:56:23]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 16:56:29]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:56:49]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-single - Hang
+[SUMMARY -- 2018-12-03 16:56:56]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:57:02]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:57:08]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 16:57:14]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 16:57:20]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-random - Masked
+[SUMMARY -- 2018-12-03 16:57:26]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 16:57:32]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:57:52]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-random - Hang
+[SUMMARY -- 2018-12-03 16:57:58]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:58:04]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-double - SDC Detected
+[SUMMARY -- 2018-12-03 16:58:10]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-random - SDC Detected
+[SUMMARY -- 2018-12-03 16:58:16]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-single - SDC Detected
+[SUMMARY -- 2018-12-03 16:58:22]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:58:28]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-random - SDC Detected
+[SUMMARY -- 2018-12-03 16:58:34]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-single - Masked
+[SUMMARY -- 2018-12-03 16:58:40]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-double - Masked
+[SUMMARY -- 2018-12-03 16:58:47]
+FI-uniqueID=98e1f17c-6e9a-4579-9b7d-de44d5cbd981
+smith_waterman-random - SDC Detected
