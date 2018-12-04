@@ -1,0 +1,49 @@
+[INFO -- 2018-12-03 21:59:41]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-03 21:59:41]
+Initialization strings:
+[INFO -- 2018-12-03 21:59:41]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-03 21:59:41]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-03 21:59:41]
+initSignal:0
+[INFO -- 2018-12-03 21:59:41]
+endSignal:6
+[INFO -- 2018-12-03 21:59:41]
+faultModel:2
+[INFO -- 2018-12-03 21:59:45]
+Backtrace BEGIN:
+#0  __strlen_sse2 () at ../sysdeps/x86_64/multiarch/../strlen.S:240
+#1  0x00007ffff7a414d3 in _IO_vfprintf_internal (s=s@entry=0x7fffffffd7a0, format=format@entry=0x55555555627c "%c%s", ap=ap@entry=0x7fffffffd910) at vfprintf.c:1643
+#2  0x00007ffff7a6c910 in _IO_vsnprintf (string=0x555555799990 "J\003\335\367\377\177", maxlen=<optimized out>, format=0x55555555627c "%c%s", args=args@entry=0x7fffffffd910) at vsnprintf.c:114
+#3  0x00007ffff7a48fdf in __GI___snprintf (s=<optimized out>, maxlen=<optimized out>, format=<optimized out>) at snprintf.c:33
+#4  0x00005555555557d2 in smith_waterman (x_num=15000, x_num2=15000, y_num=10650, y_num2=10650, str_x=0x5555557586c0 "XGGEHMCQCZUPODVEIPVNQAVZLPLUYJKWPSAXEFNJEJASMVYUKVKAWHBHYMDXVNTNGVMMABXGKYBYTZUGVEGTOKCMWFJUSEJACVPCYMLKMMIILCOIJWBXGDLDKXZFBIFFFWIDJVNXHVFUZVDISGHAMTFWSEBTMJZTFJWQELONITHIRMSJTAJHVPDNVHIKQJDXUCOANENY"..., str_y=0x55555575c170 "GGGEMCCCCZPPOVVEIPVNAAVLPPLUYKWWPAXXFNJJEJSMVYYKKVKWWBBYYMDVVTTGGMMAABXGYYBTTUUGEETTKKCWWJUSSEJCCPPYYLLKMMILLCIIJBXXGDLDKXZFIFFFWIIDVNNXHFUUZDISGHAAMTWWEEBMMZZTFWWQLOOIITHIRMJJAAHHVDNNHIIQJJDXCOANNENZ"...) at smith_waterman.c:217
+#5  0x0000555555555e65 in execute (file_x_name=0x7fffffffe0b4 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe0d6 "/tmp/smith_waterman/randInputY") at smith_waterman.c:309
+#6  0x0000555555556082 in main (argc=9, argv=0x7fffffffdc88) at smith_waterman.c:355
+
+235	../sysdeps/x86_64/multiarch/../strlen.S: No such file or directory.
+
+Backtrace END
+Fliping a bit of the pointer
+Memory content before bitflip:0x900x4d0x790x550x550x550x000x00
+Fault Model: Random bit-flip
+base address to flip value: 0x7fffffffdaa0
+address max offset: 8
+Memory content after  bitflip:0x4f0x070x160xe20x4f0x5a0x400x44
+frame name: smith_waterman
+symbol name: alignmentBcopy
+symbol filename: smith_waterman.c
+symbol line: 183
+value: 0x555555794d90 "BBANXVYHJHMBMWVDJHYLWHOZC-AGQMPZPSBERY-CAHMNLYLIBUQBIMJYLLYTDNKECEFJWFLWOZJBXWKATACBOLZZYYUBLHFPLMYHRMGHLRJLOTLJT-PKJCLKCLEDWNKOZYOIRAOZOIIBY-DOHYETHIERLQ-XQOLDCMBRUTTLSJTCMTFBADHTKRXDCPAV-ELYIXBBUUVF"...
+value address: 0x7fffffffdaa0
+Type: The type is a pointer.
+Type sizeof: 8
+
+[INFO -- 2018-12-03 21:59:45]
+Fault Injection Successful after 4.732861757278442s
+[INFO -- 2018-12-03 21:59:45]
+event type: exit
+[EXCEPTION -- 2018-12-03 21:59:45]
+exit code: no exit code available

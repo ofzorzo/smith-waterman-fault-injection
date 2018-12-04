@@ -97,6 +97,11 @@ char *smith_waterman(long x_num, long x_num2, long y_num, long y_num2, char* str
         sdc_occurred2 = 1;
     }
 
+	if(y_num != y_num2){        
+        sdc_occurred = 1; // ocorreu sdc!
+        sdc_occurred2 = 1;
+    }
+
     double** matrix=(double**)calloc(x_num+1, sizeof(double*));
     matrix[0]=(double*)calloc((x_num+1)*(y_num+1), sizeof(double));
     long i, i2;

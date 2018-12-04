@@ -1,0 +1,9 @@
+gcc -g smith_waterman.c -o smith_waterman
+gcc -g random_strings.c -o random_strings -lm
+mkdir -p /tmp/smith_waterman
+mkdir -p lastDataCreated
+./random_strings
+./smith_waterman -x randInputX -y randInputY -o goldOutput -z /tmp/smith_waterman/detected.log
+cp randInputX randInputY goldOutput lastDataCreated
+mv random_strings smith_waterman randInputX randInputY goldOutput /tmp/smith_waterman
+All Done, executables should be in the /tmp/smith_waterman

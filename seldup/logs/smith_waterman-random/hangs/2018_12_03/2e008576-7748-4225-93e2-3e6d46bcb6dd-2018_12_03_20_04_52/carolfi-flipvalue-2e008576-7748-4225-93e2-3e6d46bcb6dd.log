@@ -1,0 +1,51 @@
+[INFO -- 2018-12-03 20:04:32]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-03 20:04:32]
+Initialization strings:
+[INFO -- 2018-12-03 20:04:32]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-03 20:04:32]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-03 20:04:32]
+initSignal:0
+[INFO -- 2018-12-03 20:04:32]
+endSignal:6
+[INFO -- 2018-12-03 20:04:32]
+faultModel:2
+[EXCEPTION -- 2018-12-03 20:04:37]
+pythonException: invalid literal for int() with base 16: '0x55555575c170 ...'
+[INFO -- 2018-12-03 20:04:37]
+Backtrace BEGIN:
+#0  smith_waterman (x_num=15000, x_num2=15000, y_num=14850, y_num2=14850, str_x=0x5555557586c0 "VWQIBLFLFGCSZRYTZIZVYTTKLONABOGWKWFNIKYPSDKTWKMVSNSQGNDUCQUDEBARXHEHTFXLKHEGRTELGYBPMEJOXFTBGVSGCZNXGMIQTNYMIEXQDBFPFQFEWAGCWAIABYYHKIZGVYUFEUWHVBYCSFHOGNSEPDGRBGALPATMYOSCIOMDRMFLSOBABUETXKKARKNIKHUK"..., str_y=0x55555575c170 "WWIBLFLLGCCZRYTZIZVVTTTLLONBOGWKKFNIKYPSDKKWKKMSNNQGNNUUQQDEBBARHHEHFXLLHEERRELLYBBMMJOXFTTBGSGGZNXGMIQTNYMIIXQDDBPFFQEWWAGWAIABYYYKKZZVYYFEUUHHBYCSSHOOGSEPDGRBGAAPATMYOSCCOMDRMMLSOBBBUETXKKKAKNNIHUKV"...) at smith_waterman.c:167
+#1  0x0000555555555e65 in execute (file_x_name=0x7fffffffe0b4 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe0d6 "/tmp/smith_waterman/randInputY") at smith_waterman.c:309
+#2  0x0000555555556082 in main (argc=9, argv=0x7fffffffdc88) at smith_waterman.c:355
+
+162	    long width = y_num;
+163	
+164	    i2 = 0;
+165	    for(i=0; i<height+1; i++){
+166	        check_index(i, i2);
+167	        for(j=0; j<width+1; j++){
+168	            if(i==0 && j==0){
+169	                maxValue = matrix[i][j];
+170	                y = i;
+171	                x = j;
+
+Backtrace END
+Memory content before bitflip:0x000x000x000x000x000x000x000xc0
+Fault Model: Random bit-flip
+base address to flip value: 0x555555757030 
+address max offset: 8
+Memory content after  bitflip:0x660xc40x440xf70x280x1e0x0b0xf9
+frame name: execute
+symbol name: gap_score
+symbol filename: smith_waterman.c
+symbol line: 11
+value: -1.1736016558175915e+275
+value address: 0x555555757030 <gap_score>
+Type: A floating point type.
+Type sizeof: 8
+
+[INFO -- 2018-12-03 20:04:37]
+Fault Injection Successful after 5.953117609024048s
