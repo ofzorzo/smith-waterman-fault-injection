@@ -1,0 +1,54 @@
+[INFO -- 2018-12-05 09:04:42]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-05 09:04:42]
+Initialization strings:
+[INFO -- 2018-12-05 09:04:42]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-05 09:04:42]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-05 09:04:42]
+initSignal:0
+[INFO -- 2018-12-05 09:04:42]
+endSignal:6
+[INFO -- 2018-12-05 09:04:42]
+faultModel:2
+[INFO -- 2018-12-05 09:04:43]
+Backtrace BEGIN:
+#0  0x0000555555554d22 in my_maxof (a=-1, b=-2, c=-2, d=0) at smith_waterman.c:70
+#1  0x0000555555555202 in smith_waterman (x_num=13050, x_num2=13050, y_num=15000, y_num2=15000, str_x=0x5555557586c0 "YYMQVVLQFCCMQCGNMKPLLAEKKPWIIJJFXXXQVKHPPJMOOVVAFMUSOBVSSROAZZHHXYYSFFSJGGSEAPHBDDZSGQYYOFZQIIXPPXXJERUVZBACCHFFOJUGGTTVVUMCCMUJJFFAAZLLMMPPXJLSSFFAAAWFLLZZXSVYAAAAZJAYYBCMMZITTGGEDDKOOLLOOGPPGWHHHRUV"..., str_y=0x55555575b9d0 "WYMQKVLQDFCMQCGNMKPULAEBKPWQIGJFGXXQVKHYPJMHOUVAFMUSOBVYSROAZZHHXHYSRFSJQGSEAPHHBDZSGVQYOFZQGIXDPXXJERUVZMBACIHFOJXUGOTWVUMBCMHUJGFOAZLZLMZPXJVLSUFAKAWFULJZXSVIYAYAZJAMYBCVMZIGTNGEQDLKOWLNOGXPGWRHHRUF"...) at smith_waterman.c:141
+#2  0x0000555555555e65 in execute (file_x_name=0x7fffffffe0b4 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe0d6 "/tmp/smith_waterman/randInputY") at smith_waterman.c:309
+#3  0x0000555555556082 in main (argc=9, argv=0x7fffffffdc88) at smith_waterman.c:355
+
+65	    }
+66	}
+67	
+68	double my_maxof(double a, double b, double c, double d)
+69	{
+70	    double ans=a;
+71	    if(ans<b) ans=b;
+72	    if(ans<c) ans=c;
+73	    if(ans<d) ans=d;
+74	    return ans;
+
+Backtrace END
+Memory content before bitflip:0x790x230xa70xf7
+Fault Model: Random bit-flip
+base address to flip value: 0x7fffffffda28
+address max offset: 4
+Memory content after  bitflip:0x570x700x340xaa
+frame name: smith_waterman
+symbol name: stringSize
+symbol filename: smith_waterman.c
+symbol line: 282
+value: -1439403945
+value address: 0x7fffffffda28
+Type: The type is an integer type.
+Type sizeof: 4
+
+[INFO -- 2018-12-05 09:04:43]
+Fault Injection Successful after 1.9393725395202637s
+[INFO -- 2018-12-05 09:04:47]
+event type: exit
+[INFO -- 2018-12-05 09:04:47]
+exit code: 0

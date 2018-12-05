@@ -1,0 +1,53 @@
+[INFO -- 2018-12-05 18:08:36]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-05 18:08:36]
+Initialization strings:
+[INFO -- 2018-12-05 18:08:36]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-05 18:08:36]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-05 18:08:36]
+initSignal:0
+[INFO -- 2018-12-05 18:08:36]
+endSignal:6
+[INFO -- 2018-12-05 18:08:36]
+faultModel:2
+[INFO -- 2018-12-05 18:08:37]
+Backtrace BEGIN:
+#0  0x0000555555554fa6 in smith_waterman (x_num=15000, x_num2=15000, y_num=12000, y_num2=12000, str_x=0x5555557586c0 "CVUOAGGETRADLDNAMNINZBWZQWUTOLKTGGJINPOIIQLUTYWFOESNHPOYNITETDXBLILAYZJIPUCJVAQJFJWOAKMNTHROMQSYZDYXFHFUEKFZKWKRFGGHSUUNCOEOEWMDBLCGUKDYUIZGGJYNRGUKAPZEDDTHBHNFUPLRZOPVZREFAETUKNGMEFTHLOROVGTSVFJXVAUW"..., str_y=0x55555575c170 "VVUOAGEETAALDDAMMNNZBBZQQWTTOKKGGGJNPOIIQLUTTWFFESNNHOYNIIEETXBLILLYYZJIUUCVAAQJJWWAAMNTTHRMQSYYDDXFFFUEKFFKWWRFGGHHSUUNOOOEWMMBBCGUUDYYIZGGJYYRGUKAPZZEDTHBHHFFPLRROPPZREFAATUUNGMMFTHLOROOVTTVFJJVVUWR"...) at smith_waterman.c:121
+#1  0x0000555555555e65 in execute (file_x_name=0x7fffffffe0b4 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe0d6 "/tmp/smith_waterman/randInputY") at smith_waterman.c:309
+#2  0x0000555555556082 in main (argc=9, argv=0x7fffffffdc88) at smith_waterman.c:355
+
+116	    long j;
+117		
+118	    i2 = 0;
+119	    for(i=0; i<x_num+1; i++){
+120	        check_index(i, i2);
+121	        matrix[i][0]=0.0;
+122	        i2++;
+123	    }
+124	    check_index(i, i2);
+125	    i2 = 0;
+
+Backtrace END
+Memory content before bitflip:0x000x000x000x000x000x000xf00x3f
+Fault Model: Random bit-flip
+base address to flip value: 0x555555757010 
+address max offset: 8
+Memory content after  bitflip:0x750xb90x650x820xd10x380x5b0x3a
+frame name: execute
+symbol name: match_score
+symbol filename: smith_waterman.c
+symbol line: 7
+value: 1.3743570970386384e-27
+value address: 0x555555757010 <match_score>
+Type: A floating point type.
+Type sizeof: 8
+
+[INFO -- 2018-12-05 18:08:37]
+Fault Injection Successful after 1.0149540901184082s
+[INFO -- 2018-12-05 18:08:41]
+event type: exit
+[INFO -- 2018-12-05 18:08:41]
+exit code: 0

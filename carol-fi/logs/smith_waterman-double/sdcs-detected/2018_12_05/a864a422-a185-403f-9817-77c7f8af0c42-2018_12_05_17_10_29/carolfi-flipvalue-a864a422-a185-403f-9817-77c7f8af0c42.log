@@ -1,0 +1,51 @@
+[INFO -- 2018-12-05 17:10:23]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-05 17:10:23]
+Initialization strings:
+[INFO -- 2018-12-05 17:10:23]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-05 17:10:23]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-05 17:10:23]
+initSignal:0
+[INFO -- 2018-12-05 17:10:23]
+endSignal:6
+[INFO -- 2018-12-05 17:10:23]
+faultModel:1
+[INFO -- 2018-12-05 17:10:28]
+Backtrace BEGIN:
+#0  malloc (n=13) at dl-minimal.c:50
+#1  <function called from gdb>
+#2  malloc (n=13) at dl-minimal.c:50
+#3  <function called from gdb>
+#4  0x00007ffff7affab7 in munmap () at ../sysdeps/unix/syscall-template.S:78
+#5  0x00007ffff7a7bbef in munmap_chunk (p=0x7fffa1c64000) at malloc.c:2854
+#6  __GI___libc_free (mem=0x7fffa1c64010) at malloc.c:3117
+#7  0x0000555555555d16 in smith_waterman (x_num=15000, x_num2=15000, y_num=12000, y_num2=12000, str_x=0x5555557586c0 "CVUOAGGETRADLDNAMNINZBWZQWUTOLKTGGJINPOIIQLUTYWFOESNHPOYNITETDXBLILAYZJIPUCJVAQJFJWOAKMNTHROMQSYZDYXFHFUEKFZKWKRFGGHSUUNCOEOEWMDBLCGUKDYUIZGGJYNRGUKAPZEDDTHBHNFUPLRZOPVZREFAETUKNGMEFTHLOROVGTSVFJXVAUW"..., str_y=0x55555575c170 "VVUOAGEETAALDDAMMNNZBBZQQWTTOKKGGGJNPOIIQLUTTWFFESNNHOYNIIEETXBLILLYYZJIUUCVAAQJJWWAAMNTTHRMQSYYDDXFFFUEKFFKWWRFGGHHSUUNOOOEWMMBBCGUUDYYIZGGJYYRGUKAPZZEDTHBHHFFPLRROPPZREFAATUUNGMMFTHLOROOVTTVFJJVVUWR"...) at smith_waterman.c:290
+#8  0x0000555555555e65 in execute (file_x_name=0x7fffffffe0b4 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe0d6 "/tmp/smith_waterman/randInputY") at smith_waterman.c:309
+#9  0x0000555555556082 in main (argc=9, argv=0x7fffffffdc88) at smith_waterman.c:355
+
+45	in dl-minimal.c
+
+Backtrace END
+Memory content before bitflip:0x000x000x000x000x000x000xf00xbf
+Fault Model: Double bit-flip
+base address to flip value: 0x555555757020 
+address max offset: 8
+Memory content after  bitflip:0x000x000x000x000x000x000xf00x9b
+frame name: smith_waterman
+symbol name: mismatch_score
+symbol filename: smith_waterman.c
+symbol line: 9
+value: -4.0431746119521949e-174
+value address: 0x555555757020 <mismatch_score>
+Type: A floating point type.
+Type sizeof: 8
+
+[INFO -- 2018-12-05 17:10:28]
+Fault Injection Successful after 5.464916706085205s
+[INFO -- 2018-12-05 17:10:28]
+event type: exit
+[INFO -- 2018-12-05 17:10:28]
+exit code: 0

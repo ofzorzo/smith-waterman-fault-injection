@@ -1,0 +1,49 @@
+[INFO -- 2018-12-05 15:16:42]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-05 15:16:42]
+Initialization strings:
+[INFO -- 2018-12-05 15:16:42]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-05 15:16:42]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-05 15:16:42]
+initSignal:0
+[INFO -- 2018-12-05 15:16:42]
+endSignal:6
+[INFO -- 2018-12-05 15:16:42]
+faultModel:2
+[INFO -- 2018-12-05 15:16:47]
+Backtrace BEGIN:
+#0  malloc (n=13) at dl-minimal.c:50
+#1  <function called from gdb>
+#2  0x00007ffff7affab7 in munmap () at ../sysdeps/unix/syscall-template.S:78
+#3  0x00007ffff7a7bbef in munmap_chunk (p=0x7fffab6e6000) at malloc.c:2854
+#4  __GI___libc_free (mem=0x7fffab6e6010) at malloc.c:3117
+#5  0x0000555555555d16 in smith_waterman (x_num=15000, x_num2=15000, y_num=10650, y_num2=10650, str_x=0x5555557586c0 "EPHJLKKADWCYUXKGRYGUBKEEFZOTCDPHUYSHICHNYMLUJXABXIXATBGACWVHCKQYKIGSMPFMBSJLSJORULSPOAPSXMZZXPXJZDCNVJAWEJJWUXPOKJDYKURHHSIGKFPJLRXGDZEHIOFCNUTAEWAORTXAMFGWMVHZPEHUDMBNCGSRCLRGHUWANVCBCIXPGFQXLYRRKUGO"..., str_y=0x55555575c170 "EHJJKKAAWWCYUKKGYGUUBKEEZZOTCPPHUYHICHNNYMLJJAABIIXATBAAWWHHCKYKIGSMMPFMSJJLJJOULSPPAPSXMZZZXPJJZCCNVAWWJJJUXPOKJDDKUUHHHSIKKFPLRXXGDZHHIOFCNUTAEAAORTXMMGGMVVZZPEUDDBBCGGSCLRRHHWAANVCCIXPGGFQLYYRRKUOO"...) at smith_waterman.c:290
+#6  0x0000555555555e65 in execute (file_x_name=0x7fffffffe0b4 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe0d6 "/tmp/smith_waterman/randInputY") at smith_waterman.c:309
+#7  0x0000555555556082 in main (argc=9, argv=0x7fffffffdc88) at smith_waterman.c:355
+
+45	dl-minimal.c: No such file or directory.
+
+Backtrace END
+Memory content before bitflip:0x000x000x000x000x000x000x000xc0
+Fault Model: Random bit-flip
+base address to flip value: 0x555555757030 
+address max offset: 8
+Memory content after  bitflip:0x400x700x670xfc0x450x460xa60x1c
+frame name: execute
+symbol name: gap_score
+symbol filename: smith_waterman.c
+symbol line: 11
+value: 1.152764348553071e-170
+value address: 0x555555757030 <gap_score>
+Type: A floating point type.
+Type sizeof: 8
+
+[INFO -- 2018-12-05 15:16:47]
+Fault Injection Successful after 5.270549535751343s
+[INFO -- 2018-12-05 15:16:47]
+event type: exit
+[INFO -- 2018-12-05 15:16:47]
+exit code: 0

@@ -1,0 +1,54 @@
+[INFO -- 2018-12-05 19:04:40]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-05 19:04:40]
+Initialization strings:
+[INFO -- 2018-12-05 19:04:40]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-05 19:04:40]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-05 19:04:40]
+initSignal:0
+[INFO -- 2018-12-05 19:04:40]
+endSignal:6
+[INFO -- 2018-12-05 19:04:40]
+faultModel:1
+[INFO -- 2018-12-05 19:04:45]
+Backtrace BEGIN:
+#0  0x0000555555555434 in smith_waterman (x_num=15000, x_num2=15000, y_num=12000, y_num2=12000, str_x=0x5555557586c0 "CVUOAGGETRADLDNAMNINZBWZQWUTOLKTGGJINPOIIQLUTYWFOESNHPOYNITETDXBLILAYZJIPUCJVAQJFJWOAKMNTHROMQSYZDYXFHFUEKFZKWKRFGGHSUUNCOEOEWMDBLCGUKDYUIZGGJYNRGUKAPZEDDTHBHNFUPLRZOPVZREFAETUKNGMEFTHLOROVGTSVFJXVAUW"..., str_y=0x55555575c170 "VVUOAGEETAALDDAMMNNZBBZQQWTTOKKGGGJNPOIIQLUTTWFFESNNHOYNIIEETXBLILLYYZJIUUCVAAQJJWWAAMNTTHRMQSYYDDXFFFUEKFFKWWRFGGHHSUUNOOOEWMMBBCGUUDYYIZGGJYYRGUKAPZZEDTHBHHFFPLRROPPZREFAATUUNGMMFTHLOROOVTTVFJJVVUWR"...) at smith_waterman.c:167
+#1  0x0000555555555e65 in execute (file_x_name=0x7fffffffe0b4 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe0d6 "/tmp/smith_waterman/randInputY") at smith_waterman.c:309
+#2  0x0000555555556082 in main (argc=9, argv=0x7fffffffdc88) at smith_waterman.c:355
+
+162	    long width = y_num;
+163	
+164	    i2 = 0;
+165	    for(i=0; i<height+1; i++){
+166	        check_index(i, i2);
+167	        for(j=0; j<width+1; j++){
+168	            if(i==0 && j==0){
+169	                maxValue = matrix[i][j];
+170	                y = i;
+171	                x = j;
+
+Backtrace END
+Fliping a bit of the value pointed by a pointer
+Memory content before bitflip:0x2f
+Fault Model: Double bit-flip
+base address to flip value: 0x7fffffffe0d6 
+address max offset: 1
+Memory content after  bitflip:0x07
+frame name: execute
+symbol name: file_y_name
+symbol filename: smith_waterman.c
+symbol line: 295
+value: 0x7fffffffe0d6 "\atmp/smith_waterman/randInputY"
+value address: 0x7fffffffdaf0
+Type: The type is a pointer.
+Type sizeof: 8
+
+[INFO -- 2018-12-05 19:04:45]
+Fault Injection Successful after 5.024315357208252s
+[INFO -- 2018-12-05 19:04:45]
+event type: exit
+[INFO -- 2018-12-05 19:04:45]
+exit code: 0
