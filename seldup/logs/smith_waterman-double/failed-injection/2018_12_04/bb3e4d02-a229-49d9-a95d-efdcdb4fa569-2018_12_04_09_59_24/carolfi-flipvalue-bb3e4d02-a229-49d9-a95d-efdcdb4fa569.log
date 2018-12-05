@@ -1,0 +1,19 @@
+[INFO -- 2018-12-04 09:59:18]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-04 09:59:18]
+Initialization strings:
+[INFO -- 2018-12-04 09:59:18]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-04 09:59:18]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-04 09:59:18]
+initSignal:0
+[INFO -- 2018-12-04 09:59:18]
+endSignal:6
+[INFO -- 2018-12-04 09:59:18]
+faultModel:1
+[INFO -- 2018-12-04 09:59:23]
+event type: exit
+[INFO -- 2018-12-04 09:59:23]
+exit code: 0

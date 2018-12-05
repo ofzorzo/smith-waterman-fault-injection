@@ -1,5 +1,5 @@
 FOLDER=seldup
-for i in 1 2 3
+for i in 1 2 3 4 5
 do
 	make > dump
 	cd ../carol-fi

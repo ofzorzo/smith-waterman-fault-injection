@@ -1,0 +1,64 @@
+[INFO -- 2018-12-04 02:47:07]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-04 02:47:07]
+Initialization strings:
+[INFO -- 2018-12-04 02:47:07]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-04 02:47:07]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-04 02:47:07]
+initSignal:0
+[INFO -- 2018-12-04 02:47:07]
+endSignal:6
+[INFO -- 2018-12-04 02:47:07]
+faultModel:2
+[INFO -- 2018-12-04 02:47:07]
+Backtrace BEGIN:
+#0  0x00007ffff7dedd81 in tunable_is_name (envname=0x7fffffffed6e "LC_TELEPHONE=pt_BR.UTF-8", orig=0x7ffff7df658d "LD_HWCAP_MASK") at dl-tunables.h:121
+#1  __GI___tunables_init (envp=0x7fffffffdeb0) at dl-tunables.c:324
+#2  0x00007ffff7defc6a in _dl_sysdep_start (start_argptr=start_argptr@entry=0x7fffffffdc80, dl_main=dl_main@entry=0x7ffff7dd7660 <dl_main>) at ../elf/dl-sysdep.c:224
+#3  0x00007ffff7dd7128 in _dl_start_final (arg=0x7fffffffdc80) at rtld.c:414
+#4  _dl_start (arg=0x7fffffffdc80) at rtld.c:521
+#5  0x00007ffff7dd6098 in _start () from /lib64/ld-linux-x86-64.so.2
+#6  0x0000000000000009 in ?? ()
+#7  0x00007fffffffe08e in ?? ()
+#8  0x00007fffffffe0b1 in ?? ()
+#9  0x00007fffffffe0b4 in ?? ()
+#10 0x00007fffffffe0d3 in ?? ()
+#11 0x00007fffffffe0d6 in ?? ()
+#12 0x00007fffffffe0f5 in ?? ()
+#13 0x00007fffffffe0f8 in ?? ()
+#14 0x00007fffffffe113 in ?? ()
+#15 0x00007fffffffe116 in ?? ()
+#16 0x0000000000000000 in ?? ()
+
+116	dl-tunables.h: No such file or directory.
+
+Backtrace END
+Fliping array at pos: 10
+Fliping value of field: initialized
+Memory content before bitflip:0x00
+Fault Model: Random bit-flip
+base address to flip value: 0x7ffff7ffcbd8 
+address max offset: 1
+Memory content after  bitflip:0x9f
+frame name: __GI___tunables_init
+symbol name: tunable_list
+symbol filename: /build/glibc-OTsEL5/glibc-2.27/build-tree/amd64-libc/dl-tunable-list.h
+symbol line: 37
+value: {{name = 0x7ffff7df647b "glibc.tune.hwcaps", type = {type_code = TUNABLE_TYPE_STRING, min = 0, max = 0}, val = {numval = 0, strval = 0x0}, initialized = false, security_level = TUNABLE_SECLEVEL_SXID_ERASE, env_alias = 0x0}, {name = 0x7ffff7df8b20 "glibc.elision.skip_lock_after_retries", type = {type_code = TUNABLE_TYPE_INT_32, min = -2147483648, max = 2147483647}, val = {numval = 3, strval = 0x3 <error: Cannot access memory at address 0x3>}, initialized = false, security_level = TUNABLE_SECLEVEL_SXID_ERASE, env_alias = 0x0}, {name = 0x7ffff7df648d "glibc.malloc.trim_threshold", type = {type_code = TUNABLE_TYPE_SIZE_T, min = 0, max = -1}, val = {numval = 0, strval = 0x0}, initialized = false, security_level = TUNABLE_SECLEVEL_SXID_IGNORE, env_alias = 0x7ffff7df64a9 "MALLOC_TRIM_THRESHOLD_"}, {name = 0x7ffff7df64c0 "glibc.malloc.perturb", type = {type_code = TUNABLE_TYPE_INT_32, min = 0, max = 255}, val = {numval = 0, strval = 0x0}, initialized = false, security_level = TUNABLE_SECLEVEL_SXID_IGNORE, env_alias = 0x7ffff7df64d5 "MALLOC_PERTURB_"}, {name = 0x7ffff7df64e5 "glibc.elision.tries", type = {type_code = TUNABLE_TYPE_INT_32, min = -2147483648, max = 2147483647}, val = {numval = 3, strval = 0x3 <error: Cannot access memory at address 0x3>}, initialized = false, security_level = TUNABLE_SECLEVEL_SXID_ERASE, env_alias = 0x0}, {name = 0x7ffff7df64f9 "glibc.elision.enable", type = {type_code = TUNABLE_TYPE_INT_32, min = 0, max = 1}, val = {numval = 0, strval = 0x0}, initialized = false, security_level = TUNABLE_SECLEVEL_SXID_ERASE, env_alias = 0x0}, {name = 0x7ffff7df650e "glibc.elision.skip_lock_busy", type = {type_code = TUNABLE_TYPE_INT_32, min = -2147483648, max = 2147483647}, val = {numval = 3, strval = 0x3 <error: Cannot access memory at address 0x3>}, initialized = false, security_level = TUNABLE_SECLEVEL_SXID_ERASE, env_alias = 0x0}, {name = 0x7ffff7df652b "glibc.malloc.top_pad", type = {type_code = TUNABLE_TYPE_SIZE_T, min = 0, max = -1}, val = {numval = 0, strval = 0x0}, initialized = false, security_level = TUNABLE_SECLEVEL_SXID_IGNORE, env_alias = 0x7ffff7df6540 "MALLOC_TOP_PAD_"}, {name = 0x7ffff7df6550 "glibc.malloc.mmap_max", type = {type_code = TUNABLE_TYPE_INT_32, min = -2147483648, max = 2147483647}, val = {numval = 0, strval = 0x0}, initialized = false, security_level = TUNABLE_SECLEVEL_SXID_IGNORE, env_alias = 0x7ffff7df6566 "MALLOC_MMAP_MAX_"}, {name = 0x7ffff7df8b48 "glibc.elision.skip_trylock_internal_abort", type = {type_code = TUNABLE_TYPE_INT_32, min = -2147483648, max = 2147483647}, val = {numval = 3, strval = 0x3 <error: Cannot access memory at address 0x3>}, initialized = false, security_level = TUNABLE_SECLEVEL_SXID_ERASE, env_alias = 0x0}, {name = 0x7ffff7df8b78 "glibc.malloc.tcache_unsorted_limit", type = {type_code = TUNABLE_TYPE_SIZE_T, min = 0, max = -1}, val = {numval = 0, strval = 0x0}, initialized = 159, security_level = TUNABLE_SECLEVEL_SXID_ERASE, env_alias = 0x0}, {name = 0x7ffff7df8ba0 "glibc.tune.x86_non_temporal_threshold", type = {type_code = TUNABLE_TYPE_SIZE_T, min = 0, max = -1}, val = {numval = 0, strval = 0x0}, initialized = false, security_level = TUNABLE_SECLEVEL_SXID_ERASE, env_alias = 0x0}, {name = 0x7ffff7df8bc8 "glibc.tune.x86_shared_cache_size", type = {type_code = TUNABLE_TYPE_SIZE_T, min = 0, max = -1}, val = {numval = 0, strval = 0x0}, initialized = false, security_level = TUNABLE_SECLEVEL_SXID_ERASE, env_alias = 0x0}, {name = 0x7ffff7df8bf0 "glibc.elision.skip_lock_internal_abort", type = {type_code = TUNABLE_TYPE_INT_32, min = -2147483648, max = 2147483647}, val = {numval = 3, strval = 0x3 <error: Cannot access memory at address 0x3>}, initialized = false, security_level = TUNABLE_SECLEVEL_SXID_ERASE, env_alias = 0x0}, {name = 0x7ffff7df6577 "glibc.tune.hwcap_mask", type = {type_code = TUNABLE_TYPE_UINT_64, min = 0, max = -1}, val = {numval = 6, strval = 0x6 <error: Cannot access memory at address 0x6>}, initialized = false, security_level = TUNABLE_SECLEVEL_SXID_ERASE, env_alias = 0x7ffff7df658d "LD_HWCAP_MASK"}, {name = 0x7ffff7df659b "glibc.malloc.arena_max", type = {type_code = TUNABLE_TYPE_SIZE_T, min = 1, max = -1}, val = {numval = 0, strval = 0x0}, initialized = false, security_level = TUNABLE_SECLEVEL_SXID_IGNORE, env_alias = 0x7ffff7df65b2 "MALLOC_ARENA_MAX"}, {name = 0x7ffff7df65c3 "glibc.malloc.mmap_threshold", type = {type_code = TUNABLE_TYPE_SIZE_T, min = 0, max = -1}, val = {numval = 0, strval = 0x0}, initialized = false, security_level = TUNABLE_SECLEVEL_SXID_IGNORE, env_alias = 0x7ffff7df65df "MALLOC_MMAP_THRESHOLD_"}, {name = 0x7ffff7df65f6 "glibc.malloc.tcache_count", type = {type_code = TUNABLE_TYPE_SIZE_T, min = 0, max = -1}, val = {numval = 0, strval = 0x0}, initialized = false, security_level = TUNABLE_SECLEVEL_SXID_ERASE, env_alias = 0x0}, {name = 0x7ffff7df6610 "glibc.malloc.arena_test", type = {type_code = TUNABLE_TYPE_SIZE_T, min = 1, max = -1}, val = {numval = 0, strval = 0x0}, initialized = false, security_level = TUNABLE_SECLEVEL_SXID_IGNORE, env_alias = 0x7ffff7df6628 "MALLOC_ARENA_TEST"}, {name = 0x7ffff7df8c18 "glibc.tune.x86_data_cache_size", type = {type_code = TUNABLE_TYPE_SIZE_T, min = 0, max = -1}, val = {numval = 0, strval = 0x0}, initialized = false, security_level = TUNABLE_SECLEVEL_SXID_ERASE, env_alias = 0x0}, {name = 0x7ffff7df663a "glibc.malloc.tcache_max", type = {type_code = TUNABLE_TYPE_SIZE_T, min = 0, max = -1}, val = {numval = 0, strval = 0x0}, initialized = false, security_level = TUNABLE_SECLEVEL_SXID_ERASE, env_alias = 0x0}, {name = 0x7ffff7df6652 "glibc.malloc.check", type = {type_code = TUNABLE_TYPE_INT_32, min = 0, max = 3}, val = {numval = 0, strval = 0x0}, initialized = false, security_level = TUNABLE_SECLEVEL_SXID_ERASE, env_alias = 0x7ffff7df6665 "MALLOC_CHECK_"}}
+value address: 0x7ffff7ffc980 <tunable_list>
+Type: The type is an array.
+Type sizeof: 1232
+Field name: None
+Field Type: A range type, that is, an integer type with bounds.
+Field Type sizeof: 8
+Field Type range: (0, 21)
+
+[INFO -- 2018-12-04 02:47:07]
+Fault Injection Successful after 0.39648866653442383s
+[INFO -- 2018-12-04 02:47:13]
+event type: exit
+[INFO -- 2018-12-04 02:47:13]
+exit code: 0

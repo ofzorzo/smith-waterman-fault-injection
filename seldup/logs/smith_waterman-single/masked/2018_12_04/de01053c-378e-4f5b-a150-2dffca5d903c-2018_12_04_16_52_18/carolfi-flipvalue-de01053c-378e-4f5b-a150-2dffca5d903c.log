@@ -1,0 +1,55 @@
+[INFO -- 2018-12-04 16:52:12]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-04 16:52:12]
+Initialization strings:
+[INFO -- 2018-12-04 16:52:12]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-04 16:52:12]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-04 16:52:12]
+initSignal:0
+[INFO -- 2018-12-04 16:52:12]
+endSignal:6
+[INFO -- 2018-12-04 16:52:12]
+faultModel:0
+[INFO -- 2018-12-04 16:52:13]
+Backtrace BEGIN:
+#0  0x0000555555554d5f in my_maxof (a=-1, b=-2, c=-2, d=0) at smith_waterman.c:73
+#1  0x0000555555555202 in smith_waterman (x_num=15000, x_num2=15000, y_num=13050, y_num2=13050, str_x=0x5555557586c0 "MWEVLATIWKIDLZMYCIMAGXVIBRYPNKLBGQYTSTCQDMVQLIOPQCSWZPEAGCSTODWXVUQQNUGTHCJUMYMCCEYCTFEBJYXYETVZQNRFIAYREKLQKXSMDSQYXVAHVXHZSEBKTSQBUQUYAGOMFIZLBPJAMLJIKSHFWKPQDHTXAOYAWOPDZOOCFACSLOCYGJDFUUXZCQYCGYEE"..., str_y=0x55555575c170 "WEEVLAIIWKILLMMCCIMGXXVIRRPPKKLBGQYTSTQQDVVLLIPPQCSZZEEGGSSTDDWXUQQQNUGTHCJUMYCCCECCTFEJJYXYETZZNNRFAARRKKQQKXSMDQYYXVAHVXHZSEBKTSQBUQUYGOMFFZZLBPJAMLJIKSFFWKPQHTXXAYYAWOPDZOOCFACSLCYGGJDFUXXZQQCCGEEE"...) at smith_waterman.c:141
+#2  0x0000555555555e65 in execute (file_x_name=0x7fffffffe0b4 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe0d6 "/tmp/smith_waterman/randInputY") at smith_waterman.c:309
+#3  0x0000555555556082 in main (argc=9, argv=0x7fffffffdc88) at smith_waterman.c:355
+
+68	double my_maxof(double a, double b, double c, double d)
+69	{
+70	    double ans=a;
+71	    if(ans<b) ans=b;
+72	    if(ans<c) ans=c;
+73	    if(ans<d) ans=d;
+74	    return ans;
+75	}
+76	
+77	double matchMisScore(long i, long j, char* str_y, char* str_x)
+
+Backtrace END
+Fliping a bit of the value pointed by a pointer
+Memory content before bitflip:0x8b
+Fault Model: Single bit-flip
+base address to flip value: 0x7ffff7a722eb  
+address max offset: 1
+Memory content after  bitflip:0x83
+frame name: smith_waterman
+symbol name: alignmentB
+symbol filename: smith_waterman.c
+symbol line: 183
+value: 0x7ffff7a722eb <__GI__IO_setb+75> "\203\003\213L$\034H\213T$\020H\213t$\b\353\272\017\037"
+value address: 0x7fffffffda78
+Type: The type is a pointer.
+Type sizeof: 8
+
+[INFO -- 2018-12-04 16:52:13]
+Fault Injection Successful after 1.5840740203857422s
+[INFO -- 2018-12-04 16:52:17]
+event type: exit
+[INFO -- 2018-12-04 16:52:17]
+exit code: 0

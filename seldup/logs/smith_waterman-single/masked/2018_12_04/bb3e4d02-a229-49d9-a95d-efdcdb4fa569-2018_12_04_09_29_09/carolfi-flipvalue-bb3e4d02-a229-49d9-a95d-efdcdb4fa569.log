@@ -1,0 +1,55 @@
+[INFO -- 2018-12-04 09:29:03]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-04 09:29:03]
+Initialization strings:
+[INFO -- 2018-12-04 09:29:03]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-04 09:29:03]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-04 09:29:03]
+initSignal:0
+[INFO -- 2018-12-04 09:29:03]
+endSignal:6
+[INFO -- 2018-12-04 09:29:03]
+faultModel:0
+[INFO -- 2018-12-04 09:29:03]
+Backtrace BEGIN:
+#0  0x0000555555554d0e in my_maxof (a=-1, b=-2, c=-2, d=0) at smith_waterman.c:69
+#1  0x0000555555555202 in smith_waterman (x_num=12300, x_num2=12300, y_num=15000, y_num2=15000, str_x=0x5555557586c0 "EYYZMOVZWWFFFGGYYGGDDVVMWLCRRSXKQALEOIFMNBBUHHSWQQZZMMSKFBBBXTZJBBUPEUFRYYMMFFBBXXILLHVAIIYCZJNNFFTKKYDDZWHHYIBXLLJGGFFBBKFFDTFFBZKFFXOWHHAAWWBJJNMFFCIXMNNCHKILLIQIIIXQQMXKKHUUSMCCMKKJANKKKSSXNQRRPPXB"..., str_y=0x55555575b6e0 "ERYCZMOVZWFUFFGOYOGWDUVSMWLCRSSXKQALEOIFMNBTUHHSWQQZKMSXKFBBXTZJLBUPREUFRYYMFFGBXXBILVHVAIYZCZJNAFFTKBYDZWRHEYIBXLJIGSFIBDKFDTUFYBZKFXOGWHNAHWBEJNMSFTCIXMNCHKJILISQIIXGQMGXKHEUUSMCMQKJDANKKWSXHNQRVPXN"...) at smith_waterman.c:141
+#2  0x0000555555555e65 in execute (file_x_name=0x7fffffffe0b4 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe0d6 "/tmp/smith_waterman/randInputY") at smith_waterman.c:309
+#3  0x0000555555556082 in main (argc=9, argv=0x7fffffffdc88) at smith_waterman.c:355
+
+64	        exit(0);
+65	    }
+66	}
+67	
+68	double my_maxof(double a, double b, double c, double d)
+69	{
+70	    double ans=a;
+71	    if(ans<b) ans=b;
+72	    if(ans<c) ans=c;
+73	    if(ans<d) ans=d;
+
+Backtrace END
+Fliping a bit of the value pointed by a pointer
+Memory content before bitflip:0x2f
+Fault Model: Single bit-flip
+base address to flip value: 0x7fffffffe0b4 
+address max offset: 1
+Memory content after  bitflip:0x27
+frame name: main
+symbol name: file_x_name
+symbol filename: smith_waterman.c
+symbol line: 319
+value: 0x7fffffffe0b4 "'tmp/smith_waterman/randInputX"
+value address: 0x7fffffffdb68
+Type: The type is a pointer.
+Type sizeof: 8
+
+[INFO -- 2018-12-04 09:29:03]
+Fault Injection Successful after 0.6679248809814453s
+[INFO -- 2018-12-04 09:29:08]
+event type: exit
+[INFO -- 2018-12-04 09:29:08]
+exit code: 0

@@ -1,0 +1,50 @@
+[INFO -- 2018-12-03 22:33:44]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-03 22:33:44]
+Initialization strings:
+[INFO -- 2018-12-03 22:33:44]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-03 22:33:44]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-03 22:33:44]
+initSignal:0
+[INFO -- 2018-12-03 22:33:44]
+endSignal:6
+[INFO -- 2018-12-03 22:33:44]
+faultModel:2
+[INFO -- 2018-12-03 22:33:44]
+Backtrace BEGIN:
+#0  0x0000555555554d31 in my_maxof (a=-1, b=-2, c=-2, d=0) at smith_waterman.c:71
+#1  0x0000555555555202 in smith_waterman (x_num=15000, x_num2=15000, y_num=10650, y_num2=10650, str_x=0x5555557586c0 "XGGEHMCQCZUPODVEIPVNQAVZLPLUYJKWPSAXEFNJEJASMVYUKVKAWHBHYMDXVNTNGVMMABXGKYBYTZUGVEGTOKCMWFJUSEJACVPCYMLKMMIILCOIJWBXGDLDKXZFBIFFFWIDJVNXHVFUZVDISGHAMTFWSEBTMJZTFJWQELONITHIRMSJTAJHVPDNVHIKQJDXUCOANENY"..., str_y=0x55555575c170 "GGGEMCCCCZPPOVVEIPVNAAVLPPLUYKWWPAXXFNJJEJSMVYYKKVKWWBBYYMDVVTTGGMMAABXGYYBTTUUGEETTKKCWWJUSSEJCCPPYYLLKMMILLCIIJBXXGDLDKXZFIFFFWIIDVNNXHFUUZDISGHAAMTWWEEBMMZZTFWWQLOOIITHIRMJJAAHHVDNNHIIQJJDXCOANNENZ"...) at smith_waterman.c:141
+#2  0x0000555555555e65 in execute (file_x_name=0x7fffffffe0b4 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe0d6 "/tmp/smith_waterman/randInputY") at smith_waterman.c:309
+#3  0x0000555555556082 in main (argc=9, argv=0x7fffffffdc88) at smith_waterman.c:355
+
+66	}
+67	
+68	double my_maxof(double a, double b, double c, double d)
+69	{
+70	    double ans=a;
+71	    if(ans<b) ans=b;
+72	    if(ans<c) ans=c;
+73	    if(ans<d) ans=d;
+74	    return ans;
+75	}
+
+Backtrace END
+Memory content before bitflip:0x000x000x000x000x000x000xf00x3f
+Fault Model: Random bit-flip
+base address to flip value: 0x555555757010 
+address max offset: 8
+Memory content after  bitflip:0x4e0x6d0xd00x380xff0x850x0f0xd5
+frame name: execute
+symbol name: match_score
+symbol filename: smith_waterman.c
+symbol line: 7
+value: -5.5159708441287832e+101
+value address: 0x555555757010 <match_score>
+Type: A floating point type.
+Type sizeof: 8
+
+[INFO -- 2018-12-03 22:33:44]
+Fault Injection Successful after 0.8383197784423828s

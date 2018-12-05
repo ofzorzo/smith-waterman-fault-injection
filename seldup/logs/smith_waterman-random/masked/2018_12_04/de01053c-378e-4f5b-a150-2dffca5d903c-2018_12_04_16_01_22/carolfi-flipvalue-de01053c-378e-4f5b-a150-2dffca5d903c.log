@@ -1,0 +1,55 @@
+[INFO -- 2018-12-04 16:01:16]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-04 16:01:16]
+Initialization strings:
+[INFO -- 2018-12-04 16:01:16]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-04 16:01:16]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-04 16:01:16]
+initSignal:0
+[INFO -- 2018-12-04 16:01:16]
+endSignal:6
+[INFO -- 2018-12-04 16:01:16]
+faultModel:2
+[INFO -- 2018-12-04 16:01:18]
+Backtrace BEGIN:
+#0  my_maxof (a=1715, b=1712, c=1717, d=0) at smith_waterman.c:74
+#1  0x0000555555555202 in smith_waterman (x_num=15000, x_num2=15000, y_num=13050, y_num2=13050, str_x=0x5555557586c0 "MWEVLATIWKIDLZMYCIMAGXVIBRYPNKLBGQYTSTCQDMVQLIOPQCSWZPEAGCSTODWXVUQQNUGTHCJUMYMCCEYCTFEBJYXYETVZQNRFIAYREKLQKXSMDSQYXVAHVXHZSEBKTSQBUQUYAGOMFIZLBPJAMLJIKSHFWKPQDHTXAOYAWOPDZOOCFACSLOCYGJDFUUXZCQYCGYEE"..., str_y=0x55555575c170 "WEEVLAIIWKILLMMCCIMGXXVIRRPPKKLBGQYTSTQQDVVLLIPPQCSZZEEGGSSTDDWXUQQQNUGTHCJUMYCCCECCTFEJJYXYETZZNNRFAARRKKQQKXSMDQYYXVAHVXHZSEBKTSQBUQUYGOMFFZZLBPJAMLJIKSFFWKPQHTXXAYYAWOPDZOOCFACSLCYGGJDFUXXZQQCCGEEE"...) at smith_waterman.c:141
+#2  0x0000555555555e65 in execute (file_x_name=0x7fffffffe0b4 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe0d6 "/tmp/smith_waterman/randInputY") at smith_waterman.c:309
+#3  0x0000555555556082 in main (argc=9, argv=0x7fffffffdc88) at smith_waterman.c:355
+
+69	{
+70	    double ans=a;
+71	    if(ans<b) ans=b;
+72	    if(ans<c) ans=c;
+73	    if(ans<d) ans=d;
+74	    return ans;
+75	}
+76	
+77	double matchMisScore(long i, long j, char* str_y, char* str_x)
+78	{
+
+Backtrace END
+Fliping a bit of the pointer
+Memory content before bitflip:0xfe0x220xa60xf70xff0x7f0x000x00
+Fault Model: Random bit-flip
+base address to flip value: 0x7fffffffdac8
+address max offset: 8
+Memory content after  bitflip:0xb90x380xa80x210xf40x300x150x3d
+frame name: smith_waterman
+symbol name: answer
+symbol filename: smith_waterman.c
+symbol line: 285
+value: 0x7ffff7a622fe <_IO_new_fclose+174> "\211\350[]A\\\303\017\037"
+value address: 0x7fffffffdac8
+Type: The type is a pointer.
+Type sizeof: 8
+
+[INFO -- 2018-12-04 16:01:18]
+Fault Injection Successful after 2.0512912273406982s
+[INFO -- 2018-12-04 16:01:22]
+event type: exit
+[INFO -- 2018-12-04 16:01:22]
+exit code: 0

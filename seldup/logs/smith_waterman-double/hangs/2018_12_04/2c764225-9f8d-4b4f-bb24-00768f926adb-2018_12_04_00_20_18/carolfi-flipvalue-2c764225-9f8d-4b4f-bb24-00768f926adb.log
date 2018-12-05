@@ -1,0 +1,52 @@
+[INFO -- 2018-12-04 00:19:58]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-04 00:19:58]
+Initialization strings:
+[INFO -- 2018-12-04 00:19:58]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-04 00:19:58]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-04 00:19:58]
+initSignal:0
+[INFO -- 2018-12-04 00:19:58]
+endSignal:6
+[INFO -- 2018-12-04 00:19:58]
+faultModel:1
+[EXCEPTION -- 2018-12-04 00:19:59]
+gdbException: Attempt to dereference a generic pointer.
+[INFO -- 2018-12-04 00:20:02]
+Backtrace BEGIN:
+#0  my_maxof (a=0, b=-2, c=-2, d=0) at smith_waterman.c:74
+#1  0x0000555555555202 in smith_waterman (x_num=14700, x_num2=14700, y_num=15000, y_num2=15000, str_x=0x5555557586c0 "NBBYQVYKKFOOZZTXXXLQRUUNUKCKOWDDCXSSAAYGXXVGQQKOOOFFIUUSVXDJJBONBPVVRGYYDEECPRFFNQNLHDDWIIRKTTFLKNCTTCXLJBDDDINTTVASFFLLVDDQKKBBVVFQIPPVQQYSTJFEHHHJNYDDVDDOMPLLNWVVFTYYLQQCYYHFFDSDRRBBVCPSSGUEEFFRRYHC"..., str_y=0x55555575c040 "NQBYQVYEKFYOZZTCXXLQRAUNUKCKOKWDCXBSUAYGHXVGYQKWOWOFWIUSVXDJJBONBPGVRGCYDZECPRAFNQNLZHDWGIFRKTFLKNICTMCXLJBDADINTVASFFOLOVDAQKNBXVFQIHPVQQYSTJFNEHHJNYXDVCDOMQPLNWBVFTTYLRQFCYUHFDSUDRXBVCPJSGUIEYFJRYHC"...) at smith_waterman.c:141
+#2  0x0000555555555e65 in execute (file_x_name=0x7fffffffe0b4 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe0d6 "/tmp/smith_waterman/randInputY") at smith_waterman.c:309
+#3  0x0000555555556082 in main (argc=9, argv=0x7fffffffdc88) at smith_waterman.c:355
+
+69	{
+70	    double ans=a;
+71	    if(ans<b) ans=b;
+72	    if(ans<c) ans=c;
+73	    if(ans<d) ans=d;
+74	    return ans;
+75	}
+76	
+77	double matchMisScore(long i, long j, char* str_y, char* str_x)
+78	{
+
+Backtrace END
+Memory content before bitflip:0x000x000x000x000x000x000xf00x3f
+Fault Model: Double bit-flip
+base address to flip value: 0x555555757010 
+address max offset: 8
+Memory content after  bitflip:0x000x000x000x000x0a0x000xf00x3f
+frame name: execute
+symbol name: match_score
+symbol filename: smith_waterman.c
+symbol line: 7
+value: 1.0000095367431641
+value address: 0x555555757010 <match_score>
+Type: A floating point type.
+Type sizeof: 8
+
+[INFO -- 2018-12-04 00:20:02]
+Fault Injection Successful after 4.701020240783691s
