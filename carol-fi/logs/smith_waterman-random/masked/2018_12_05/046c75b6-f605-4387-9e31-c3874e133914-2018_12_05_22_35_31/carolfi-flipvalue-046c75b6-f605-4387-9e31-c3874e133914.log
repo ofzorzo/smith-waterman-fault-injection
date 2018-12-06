@@ -1,0 +1,53 @@
+[INFO -- 2018-12-05 22:35:26]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-05 22:35:26]
+Initialization strings:
+[INFO -- 2018-12-05 22:35:26]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-05 22:35:26]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-05 22:35:26]
+initSignal:0
+[INFO -- 2018-12-05 22:35:26]
+endSignal:6
+[INFO -- 2018-12-05 22:35:26]
+faultModel:2
+[EXCEPTION -- 2018-12-05 22:35:30]
+gdbException: Attempt to dereference a generic pointer.
+[INFO -- 2018-12-05 22:35:30]
+Backtrace BEGIN:
+#0  __memmove_sse2_unaligned_erms () at ../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:406
+#1  0x00007ffff7a724cc in __GI__IO_default_xsputn (f=0x7fffffffd7a0, data=<optimized out>, n=9098) at genops.c:404
+#2  0x00007ffff7a40feb in _IO_vfprintf_internal (s=s@entry=0x7fffffffd7a0, format=format@entry=0x555555556279 "%s", ap=ap@entry=0x7fffffffd910) at vfprintf.c:1643
+#3  0x00007ffff7a6c910 in _IO_vsnprintf (string=0x555555794bd0 "", maxlen=<optimized out>, format=0x555555556279 "%s", args=args@entry=0x7fffffffd910) at vsnprintf.c:114
+#4  0x00007ffff7a48fdf in __GI___snprintf (s=<optimized out>, maxlen=<optimized out>, format=<optimized out>) at snprintf.c:33
+#5  0x0000555555555761 in smith_waterman (x_num=15000, x_num2=15000, y_num=10200, y_num2=10200, str_x=0x5555557586c0 "UYSBZEDUESXVUGLTTBIEPRWRMJYXPXLJVDNXIQTOIQJFYXARAIWPBUHNDFMSCYEADRZNJSBUINBIMBZMMXBNSKDVSPQWNUWTNVGWPKQZZTHLVHXJGAYYNBWFRMBGIABVXITNSMMTFWECFDLLFMKSNIZGWDPEDQBCYURSGGLMCRQHUESAQEUDMWKIZBOERPGQMAKSGYGI"..., str_y=0x55555575c170 "UYSBZEDUESVUGGLTBBIPPWWRJJYPXLJVVDXIITTIQQJYYAARAIWBBUHNDFMSCYEARZNNJSBUNBBIMBMMXBNSKDDVSQWNNWTNNVWPKKZZZTHLVHJJAAYNBBWFRBGIIAVXITNSSMTFFWCFFLLLMMSSNIGWWDPDDQCYYURGGLLCCQHUUESAEEUMWKIIBBEERGQMAKKSGYGI"...) at smith_waterman.c:214
+#6  0x0000555555555e65 in execute (file_x_name=0x7fffffffe0b4 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe0d6 "/tmp/smith_waterman/randInputY") at smith_waterman.c:309
+#7  0x0000555555556082 in main (argc=9, argv=0x7fffffffdc88) at smith_waterman.c:355
+
+401	in ../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+Backtrace END
+Fliping array at pos: 0
+Fliping value of field: gp_offset
+Memory content before bitflip:0x200x000x000x00
+Fault Model: Random bit-flip
+base address to flip value: 0x7fffffffd910
+address max offset: 4
+Memory content after  bitflip:0x3f0xe00x430xd4
+frame name: __GI___snprintf
+symbol name: arg
+symbol filename: snprintf.c
+symbol line: 29
+value: {{gp_offset = 3561218111, fp_offset = 48, overflow_arg_area = 0x7fffffffd9f0, reg_save_area = 0x7fffffffd930}}
+value address: 0x7fffffffd910
+Type: The type is an array.
+Type sizeof: 24
+
+[INFO -- 2018-12-05 22:35:30]
+Fault Injection Successful after 4.901209592819214s
+[INFO -- 2018-12-05 22:35:30]
+event type: exit
+[INFO -- 2018-12-05 22:35:30]
+exit code: 0

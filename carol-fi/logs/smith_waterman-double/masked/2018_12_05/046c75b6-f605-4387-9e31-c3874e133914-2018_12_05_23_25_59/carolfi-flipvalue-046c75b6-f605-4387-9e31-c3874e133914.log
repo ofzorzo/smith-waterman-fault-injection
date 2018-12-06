@@ -1,0 +1,54 @@
+[INFO -- 2018-12-05 23:25:54]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-05 23:25:54]
+Initialization strings:
+[INFO -- 2018-12-05 23:25:54]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-05 23:25:54]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-05 23:25:54]
+initSignal:0
+[INFO -- 2018-12-05 23:25:54]
+endSignal:6
+[INFO -- 2018-12-05 23:25:54]
+faultModel:1
+[INFO -- 2018-12-05 23:25:55]
+Backtrace BEGIN:
+#0  0x0000555555554fa6 in smith_waterman (x_num=15000, x_num2=15000, y_num=10200, y_num2=10200, str_x=0x5555557586c0 "UYSBZEDUESXVUGLTTBIEPRWRMJYXPXLJVDNXIQTOIQJFYXARAIWPBUHNDFMSCYEADRZNJSBUINBIMBZMMXBNSKDVSPQWNUWTNVGWPKQZZTHLVHXJGAYYNBWFRMBGIABVXITNSMMTFWECFDLLFMKSNIZGWDPEDQBCYURSGGLMCRQHUESAQEUDMWKIZBOERPGQMAKSGYGI"..., str_y=0x55555575c170 "UYSBZEDUESVUGGLTBBIPPWWRJJYPXLJVVDXIITTIQQJYYAARAIWBBUHNDFMSCYEARZNNJSBUNBBIMBMMXBNSKDDVSQWNNWTNNVWPKKZZZTHLVHJJAAYNBBWFRBGIIAVXITNSSMTFFWCFFLLLMMSSNIGWWDPDDQCYYURGGLLCCQHUUESAEEUMWKIIBBEERGQMAKKSGYGI"...) at smith_waterman.c:121
+#1  0x0000555555555e65 in execute (file_x_name=0x7fffffffe0b4 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe0d6 "/tmp/smith_waterman/randInputY") at smith_waterman.c:309
+#2  0x0000555555556082 in main (argc=9, argv=0x7fffffffdc88) at smith_waterman.c:355
+
+116	    long j;
+117		
+118	    i2 = 0;
+119	    for(i=0; i<x_num+1; i++){
+120	        check_index(i, i2);
+121	        matrix[i][0]=0.0;
+122	        i2++;
+123	    }
+124	    check_index(i, i2);
+125	    i2 = 0;
+
+Backtrace END
+Fliping a bit of the pointer
+Memory content before bitflip:0x000x000x000x000x000x000x000x00
+Fault Model: Double bit-flip
+base address to flip value: 0x7fffffffdb98
+address max offset: 8
+Memory content after  bitflip:0x000x000x000x000x000x000x000x21
+frame name: main
+symbol name: fo
+symbol filename: smith_waterman.c
+symbol line: 372
+value: 0x0
+value address: 0x7fffffffdb98
+Type: The type is a pointer.
+Type sizeof: 8
+
+[INFO -- 2018-12-05 23:25:55]
+Fault Injection Successful after 1.0689027309417725s
+[INFO -- 2018-12-05 23:25:59]
+event type: exit
+[INFO -- 2018-12-05 23:25:59]
+exit code: 0
