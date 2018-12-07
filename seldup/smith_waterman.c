@@ -393,32 +393,26 @@ int main(int argc, char* argv[])
         }
 
     }
-	char *answer1 = execute(file_x_name, file_y_name);
-
-
-    if((match_score != match_score2) || (gap_score != gap_score2) || (mismatch_score != mismatch_score2) || (sdc_occurred != sdc_occurred2) || (sdc_occurred == 1) || (sdc_occurred2 == 1))
+    
+    if( (match_score != match_score2) || (gap_score != gap_score2) || (mismatch_score != mismatch_score2) )
     {
-        FILE* fe;
-        fe = fopen(log, "a+");
-        if (fe == NULL)
-        {
-            printf("Error opening file!\n");
-            exit(1);
-        }
-        fprintf(fe, "SDC ocorreu.\n");
-        fclose(fe);
+        sdc_exit()
     }
-
-	//writes final answer to disk (if SDC detected, the final answer can be masked if the SDC occurred in answer2, or a SDC if in answer1)
-	FILE* fo;
-	fo = fopen(output_file_name, "w");
-	if (fo == NULL)
-	{
-    		printf("Error opening file!\n");
-    		exit(1);
-	}
-	fprintf(fo, "%s", answer1);
-	fclose(fo);
+    else{
+        
+        char *answer1 = execute(file_x_name, file_y_name);
+        
+        //writes final answer to disk (if SDC detected, the final answer can be masked if the SDC occurred in answer2, or a SDC if in answer1)
+    	FILE* fo;
+    	fo = fopen(output_file_name, "w");
+    	if (fo == NULL)
+    	{
+        		printf("Error opening file!\n");
+        		exit(1);
+    	}
+    	fprintf(fo, "%s", answer1);
+    	fclose(fo);
+    }
 
     return(0);
 }
