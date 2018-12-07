@@ -12,13 +12,13 @@ double gap_score=-2.0;
 double gap_score2=-2.0;
 
 
-char* log="detected.log";
-char* log2="detected.log";
+char* log_name="detected.log";
+char* log_name2="detected.log";
 
 void sdc_exit(){
-    if(strcmp(log, log2) != 0){
+    if(strcmp(log_name, log_name2) != 0){
         FILE* fe;
-        fe = fopen(log, "a+");
+        fe = fopen(log_name, "a+");
         if (fe == NULL)
         {
             printf("Error opening file!\n");
@@ -28,7 +28,7 @@ void sdc_exit(){
         fclose(fe);
         
         FILE* fe2;
-        fe2 = fopen(log2, "a+");
+        fe2 = fopen(log_name2, "a+");
         if (fe2 == NULL)
         {
             printf("Error opening file!\n");
@@ -39,7 +39,7 @@ void sdc_exit(){
     }
     else{
         FILE* fe;
-        fe = fopen(log, "a+");
+        fe = fopen(log_name, "a+");
         if (fe == NULL)
         {
             printf("Error opening file!\n");
@@ -48,6 +48,7 @@ void sdc_exit(){
         fprintf(fe, "SDC ocorreu.\n");
         fclose(fe);
     }
+	printf("\n\nsdc\n\n");
     exit(0);
 }
 
@@ -214,7 +215,7 @@ char *smith_waterman(long x_num, long x_num2, long y_num, long y_num2, char* str
                 y = i;
                 x = j;
             }
-            j2++
+            j2++;
         }
         i2++;
     }
@@ -387,8 +388,8 @@ int main(int argc, char* argv[])
 				output_file_name = optarg;
 				break;
 			case 'z':
-				log = optarg;
-				log2 = optarg;
+				log_name = optarg;
+				log_name2 = optarg;
 				break;
         }
 
@@ -396,7 +397,7 @@ int main(int argc, char* argv[])
     
     if( (match_score != match_score2) || (gap_score != gap_score2) || (mismatch_score != mismatch_score2) )
     {
-        sdc_exit()
+        sdc_exit();
     }
     else{
         
