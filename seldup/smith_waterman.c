@@ -11,8 +11,45 @@ double mismatch_score2=-1.0;
 double gap_score=-2.0;
 double gap_score2=-2.0;
 
-int sdc_occurred = 0;
-int sdc_occurred2 = 0;
+
+char* log="detected.log";
+char* log2="detected.log";
+
+void sdc_exit(){
+    if(strcmp(log, log2) != 0){
+        FILE* fe;
+        fe = fopen(log, "a+");
+        if (fe == NULL)
+        {
+            printf("Error opening file!\n");
+            exit(1);
+        }
+        fprintf(fe, "SDC ocorreu.\n");
+        fclose(fe);
+        
+        FILE* fe2;
+        fe2 = fopen(log2, "a+");
+        if (fe2 == NULL)
+        {
+            printf("Error opening file!\n");
+            exit(1);
+        }
+        fprintf(fe2, "SDC ocorreu.\n");
+        fclose(fe2);
+    }
+    else{
+        FILE* fe;
+        fe = fopen(log, "a+");
+        if (fe == NULL)
+        {
+            printf("Error opening file!\n");
+            exit(1);
+        }
+        fprintf(fe, "SDC ocorreu.\n");
+        fclose(fe);
+    }
+    exit(0);
+}
 
 void sizeof_string(FILE* fpx, FILE* fpy, long* x_num, long* y_num)
 {
@@ -84,22 +121,18 @@ double matchMisScore(long i, long j, char* str_y, char* str_x)
 
 void check_index(int i, int j){
     if(i != j){
-        sdc_occurred = 1; // ocorreu sdc!
-        sdc_occurred2 = 1;
-        //printf("öpa\n");
+        sdc_exit();
     }
 }
 
 char *smith_waterman(long x_num, long x_num2, long y_num, long y_num2, char* str_x, char* str_y)
 {
     if(x_num != x_num2){        
-        sdc_occurred = 1; // ocorreu sdc!
-        sdc_occurred2 = 1;
+        sdc_exit();
     }
 
 	if(y_num != y_num2){        
-        sdc_occurred = 1; // ocorreu sdc!
-        sdc_occurred2 = 1;
+        sdc_exit();
     }
 
     double** matrix=(double**)calloc(x_num+1, sizeof(double*));
@@ -113,7 +146,7 @@ char *smith_waterman(long x_num, long x_num2, long y_num, long y_num2, char* str
     }
     check_index(i, i2);
 
-    long j;
+    long j, j2;
 	
     i2 = 0;
     for(i=0; i<x_num+1; i++){
@@ -135,15 +168,19 @@ char *smith_waterman(long x_num, long x_num2, long y_num, long y_num2, char* str
     i2 = 1;
     for(i=1; i<x_num+1; i++){
         check_index(i, i2);
+        j2 = 1;
         for(j=1; j<y_num+1; j++){
+            check_index(j, j2);
             if(str_x[i-1]==str_y[j-1]){diff=match_score;}
             else{diff=mismatch_score;}
             matrix[i][j]=my_maxof(matrix[i-1][j-1]+diff, matrix[i-1][j]+gap_score, matrix[i][j-1]+gap_score,0);
             if(matrix[i][j]>max_score)
                 max_score=matrix[i][j];
+            j2++;
         }
         i2++;
     }
+    check_index(j, j2);
     check_index(i, i2);
 
 	//Print alignment matrix
@@ -164,7 +201,9 @@ char *smith_waterman(long x_num, long x_num2, long y_num, long y_num2, char* str
     i2 = 0;
     for(i=0; i<height+1; i++){
         check_index(i, i2);
+        j2 = 0;
         for(j=0; j<width+1; j++){
+            check_index(j, j2);
             if(i==0 && j==0){
                 maxValue = matrix[i][j];
                 y = i;
@@ -175,9 +214,11 @@ char *smith_waterman(long x_num, long x_num2, long y_num, long y_num2, char* str
                 y = i;
                 x = j;
             }
+            j2++
         }
         i2++;
     }
+    check_index(j, j2);
     check_index(i, i2);
 
     char *alignmentA = "", *alignmentAcopy = "", *alignmentB = "", *alignmentBcopy = "";
@@ -319,7 +360,6 @@ int main(int argc, char* argv[])
     char* file_x_name="randInputX";
     char* file_y_name="randInputY";
 	char* output_file_name="output";
-	char* log="detected.log";
 
     while((opt=getopt(argc, argv, "m:n:g:x:y:o:z:")) != -1){
         switch(opt){
@@ -348,6 +388,7 @@ int main(int argc, char* argv[])
 				break;
 			case 'z':
 				log = optarg;
+				log2 = optarg;
 				break;
         }
 
