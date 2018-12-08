@@ -12,6 +12,7 @@ double gap_score=-2.0;
 double gap_score2=-2.0;
 
 
+char* output_file_name="output";
 char* log_name="detected.log";
 char* log_name2="detected.log";
 
@@ -22,20 +23,24 @@ void sdc_exit(){
         if (fe == NULL)
         {
             printf("Error opening file!\n");
-            exit(1);
+            //exit(1);
         }
-        fprintf(fe, "SDC ocorreu.\n");
-        fclose(fe);
+        else{
+			fprintf(fe, "SDC ocorreu.\n");
+		    fclose(fe);
+		}
         
         FILE* fe2;
         fe2 = fopen(log_name2, "a+");
         if (fe2 == NULL)
         {
             printf("Error opening file!\n");
-            exit(1);
+            //exit(1);
         }
-        fprintf(fe2, "SDC ocorreu.\n");
-        fclose(fe2);
+		else{
+        	fprintf(fe2, "SDC ocorreu.\n");
+        	fclose(fe2);
+		}
     }
     else{
         FILE* fe;
@@ -43,13 +48,35 @@ void sdc_exit(){
         if (fe == NULL)
         {
             printf("Error opening file!\n");
-            exit(1);
+            //exit(1);
         }
-        fprintf(fe, "SDC ocorreu.\n");
-        fclose(fe);
+        else{
+			fprintf(fe, "SDC ocorreu.\n");
+			fclose(fe);
+		}
     }
-	printf("\n\nsdc\n\n");
-    exit(0);
+	
+	FILE* fo;
+	fo = fopen(output_file_name, "w");
+	if (fo == NULL)
+	{
+			printf("Error opening file!\n");
+			//exit(1);
+	}
+	else{
+		fprintf(fo, "Não conseguiu alinhar as sequencias! && 17071997");
+		fclose(fo);
+	}
+
+
+    exit(0); // ocorreu SDC
+}
+
+void test_globals(){
+	if( (match_score != match_score2) || (gap_score != gap_score2) || (mismatch_score != mismatch_score2) )
+    {
+		sdc_exit();
+    }
 }
 
 void sizeof_string(FILE* fpx, FILE* fpy, long* x_num, long* y_num)
@@ -172,6 +199,7 @@ char *smith_waterman(long x_num, long x_num2, long y_num, long y_num2, char* str
         j2 = 1;
         for(j=1; j<y_num+1; j++){
             check_index(j, j2);
+			test_globals();
             if(str_x[i-1]==str_y[j-1]){diff=match_score;}
             else{diff=mismatch_score;}
             matrix[i][j]=my_maxof(matrix[i-1][j-1]+diff, matrix[i-1][j]+gap_score, matrix[i][j-1]+gap_score,0);
@@ -232,7 +260,7 @@ char *smith_waterman(long x_num, long x_num2, long y_num, long y_num2, char* str
 		scoreDiag = matrix[y-1][x-1];
 		scoreUp = matrix[y-1][x];
 		scoreLeft = matrix[y][x-1];
-
+		test_globals();
 		if(score==(scoreDiag+matchMisScore(y-1, x-1, str_y, str_x))){
             if(strlen(alignmentA)==0){
                 alignmentA = malloc(2*sizeof(char));
@@ -360,8 +388,6 @@ int main(int argc, char* argv[])
 	int opt;
     char* file_x_name="randInputX";
     char* file_y_name="randInputY";
-	char* output_file_name="output";
-
     while((opt=getopt(argc, argv, "m:n:g:x:y:o:z:")) != -1){
         switch(opt){
             case 'm': //m:match score
@@ -395,25 +421,21 @@ int main(int argc, char* argv[])
 
     }
     
-    if( (match_score != match_score2) || (gap_score != gap_score2) || (mismatch_score != mismatch_score2) )
-    {
-        sdc_exit();
-    }
-    else{
-        
-        char *answer1 = execute(file_x_name, file_y_name);
-        
-        //writes final answer to disk (if SDC detected, the final answer can be masked if the SDC occurred in answer2, or a SDC if in answer1)
-    	FILE* fo;
-    	fo = fopen(output_file_name, "w");
-    	if (fo == NULL)
-    	{
-        		printf("Error opening file!\n");
-        		exit(1);
-    	}
-    	fprintf(fo, "%s", answer1);
-    	fclose(fo);
-    }
-
+      
+    char *answer1 = execute(file_x_name, file_y_name);
+    
+    //writes final answer to disk (if SDC detected, the final answer can be masked if the SDC occurred in answer2, or a SDC if in answer1)
+	
+	FILE* fo;
+	fo = fopen(output_file_name, "w");
+	if (fo == NULL)
+	{
+			printf("Error opening file!\n");
+			//exit(1);
+	}
+	else{
+		fprintf(fo, "%s", answer1);
+		fclose(fo);
+	}
     return(0);
 }

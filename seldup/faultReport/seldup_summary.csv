@@ -1,0 +1,62 @@
+Faults Injected:;150
+
+Fault Effect;#Effect;PVF
+Masked;96;0.64
+SDCs;40;0.26666666666666666
+Crashes;14;0.09333333333333334
+Hangs;0;N/A
+
+
+Detected SDCs:;39
+SDC Coverage (%):;97.5
+
+FaultModels SDCs:
+FaultModel ;#SDCs;percentage
+Random bit-flip;17;42.5
+Double bit-flip;13;32.5
+Single bit-flip;10;25.0
+
+FaultModels Detected SDCs:
+FaultModel ;#SDCs Detected; percentage
+Random bit-flip;17;42.5
+Double bit-flip;12;30.0
+Single bit-flip;10;25.0
+
+FaultModels Crashes:
+FaultModel ;#Crashes;percentage
+Double bit-flip;6;42.857142857142854
+Random bit-flip;5;35.714285714285715
+Single bit-flip;3;21.428571428571427
+
+Variables that caused SDCs:
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+100.0;8;8;match_score;smith_waterman.c;7
+100.0;7;7;mismatch_score;smith_waterman.c;9
+100.0;7;7;match_score2;smith_waterman.c;8
+100.0;6;6;gap_score2;smith_waterman.c;12
+100.0;4;4;gap_score;smith_waterman.c;11
+100.0;4;4;mismatch_score2;smith_waterman.c;10
+100.0;2;2;j2;smith_waterman.c;177
+100.0;1;1;str_y;smith_waterman.c;156
+100.0;1;1;i2;smith_waterman.c;168
+
+Variables that caused Detected SDCs:
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+100.0;8;8;match_score;smith_waterman.c;7
+100.0;7;7;mismatch_score;smith_waterman.c;9
+100.0;7;7;match_score2;smith_waterman.c;8
+100.0;6;6;gap_score2;smith_waterman.c;12
+100.0;4;4;gap_score;smith_waterman.c;11
+100.0;4;4;mismatch_score2;smith_waterman.c;10
+100.0;2;2;j2;smith_waterman.c;177
+100.0;1;1;i2;smith_waterman.c;168
+
+Variables that caused Crash:
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+36.36363636363637;11;4;output_file_name;smith_waterman.c;15
+100.0;3;3;i;smith_waterman.c;168
+100.0;2;2;str_x;smith_waterman.c;156
+100.0;2;2;y_num;smith_waterman.c;156
+100.0;1;1;user_entry;../elf/dl-sysdep.c;91
+100.0;1;1;str_x;smith_waterman.c;373
+100.0;1;1;x_num;smith_waterman.c;156

@@ -1,0 +1,15 @@
+Variable Name;Variable File;Variable Line;Fault Injection Time(s);Injection Time Interval;Fault Model
+str_x;smith_waterman.c;156;1.6764845848083496;0-6;Double bit-flip
+y_num;smith_waterman.c;156;2.1499502658843994;0-6;Double bit-flip
+user_entry;../elf/dl-sysdep.c;91;0.4473245143890381;0-6;Double bit-flip
+i;smith_waterman.c;168;0.5307374000549316;0-6;Double bit-flip
+str_x;smith_waterman.c;373;1.3538479804992676;0-6;Double bit-flip
+output_file_name;smith_waterman.c;15;4.216606378555298;0-6;Double bit-flip
+x_num;smith_waterman.c;156;2.2026848793029785;0-6;Single bit-flip
+output_file_name;smith_waterman.c;15;1.465559959411621;0-6;Single bit-flip
+output_file_name;smith_waterman.c;15;1.874558925628662;0-6;Single bit-flip
+i;smith_waterman.c;168;1.4795522689819336;0-6;Random bit-flip
+str_x;smith_waterman.c;156;2.139822244644165;0-6;Random bit-flip
+i;smith_waterman.c;168;1.358699083328247;0-6;Random bit-flip
+y_num;smith_waterman.c;156;2.2199878692626953;0-6;Random bit-flip
+output_file_name;smith_waterman.c;15;1.228142261505127;0-6;Random bit-flip
