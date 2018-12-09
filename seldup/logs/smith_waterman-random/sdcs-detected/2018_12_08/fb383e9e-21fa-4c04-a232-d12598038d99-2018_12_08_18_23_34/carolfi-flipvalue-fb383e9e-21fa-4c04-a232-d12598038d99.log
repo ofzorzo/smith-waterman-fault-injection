@@ -1,0 +1,54 @@
+[INFO -- 2018-12-08 18:23:30]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-08 18:23:30]
+Initialization strings:
+[INFO -- 2018-12-08 18:23:30]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-08 18:23:30]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-08 18:23:30]
+initSignal:0
+[INFO -- 2018-12-08 18:23:30]
+endSignal:6
+[INFO -- 2018-12-08 18:23:30]
+faultModel:2
+[INFO -- 2018-12-08 18:23:34]
+Backtrace BEGIN:
+#0  0x000055555555504f in check_index (i=1083570176, j=0) at smith_waterman.c:150
+#1  0x0000555555555367 in smith_waterman (x_num=15000, x_num2=15000, y_num=12150, y_num2=12150, str_x=0x5555557586c0 "XVDLHCJWPSEBDCNRHWOWBXQOTWEAMFHJDMVKOGJGYPHCUUVBQMZTLPIENOGAWNLZZILOQUUPMDTGYQHQCGKPYUTNKAPGNDHPLVFERBTDEOJEESVJZHYZDUONUEWJHFYUADYUETXLJJPQBKBCRZDUTSKPYIZHNZDQDEMJXJUJUKZYWACOBGKXAWMYGNFUNIMSMYBMJYVE"..., str_y=0x55555575c170 "XVDHHJJWPEEBCCNHWWOBXQQOTWEAMFJJMMVOGJJGYPHCUUVBMZTTLPINOOGANNLZZLLQQUUPMTGYQQHQCGPPYUTNKPPGNHHLVVEEBBDEEJJESSJJZHZZDUNUEEWHHFYAAYUEEXLJJPPQBKBRRDUTSSPPYZZNNZDQDMJXJUJUKZZYWACBBGXXWWYYGNFNNISSMYBJJYVI"...) at smith_waterman.c:201
+#2  0x0000555555556178 in execute (file_x_name=0x7fffffffe065 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe087 "/tmp/smith_waterman/randInputY") at smith_waterman.c:379
+#3  0x0000555555556393 in main (argc=9, argv=0x7fffffffdc38) at smith_waterman.c:425
+
+145	        return match_score;
+146	    else
+147	        return mismatch_score;
+148	}
+149	
+150	void check_index(int i, int j){
+151	    if(i != j){
+152	        sdc_exit();
+153	    }
+154	}
+
+Backtrace END
+Memory content before bitflip:0x000x000x000x000x000x000xf00xbf
+Fault Model: Random bit-flip
+base address to flip value: 0x555555757020 
+address max offset: 8
+Memory content after  bitflip:0x0e0x510x280xfe0x5c0xca0x4c0x72
+frame name: check_index
+symbol name: mismatch_score
+symbol filename: smith_waterman.c
+symbol line: 9
+value: 3.8395069177714604e+242
+value address: 0x555555757020 <mismatch_score>
+Type: A floating point type.
+Type sizeof: 8
+
+[INFO -- 2018-12-08 18:23:34]
+Fault Injection Successful after 4.185389518737793s
+[INFO -- 2018-12-08 18:23:34]
+event type: exit
+[INFO -- 2018-12-08 18:23:34]
+exit code: 0

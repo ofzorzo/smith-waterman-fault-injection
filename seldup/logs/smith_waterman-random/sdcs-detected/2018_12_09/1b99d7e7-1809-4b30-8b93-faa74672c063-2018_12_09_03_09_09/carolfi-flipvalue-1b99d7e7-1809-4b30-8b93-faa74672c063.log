@@ -1,0 +1,53 @@
+[INFO -- 2018-12-09 03:09:05]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-09 03:09:05]
+Initialization strings:
+[INFO -- 2018-12-09 03:09:05]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-09 03:09:05]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-09 03:09:05]
+initSignal:0
+[INFO -- 2018-12-09 03:09:05]
+endSignal:6
+[INFO -- 2018-12-09 03:09:05]
+faultModel:2
+[INFO -- 2018-12-09 03:09:08]
+Backtrace BEGIN:
+#0  smith_waterman (x_num=15000, x_num2=15000, y_num=14250, y_num2=14250, str_x=0x5555557586c0 "HOCVFBOSTRXOQCCBDLFPULXQPQLRQYZXPBSWFGOAZNOSQRTTEYIYMHOBZAUPATNRXHNCQDCPTQJLJCENDOOPYESXEMNHFCYCLOGBTITMBCXMHDCKUQBUUTTBFIIMKIRYYXZSGUGJXGVELXQHPRBKMVLTFVFQDWOEWPWEKENJKKPWKFDZYHJKEWDJRKBXJRDFHZJTFWCS"..., str_y=0x55555575c170 "OOVVFBOTTRXQQCBDLLFPUXQQQQRQYYXXBSSFFOOZZNSQQRTEEIIYMHBZAUUAATNRXNNQDDCTTQLLJEENDOPYESSEMMHHCYCCOOBTIIMBBCXHDDCKUQBUUTBBFIMMIIYYXZSGUUJJXVEEXXQPPBKMVLTTFFQDDWEEWPWEEENKKKWWKFDYHHJKEWDJRBXJRDDFZZJTWWSS"...) at smith_waterman.c:208
+#1  0x0000555555556178 in execute (file_x_name=0x7fffffffe065 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe087 "/tmp/smith_waterman/randInputY") at smith_waterman.c:379
+#2  0x0000555555556393 in main (argc=9, argv=0x7fffffffdc38) at smith_waterman.c:425
+
+203	            if(str_x[i-1]==str_y[j-1]){diff=match_score;}
+204	            else{diff=mismatch_score;}
+205	            matrix[i][j]=my_maxof(matrix[i-1][j-1]+diff, matrix[i-1][j]+gap_score, matrix[i][j-1]+gap_score,0);
+206	            if(matrix[i][j]>max_score)
+207	                max_score=matrix[i][j];
+208	            j2++;
+209	        }
+210	        i2++;
+211	    }
+212	    check_index(j, j2);
+
+Backtrace END
+Memory content before bitflip:0x000x000x000x000x000x000xf00xbf
+Fault Model: Random bit-flip
+base address to flip value: 0x555555757028 
+address max offset: 8
+Memory content after  bitflip:0x740x300x730xf70x230x470x420x51
+frame name: main
+symbol name: mismatch_score2
+symbol filename: smith_waterman.c
+symbol line: 10
+value: 2.7740541629303553e+83
+value address: 0x555555757028 <mismatch_score2>
+Type: A floating point type.
+Type sizeof: 8
+
+[INFO -- 2018-12-09 03:09:08]
+Fault Injection Successful after 3.0075392723083496s
+[INFO -- 2018-12-09 03:09:08]
+event type: exit
+[INFO -- 2018-12-09 03:09:08]
+exit code: 0

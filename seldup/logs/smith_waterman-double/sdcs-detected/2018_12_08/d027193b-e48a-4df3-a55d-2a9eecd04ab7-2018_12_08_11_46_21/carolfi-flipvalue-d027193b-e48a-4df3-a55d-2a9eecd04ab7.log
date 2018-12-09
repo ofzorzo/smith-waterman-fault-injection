@@ -1,0 +1,53 @@
+[INFO -- 2018-12-08 11:46:20]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-08 11:46:20]
+Initialization strings:
+[INFO -- 2018-12-08 11:46:20]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-08 11:46:20]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-08 11:46:20]
+initSignal:0
+[INFO -- 2018-12-08 11:46:20]
+endSignal:6
+[INFO -- 2018-12-08 11:46:20]
+faultModel:1
+[INFO -- 2018-12-08 11:46:20]
+Backtrace BEGIN:
+#0  smith_waterman (x_num=13050, x_num2=13050, y_num=15000, y_num2=15000, str_x=0x5555557586c0 "OPPIVRYRVVLVBQXXMLTUOOROOWWGGBWTRWDOOBGGOBBMTTGGWZANNOOHKBBNNMJJIMOOQWIEEWRRTXZZWBBTMWWBZZRRYCFFOVVGGQLQOEEWWMCYOOXFTJJSVCYVEFFEUNBTDOOUSXQWJUXXRKKKVQESSENNYSSLLVVKLSGERWAASZZCJJJIIAATEQTTKNDRJKKUEEAA"..., str_y=0x55555575b9d0 "OQPZIVRYRVLVBUQXTMLTUORLOPWYGBCWTRWDONBGKOBMLTLGGWZANQOBHKBONGMJZIMOXQWIEZWRTHXZGWBTMPWWBZMRFYCFJOVGGRQLQOELWCMCYOXNFTJJSVCYVEFEUANBTDOLUSXQWJUXZRKHKVQESSENYJSSLHVGKLSGERWAASZCJLJVIZAATEQTQKNDRJKDUEKA"...) at smith_waterman.c:171
+#1  0x0000555555556178 in execute (file_x_name=0x7fffffffe065 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe087 "/tmp/smith_waterman/randInputY") at smith_waterman.c:379
+#2  0x0000555555556393 in main (argc=9, argv=0x7fffffffdc38) at smith_waterman.c:425
+
+166	    double** matrix=(double**)calloc(x_num+1, sizeof(double*));
+167	    matrix[0]=(double*)calloc((x_num+1)*(y_num+1), sizeof(double));
+168	    long i, i2;
+169	    i2 = 1;
+170	    for(i=1; i<x_num+1; i++){
+171	        check_index(i, i2);
+172	        matrix[i]=matrix[0]+(y_num+1)*i;
+173	        i2++;
+174	    }
+175	    check_index(i, i2);
+
+Backtrace END
+Memory content before bitflip:0x000x000x000x000x000x000xf00x3f
+Fault Model: Double bit-flip
+base address to flip value: 0x555555757010 
+address max offset: 8
+Memory content after  bitflip:0x000x000x050x000x000x000xf00x3f
+frame name: main
+symbol name: match_score
+symbol filename: smith_waterman.c
+symbol line: 7
+value: 1.0000000000727596
+value address: 0x555555757010 <match_score>
+Type: A floating point type.
+Type sizeof: 8
+
+[INFO -- 2018-12-08 11:46:20]
+Fault Injection Successful after 0.6284177303314209s
+[INFO -- 2018-12-08 11:46:20]
+event type: exit
+[INFO -- 2018-12-08 11:46:20]
+exit code: 0

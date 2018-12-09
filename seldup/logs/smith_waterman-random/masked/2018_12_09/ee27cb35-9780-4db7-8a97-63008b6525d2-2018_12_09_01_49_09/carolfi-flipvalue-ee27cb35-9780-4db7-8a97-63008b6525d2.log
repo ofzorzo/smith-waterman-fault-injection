@@ -1,0 +1,47 @@
+[INFO -- 2018-12-09 01:49:03]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-09 01:49:03]
+Initialization strings:
+[INFO -- 2018-12-09 01:49:03]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-09 01:49:03]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-09 01:49:03]
+initSignal:0
+[INFO -- 2018-12-09 01:49:03]
+endSignal:6
+[INFO -- 2018-12-09 01:49:03]
+faultModel:2
+[INFO -- 2018-12-09 01:49:09]
+Backtrace BEGIN:
+#0  0x00007ffff7a74338 in _IO_str_init_static_internal (sf=sf@entry=0x7fffffffd760, ptr=ptr@entry=0x55555578faf0 "", size=size@entry=8165, pstart=pstart@entry=0x55555578faf0 "") at strops.c:36
+#1  0x00007ffff7a6c902 in _IO_vsnprintf (string=0x55555578faf0 "", maxlen=<optimized out>, format=0x55555555651b "%s", args=args@entry=0x7fffffffd8d0) at vsnprintf.c:113
+#2  0x00007ffff7a48fdf in __GI___snprintf (s=<optimized out>, maxlen=<optimized out>, format=<optimized out>) at snprintf.c:33
+#3  0x0000555555555a74 in smith_waterman (x_num=10350, x_num2=10350, y_num=15000, y_num2=15000, str_x=0x5555557586c0 "RKMMZLDIXTNNGCCASRJUUTVVRPQWGUAAEKMFWOOVHHJRZLTTERRYEEQQVMNIIJEVVSURKKUUYYNSGNNQEEQIKYGGYKKYYUUUQQNTACNCCBOOJCSSWWCVICEGQQOQHJKQYYLAAAADDTTNUZHFXJALLGOXXDEEOEWEEHVFHKKLDDIEEFNBQOBBUYHTBBXHTIICEETKBDXP"..., str_y=0x55555575af40 "RKOMZLDIXTRNGRCASRJYUTNVRPQWGUUAEKMFWPOVKHJRZLRTECRYXETQVMNCIJEOVSURKKPUTYNSLGNQIEQILKYGYNKGYQUUJQNTACNWCBOOJCGSIWCVICEGQQOQHJKQBYLEAAADDQTNUZHFXJAGLGODXDUEOEWPEHVFHVKLMDYIEFNBQOHBUYHTBBXRHTIMCETKBDXP"...) at smith_waterman.c:284
+#4  0x0000555555556178 in execute (file_x_name=0x7fffffffe065 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe087 "/tmp/smith_waterman/randInputY") at smith_waterman.c:379
+#5  0x0000555555556393 in main (argc=9, argv=0x7fffffffdc38) at smith_waterman.c:425
+
+31	strops.c: No such file or directory.
+
+Backtrace END
+Memory content before bitflip:0x980x3a0x000x000x000x000x000x00
+Fault Model: Random bit-flip
+base address to flip value: 0x7fffffffda50
+address max offset: 8
+Memory content after  bitflip:0x970x630x870xc40xdd0x3c0x470x2a
+frame name: smith_waterman
+symbol name: width
+symbol filename: smith_waterman.c
+symbol line: 228
+value: 3046470596122076055
+value address: 0x7fffffffda50
+Type: The type is an integer type.
+Type sizeof: 8
+
+[INFO -- 2018-12-09 01:49:09]
+Fault Injection Successful after 6.266362905502319s
+[INFO -- 2018-12-09 01:49:09]
+event type: exit
+[INFO -- 2018-12-09 01:49:09]
+exit code: 0

@@ -1,0 +1,55 @@
+[INFO -- 2018-12-08 14:13:09]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-08 14:13:09]
+Initialization strings:
+[INFO -- 2018-12-08 14:13:09]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-08 14:13:09]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-08 14:13:09]
+initSignal:0
+[INFO -- 2018-12-08 14:13:09]
+endSignal:6
+[INFO -- 2018-12-08 14:13:09]
+faultModel:0
+[INFO -- 2018-12-08 14:13:14]
+Backtrace BEGIN:
+#0  check_index (i=4235, j=4235) at smith_waterman.c:154
+#1  0x0000555555555631 in smith_waterman (x_num=15000, x_num2=15000, y_num=11250, y_num2=11250, str_x=0x5555557586c0 "AEPABPPDMMBIYNAHLRHXOBLCRUBAFZXFFOIGDXKQJLAKADRLWYIKZVMTPOVVPUCVIKBNHLFTYGFYLWMHWWSYSETHUOEKIJHSTIFDWNYUTDVEBHLXDDVXKQHGELQOUZIQIQTGDTAWWXCXEPWKVUHFKOLPCEFYDOONEJTHCWFATHXAWWMRQVYAKMROQZMVNBJTKECNCHNY"..., str_y=0x55555575c170 "AEPABPDDMMIIYNAHLRHXOBLCRBBFZZXFFIIGXXKQJLKKADRLWIKZZVMTPOVVPUCVIKBNHLFTYGFYLWMWWWYYSETHUEEKJJSSTIFDWNUUTVEEBHXXDDVXQQHGEQOOUZIQIQTGDTAWWXCXEWWKVUHKKLLPCEYYDOONETTHCFATTXXAWMMRQVAKKMROZZMVNBTTKENCCNNY"...) at smith_waterman.c:235
+#2  0x0000555555556178 in execute (file_x_name=0x7fffffffe065 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe087 "/tmp/smith_waterman/randInputY") at smith_waterman.c:379
+#3  0x0000555555556393 in main (argc=9, argv=0x7fffffffdc38) at smith_waterman.c:425
+
+149	
+150	void check_index(int i, int j){
+151	    if(i != j){
+152	        sdc_exit();
+153	    }
+154	}
+155	
+156	char *smith_waterman(long x_num, long x_num2, long y_num, long y_num2, char* str_x, char* str_y)
+157	{
+158	    if(x_num != x_num2){        
+
+Backtrace END
+Fliping a bit of the pointer
+Memory content before bitflip:0x600x820x750x550x550x550x000x00
+Fault Model: Single bit-flip
+base address to flip value: 0x7fffffffdac8
+address max offset: 8
+Memory content after  bitflip:0x600x820x550x550x550x550x000x00
+frame name: execute
+symbol name: fpy
+symbol filename: smith_waterman.c
+symbol line: 366
+value: 0x555555758260
+value address: 0x7fffffffdac8
+Type: The type is a pointer.
+Type sizeof: 8
+
+[INFO -- 2018-12-08 14:13:14]
+Fault Injection Successful after 5.897835731506348s
+[INFO -- 2018-12-08 14:13:15]
+event type: exit
+[INFO -- 2018-12-08 14:13:15]
+exit code: 0

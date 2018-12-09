@@ -1,0 +1,54 @@
+[INFO -- 2018-12-08 22:24:41]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-08 22:24:41]
+Initialization strings:
+[INFO -- 2018-12-08 22:24:41]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-08 22:24:41]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-08 22:24:41]
+initSignal:0
+[INFO -- 2018-12-08 22:24:41]
+endSignal:6
+[INFO -- 2018-12-08 22:24:41]
+faultModel:2
+[INFO -- 2018-12-08 22:24:42]
+Backtrace BEGIN:
+#0  smith_waterman (x_num=10200, x_num2=10200, y_num=15000, y_num2=15000, str_x=0x5555557586c0 "VJJPPOKKZRRZZZSGGKZZNROHHFUUJJDRPNQGDGQEXJDIIXGPMQZZQJPPXXTLZEEXWWDDDVAAFAAPGGGJXXQGAAQYYLKGKOEYLRROOOMMOQNNWIXWHNNMMFNSSZTFOFFZGXPLLFZAYBUULMSSYIJLNWXYYSKMPQNYPELALNCJSSEBGZHHEESWRRDBQNBBGBBXGPRRCCBS"..., str_y=0x55555575aeb0 "VEJZPOOKZRRZAZSGGNKZNYROHFIUWJDRPNQGDGQEXJDXIXGPMQQZQJPZPXTLGZEXMWDRDVVAFAAPXGGJYXLQGAQXYLKGKOEYLHROFOQMOQBNWIXWHKNPMFNKSZTFOXFZGXPNLFZAYBPULMTSYIJLNWXFYSKMPQNYPELALNCJOSEBGZTHHESWDRDBKQNBGCBXGPZRCCBS"...) at smith_waterman.c:208
+#1  0x0000555555556178 in execute (file_x_name=0x7fffffffe065 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe087 "/tmp/smith_waterman/randInputY") at smith_waterman.c:379
+#2  0x0000555555556393 in main (argc=9, argv=0x7fffffffdc38) at smith_waterman.c:425
+
+203	            if(str_x[i-1]==str_y[j-1]){diff=match_score;}
+204	            else{diff=mismatch_score;}
+205	            matrix[i][j]=my_maxof(matrix[i-1][j-1]+diff, matrix[i-1][j]+gap_score, matrix[i][j-1]+gap_score,0);
+206	            if(matrix[i][j]>max_score)
+207	                max_score=matrix[i][j];
+208	            j2++;
+209	        }
+210	        i2++;
+211	    }
+212	    check_index(j, j2);
+
+Backtrace END
+Fliping a bit of the value pointed by a pointer
+Memory content before bitflip:0x89
+Fault Model: Random bit-flip
+base address to flip value: 0x7ffff7a622fe  
+address max offset: 1
+Memory content after  bitflip:0x90
+frame name: smith_waterman
+symbol name: answer
+symbol filename: smith_waterman.c
+symbol line: 355
+value: 0x7ffff7a622fe <_IO_new_fclose+174> "\220\350[]A\\\303\017\037"
+value address: 0x7fffffffda88
+Type: The type is a pointer.
+Type sizeof: 8
+
+[INFO -- 2018-12-08 22:24:42]
+Fault Injection Successful after 1.2613792419433594s
+[INFO -- 2018-12-08 22:24:47]
+event type: exit
+[EXCEPTION -- 2018-12-08 22:24:47]
+exit code: no exit code available

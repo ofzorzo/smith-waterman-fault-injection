@@ -1,0 +1,60 @@
+[INFO -- 2018-12-08 19:47:23]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-08 19:47:23]
+Initialization strings:
+[INFO -- 2018-12-08 19:47:23]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-08 19:47:23]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-08 19:47:23]
+initSignal:0
+[INFO -- 2018-12-08 19:47:23]
+endSignal:6
+[INFO -- 2018-12-08 19:47:23]
+faultModel:1
+[INFO -- 2018-12-08 19:47:23]
+Backtrace BEGIN:
+#0  strchr () at ../sysdeps/x86_64/multiarch/../strchr.S:32
+#1  0x00007ffff7de35f4 in _dl_map_object_deps (map=map@entry=0x7ffff7ffe170, preloads=<optimized out>, npreloads=npreloads@entry=0, trace_mode=trace_mode@entry=0, open_mode=open_mode@entry=0) at dl-deps.c:245
+#2  0x00007ffff7dd8ea6 in dl_main (phdr=<optimized out>, phnum=<optimized out>, user_entry=<optimized out>, auxv=<optimized out>) at rtld.c:1726
+#3  0x00007ffff7defdd0 in _dl_sysdep_start (start_argptr=start_argptr@entry=0x7fffffffdc30, dl_main=dl_main@entry=0x7ffff7dd7660 <dl_main>) at ../elf/dl-sysdep.c:253
+#4  0x00007ffff7dd7128 in _dl_start_final (arg=0x7fffffffdc30) at rtld.c:414
+#5  _dl_start (arg=0x7fffffffdc30) at rtld.c:521
+#6  0x00007ffff7dd6098 in _start () from /lib64/ld-linux-x86-64.so.2
+#7  0x0000000000000009 in ?? ()
+#8  0x00007fffffffe03f in ?? ()
+#9  0x00007fffffffe062 in ?? ()
+#10 0x00007fffffffe065 in ?? ()
+#11 0x00007fffffffe084 in ?? ()
+#12 0x00007fffffffe087 in ?? ()
+#13 0x00007fffffffe0a6 in ?? ()
+#14 0x00007fffffffe0a9 in ?? ()
+#15 0x00007fffffffe0c4 in ?? ()
+#16 0x00007fffffffe0c7 in ?? ()
+#17 0x0000000000000000 in ?? ()
+
+27	../sysdeps/x86_64/multiarch/../strchr.S: No such file or directory.
+
+Backtrace END
+Fliping a bit of the pointer
+Memory content before bitflip:0x000x000x000x000x000x000x000x00
+Fault Model: Double bit-flip
+base address to flip value: 0x7ffff7ffc688 
+address max offset: 8
+Memory content after  bitflip:0x000x000x000x000x000x120x000x00
+frame name: _dl_start_final
+symbol name: preloadlist
+symbol filename: rtld.c
+symbol line: 825
+value: 0x0
+value address: 0x7ffff7ffc688 <preloadlist>
+Type: The type is a pointer.
+Type sizeof: 8
+
+[INFO -- 2018-12-08 19:47:23]
+Fault Injection Successful after 0.27063727378845215s
+[INFO -- 2018-12-08 19:47:28]
+event type: exit
+[INFO -- 2018-12-08 19:47:28]
+exit code: 0

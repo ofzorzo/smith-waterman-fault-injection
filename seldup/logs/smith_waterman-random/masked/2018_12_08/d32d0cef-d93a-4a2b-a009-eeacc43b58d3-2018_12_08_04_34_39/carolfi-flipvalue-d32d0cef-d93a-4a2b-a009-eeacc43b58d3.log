@@ -1,0 +1,55 @@
+[INFO -- 2018-12-08 04:34:32]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-08 04:34:32]
+Initialization strings:
+[INFO -- 2018-12-08 04:34:32]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-08 04:34:32]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-08 04:34:32]
+initSignal:0
+[INFO -- 2018-12-08 04:34:32]
+endSignal:6
+[INFO -- 2018-12-08 04:34:32]
+faultModel:2
+[INFO -- 2018-12-08 04:34:35]
+Backtrace BEGIN:
+#0  my_maxof (a=-1, b=-2, c=-2, d=0) at smith_waterman.c:134
+#1  0x00005555555554a5 in smith_waterman (x_num=12150, x_num2=12150, y_num=15000, y_num2=15000, str_x=0x5555557586c0 "VVEHCQLLZKVGVBBGHUUUUOHHKKJRTLYHHJLAAYXBKUFNNKOTUNNQNNXHZGBSUGTRROTTBLUMGDTQQHORRCCSQZBRICMKKFFITTUJQQXNRIIKAWWCCAMVNNMJSYCCDSNOOAXVRUNNNSZOXXIXXURYJIIBCXGHMMVMMUDFQNUFFSSZSCVPMMQPPJJXXPBPDVVRSYILLTTT"..., str_y=0x55555575b640 "DVEHCRQLZKVGVTBGFHUUUOYHHKJRTLFYHJILAYXBKUJFNKOTUKNQYNXHZGBSUGTBRBOTBLUMGDTTQHOKRDCSQZBRICMCKFFBITUJHQXNURIKAXWSCAMVZNMJSYNCDSGNOAXVRUKNNSZORXIUXURYJDIBCXGHQMVGMUDFQNUEFTSZSCVPWMQHPAJTXPBPDYVRSYXILTMT"...) at smith_waterman.c:205
+#2  0x0000555555556178 in execute (file_x_name=0x7fffffffe065 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe087 "/tmp/smith_waterman/randInputY") at smith_waterman.c:379
+#3  0x0000555555556393 in main (argc=9, argv=0x7fffffffdc38) at smith_waterman.c:425
+
+129	        exit(0);
+130	    }
+131	}
+132	
+133	double my_maxof(double a, double b, double c, double d)
+134	{
+135	    double ans=a;
+136	    if(ans<b) ans=b;
+137	    if(ans<c) ans=c;
+138	    if(ans<d) ans=d;
+
+Backtrace END
+Fliping a bit of the pointer
+Memory content before bitflip:0xc70xe00xff0xff0xff0x7f0x000x00
+Fault Model: Random bit-flip
+base address to flip value: 0x555555757050 
+address max offset: 8
+Memory content after  bitflip:0x9d0x660x590x3f0x1e0x160x950x65
+frame name: my_maxof
+symbol name: log_name2
+symbol filename: smith_waterman.c
+symbol line: 17
+value: 0x7fffffffe0c7 "/tmp/smith_waterman/detected.log"
+value address: 0x555555757050 <log_name2>
+Type: The type is a pointer.
+Type sizeof: 8
+
+[INFO -- 2018-12-08 04:34:35]
+Fault Injection Successful after 3.245816230773926s
+[INFO -- 2018-12-08 04:34:38]
+event type: exit
+[INFO -- 2018-12-08 04:34:38]
+exit code: 0

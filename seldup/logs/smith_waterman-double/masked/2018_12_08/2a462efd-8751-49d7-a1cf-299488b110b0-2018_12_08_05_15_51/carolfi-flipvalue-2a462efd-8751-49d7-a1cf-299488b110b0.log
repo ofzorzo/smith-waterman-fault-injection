@@ -1,0 +1,55 @@
+[INFO -- 2018-12-08 05:15:43]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-08 05:15:43]
+Initialization strings:
+[INFO -- 2018-12-08 05:15:43]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-08 05:15:43]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-08 05:15:43]
+initSignal:0
+[INFO -- 2018-12-08 05:15:43]
+endSignal:6
+[INFO -- 2018-12-08 05:15:43]
+faultModel:1
+[INFO -- 2018-12-08 05:15:44]
+Backtrace BEGIN:
+#0  0x0000555555554fc0 in my_maxof (a=1, b=-2, c=-2, d=0) at smith_waterman.c:136
+#1  0x00005555555554a5 in smith_waterman (x_num=13350, x_num2=13350, y_num=15000, y_num2=15000, str_x=0x5555557586c0 "CZPWWHDZZJJZOOSVYKXPDMMXBJRJMLNMMOOJUUBPNKODBGZSSXODDBAETTQYFFOTLEZZFFOLEEQMMRRQQITTJMAVFVMMXJHKPNOOSZLLFEERXXXFFHQTXLLAPIOTTVAIIMCCYOOTUUMRRHHZREMMBBMLBBIFIOHHWNLKLFGGVJJBBMUUWBGETTTWWBXUMLIAAPSNQZMM"..., str_y=0x55555575baf0 "CZPYWHDQZTJZQOSVYKXPLDMXBJRJMLNOMEOJNUBPNKODBGAZSXODDBAEMTQYGFOTLEEZYFOLREQSMRREQIJTJMAVFSVMXJHKPNLOSZBLFSERLXXBFHXQTXLAPIOOTVAJIMXCNYOTSUMDRKHZREPMBBMSLBIFYIOHWNLKLZFGVRJNBQMUWBGZETTSWBXUMLDIAPSNQZTM"...) at smith_waterman.c:205
+#2  0x0000555555556178 in execute (file_x_name=0x7fffffffe065 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe087 "/tmp/smith_waterman/randInputY") at smith_waterman.c:379
+#3  0x0000555555556393 in main (argc=9, argv=0x7fffffffdc38) at smith_waterman.c:425
+
+131	}
+132	
+133	double my_maxof(double a, double b, double c, double d)
+134	{
+135	    double ans=a;
+136	    if(ans<b) ans=b;
+137	    if(ans<c) ans=c;
+138	    if(ans<d) ans=d;
+139	    return ans;
+140	}
+
+Backtrace END
+Fliping a bit of the pointer
+Memory content before bitflip:0x000x000x000x000x000x000x000x00
+Fault Model: Double bit-flip
+base address to flip value: 0x7fffffffdaf0
+address max offset: 8
+Memory content after  bitflip:0x000x140x000x000x000x000x000x00
+frame name: execute
+symbol name: answer
+symbol filename: smith_waterman.c
+symbol line: 379
+value: 0x0
+value address: 0x7fffffffdaf0
+Type: The type is a pointer.
+Type sizeof: 8
+
+[INFO -- 2018-12-08 05:15:44]
+Fault Injection Successful after 1.3753242492675781s
+[INFO -- 2018-12-08 05:15:50]
+event type: exit
+[INFO -- 2018-12-08 05:15:50]
+exit code: 0

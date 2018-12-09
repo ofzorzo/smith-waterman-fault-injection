@@ -1,0 +1,53 @@
+[INFO -- 2018-12-09 00:09:36]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-09 00:09:36]
+Initialization strings:
+[INFO -- 2018-12-09 00:09:36]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-09 00:09:36]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-09 00:09:36]
+initSignal:0
+[INFO -- 2018-12-09 00:09:36]
+endSignal:6
+[INFO -- 2018-12-09 00:09:36]
+faultModel:2
+[INFO -- 2018-12-09 00:09:41]
+Backtrace BEGIN:
+#0  0x00005555555556b9 in smith_waterman (x_num=10350, x_num2=10350, y_num=15000, y_num2=15000, str_x=0x5555557586c0 "RKMMZLDIXTNNGCCASRJUUTVVRPQWGUAAEKMFWOOVHHJRZLTTERRYEEQQVMNIIJEVVSURKKUUYYNSGNNQEEQIKYGGYKKYYUUUQQNTACNCCBOOJCSSWWCVICEGQQOQHJKQYYLAAAADDTTNUZHFXJALLGOXXDEEOEWEEHVFHKKLDDIEEFNBQOBBUYHTBBXHTIICEETKBDXP"..., str_y=0x55555575af40 "RKOMZLDIXTRNGRCASRJYUTNVRPQWGUUAEKMFWPOVKHJRZLRTECRYXETQVMNCIJEOVSURKKPUTYNSLGNQIEQILKYGYNKGYQUUJQNTACNWCBOOJCGSIWCVICEGQQOQHJKQBYLEAAADDQTNUZHFXJAGLGODXDUEOEWPEHVFHVKLMDYIEFNBQOHBUYHTBBXRHTIMCETKBDXP"...) at smith_waterman.c:241
+#1  0x0000555555556178 in execute (file_x_name=0x7fffffffe065 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe087 "/tmp/smith_waterman/randInputY") at smith_waterman.c:379
+#2  0x0000555555556393 in main (argc=9, argv=0x7fffffffdc38) at smith_waterman.c:425
+
+236	            if(i==0 && j==0){
+237	                maxValue = matrix[i][j];
+238	                y = i;
+239	                x = j;
+240	            }
+241	            if(maxValue < matrix[i][j]){
+242	                maxValue = matrix[i][j];
+243	                y = i;
+244	                x = j;
+245	            }
+
+Backtrace END
+Memory content before bitflip:0x980x3a0x000x000x000x000x000x00
+Fault Model: Random bit-flip
+base address to flip value: 0x7fffffffdad8
+address max offset: 8
+Memory content after  bitflip:0x270x3b0x300xd60xea0x0d0x5f0x6b
+frame name: execute
+symbol name: y_num
+symbol filename: smith_waterman.c
+symbol line: 369
+value: 7736917987112794919
+value address: 0x7fffffffdad8
+Type: The type is an integer type.
+Type sizeof: 8
+
+[INFO -- 2018-12-09 00:09:41]
+Fault Injection Successful after 5.247092008590698s
+[INFO -- 2018-12-09 00:09:42]
+event type: exit
+[INFO -- 2018-12-09 00:09:42]
+exit code: 0

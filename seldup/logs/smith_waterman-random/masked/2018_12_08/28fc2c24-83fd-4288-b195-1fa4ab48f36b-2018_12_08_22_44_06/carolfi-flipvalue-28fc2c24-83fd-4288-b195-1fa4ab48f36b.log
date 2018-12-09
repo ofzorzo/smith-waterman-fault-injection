@@ -1,0 +1,54 @@
+[INFO -- 2018-12-08 22:44:00]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-08 22:44:00]
+Initialization strings:
+[INFO -- 2018-12-08 22:44:00]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-08 22:44:00]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-08 22:44:00]
+initSignal:0
+[INFO -- 2018-12-08 22:44:00]
+endSignal:6
+[INFO -- 2018-12-08 22:44:00]
+faultModel:2
+[INFO -- 2018-12-08 22:44:01]
+Backtrace BEGIN:
+#0  0x0000555555554cfe in test_globals () at smith_waterman.c:76
+#1  0x0000555555555371 in smith_waterman (x_num=10200, x_num2=10200, y_num=15000, y_num2=15000, str_x=0x5555557586c0 "VJJPPOKKZRRZZZSGGKZZNROHHFUUJJDRPNQGDGQEXJDIIXGPMQZZQJPPXXTLZEEXWWDDDVAAFAAPGGGJXXQGAAQYYLKGKOEYLRROOOMMOQNNWIXWHNNMMFNSSZTFOFFZGXPLLFZAYBUULMSSYIJLNWXYYSKMPQNYPELALNCJSSEBGZHHEESWRRDBQNBBGBBXGPRRCCBS"..., str_y=0x55555575aeb0 "VEJZPOOKZRRZAZSGGNKZNYROHFIUWJDRPNQGDGQEXJDXIXGPMQQZQJPZPXTLGZEXMWDRDVVAFAAPXGGJYXLQGAQXYLKGKOEYLHROFOQMOQBNWIXWHKNPMFNKSZTFOXFZGXPNLFZAYBPULMTSYIJLNWXFYSKMPQNYPELALNCJOSEBGZTHHESWDRDBKQNBGCBXGPZRCCBS"...) at smith_waterman.c:202
+#2  0x0000555555556178 in execute (file_x_name=0x7fffffffe065 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe087 "/tmp/smith_waterman/randInputY") at smith_waterman.c:379
+#3  0x0000555555556393 in main (argc=9, argv=0x7fffffffdc38) at smith_waterman.c:425
+
+71	
+72	    exit(0); // ocorreu SDC
+73	}
+74	
+75	void test_globals(){
+76		if( (match_score != match_score2) || (gap_score != gap_score2) || (mismatch_score != mismatch_score2) )
+77	    {
+78			sdc_exit();
+79	    }
+80	}
+
+Backtrace END
+Memory content before bitflip:0x000x000x000x000x000xd00x840x40
+Fault Model: Random bit-flip
+base address to flip value: 0x7fffffffda10
+address max offset: 8
+Memory content after  bitflip:0x5a0x8d0x480x250x980x650x6f0xba
+frame name: smith_waterman
+symbol name: max_score
+symbol filename: smith_waterman.c
+symbol line: 195
+value: -3.1702719651032162e-27
+value address: 0x7fffffffda10
+Type: A floating point type.
+Type sizeof: 8
+
+[INFO -- 2018-12-08 22:44:01]
+Fault Injection Successful after 1.8027234077453613s
+[INFO -- 2018-12-08 22:44:06]
+event type: exit
+[INFO -- 2018-12-08 22:44:06]
+exit code: 0

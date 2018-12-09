@@ -1,0 +1,46 @@
+[INFO -- 2018-12-08 23:19:13]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-08 23:19:13]
+Initialization strings:
+[INFO -- 2018-12-08 23:19:13]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-08 23:19:13]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-08 23:19:13]
+initSignal:0
+[INFO -- 2018-12-08 23:19:13]
+endSignal:6
+[INFO -- 2018-12-08 23:19:13]
+faultModel:1
+[INFO -- 2018-12-08 23:19:13]
+Backtrace BEGIN:
+#0  0x00007ffff7a6bdb5 in _IO_getc (fp=0x555555758490) at getc.c:43
+#1  0x0000555555554dc1 in sizeof_string (fpx=0x555555758260, fpy=0x555555758490, x_num=0x7fffffffdad0, y_num=0x7fffffffdad8) at smith_waterman.c:92
+#2  0x00005555555560b2 in execute (file_x_name=0x7fffffffe065 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe087 "/tmp/smith_waterman/randInputY") at smith_waterman.c:370
+#3  0x0000555555556393 in main (argc=9, argv=0x7fffffffdc38) at smith_waterman.c:425
+
+38	getc.c: No such file or directory.
+
+Backtrace END
+Fliping a bit of the pointer
+Memory content before bitflip:0x000x000x000x000x000x000x000x00
+Fault Model: Double bit-flip
+base address to flip value: 0x7fffffffdb48
+address max offset: 8
+Memory content after  bitflip:0x000x000x000x000x000x900x000x00
+frame name: main
+symbol name: fo
+symbol filename: smith_waterman.c
+symbol line: 429
+value: 0x0
+value address: 0x7fffffffdb48
+Type: The type is a pointer.
+Type sizeof: 8
+
+[INFO -- 2018-12-08 23:19:13]
+Fault Injection Successful after 0.8897414207458496s
+[INFO -- 2018-12-08 23:19:19]
+event type: exit
+[INFO -- 2018-12-08 23:19:19]
+exit code: 0
