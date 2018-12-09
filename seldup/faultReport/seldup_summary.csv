@@ -1,102 +1,102 @@
-Faults Injected:;15675
+Faults Injected:;21674
 
 Fault Effect;#Effect;PVF
-Masked;9800;0.6251993620414673
-SDCs;4519;0.2882934609250399
-Crashes;1319;0.08414673046251994
-Hangs;37;0.0023604465709728866
+Masked;13587;0.6268801328781028
+SDCs;6187;0.2854572298606625
+Crashes;1852;0.08544800221463504
+Hangs;48;0.0022146350465996126
 
 
-Detected SDCs:;4494
-SDC Coverage (%):;99.44678026111971
+Detected SDCs:;6153
+SDC Coverage (%):;99.4504606432843
 
 FaultModels SDCs:
 FaultModel ;#SDCs;percentage
-Random bit-flip;1528;33.81279044036291
-Single bit-flip;1501;33.21531312237221
-Double bit-flip;1490;32.97189643726488
+Random bit-flip;2084;33.68352998222078
+Double bit-flip;2054;33.19864231453047
+Single bit-flip;2049;33.11782770324875
 
 FaultModels Detected SDCs:
 FaultModel ;#SDCs Detected; percentage
-Random bit-flip;1525;33.74640407169728
-Single bit-flip;1491;32.99402522682009
-Double bit-flip;1478;32.70635096260234
+Random bit-flip;2080;33.61887829319541
+Double bit-flip;2040;32.97236140294165
+Single bit-flip;2033;32.85922094714724
 
 FaultModels Crashes:
 FaultModel ;#Crashes;percentage
-Random bit-flip;495;37.52843062926459
-Double bit-flip;423;32.069749810462476
-Single bit-flip;401;30.401819560272937
+Random bit-flip;680;36.7170626349892
+Double bit-flip;599;32.34341252699784
+Single bit-flip;573;30.93952483801296
 
 FaultModels Hangs:
 FaultModel ;#Hangs;percentage
-Single bit-flip;14;37.83783783783784
-Random bit-flip;12;32.432432432432435
-Double bit-flip;11;29.72972972972973
+Single bit-flip;18;37.5
+Random bit-flip;17;35.41666666666667
+Double bit-flip;13;27.083333333333332
 
 Variables that caused SDCs:
 PVF ;#flips ;#SDCs ;Var name ;file ;line number
-100.0;748;748;mismatch_score;smith_waterman.c;9
-100.0;737;737;match_score2;smith_waterman.c;8
-100.0;725;725;gap_score2;smith_waterman.c;12
-100.0;715;715;gap_score;smith_waterman.c;11
-100.0;701;701;mismatch_score2;smith_waterman.c;10
-100.0;701;701;match_score;smith_waterman.c;7
-62.60869565217392;115;72;i2;smith_waterman.c;168
-61.855670103092784;97;60;j2;smith_waterman.c;177
-28.08988764044944;89;25;j;smith_waterman.c;177
-15.59633027522936;109;17;i;smith_waterman.c;168
-6.0344827586206895;116;7;x_num;smith_waterman.c;156
-5.769230769230769;104;6;y_num;smith_waterman.c;156
-9.090909090909092;44;4;str_y;smith_waterman.c;156
-1.694915254237288;59;1;str_x;smith_waterman.c;156
+100.0;1008;1008;mismatch_score;smith_waterman.c;9
+100.0;998;998;gap_score;smith_waterman.c;11
+100.0;995;995;match_score2;smith_waterman.c;8
+100.0;988;988;match_score;smith_waterman.c;7
+100.0;970;970;mismatch_score2;smith_waterman.c;10
+100.0;964;964;gap_score2;smith_waterman.c;12
+61.78343949044586;157;97;i2;smith_waterman.c;168
+62.758620689655174;145;91;j2;smith_waterman.c;177
+22.48062015503876;129;29;j;smith_waterman.c;177
+14.285714285714285;147;21;i;smith_waterman.c;168
+6.122448979591836;147;9;y_num;smith_waterman.c;156
+11.864406779661017;59;7;str_y;smith_waterman.c;156
+4.516129032258064;155;7;x_num;smith_waterman.c;156
+3.260869565217391;92;3;str_x;smith_waterman.c;156
 
 Variables that caused Detected SDCs:
 PVF ;#flips ;#SDCs ;Var name ;file ;line number
-100.0;748;748;mismatch_score;smith_waterman.c;9
-100.0;737;737;match_score2;smith_waterman.c;8
-100.0;725;725;gap_score2;smith_waterman.c;12
-100.0;715;715;gap_score;smith_waterman.c;11
-100.0;701;701;mismatch_score2;smith_waterman.c;10
-100.0;701;701;match_score;smith_waterman.c;7
-62.60869565217392;115;72;i2;smith_waterman.c;168
-61.855670103092784;97;60;j2;smith_waterman.c;177
-20.224719101123593;89;18;j;smith_waterman.c;177
-15.59633027522936;109;17;i;smith_waterman.c;168
+100.0;1008;1008;mismatch_score;smith_waterman.c;9
+100.0;998;998;gap_score;smith_waterman.c;11
+100.0;995;995;match_score2;smith_waterman.c;8
+100.0;988;988;match_score;smith_waterman.c;7
+100.0;970;970;mismatch_score2;smith_waterman.c;10
+100.0;964;964;gap_score2;smith_waterman.c;12
+61.78343949044586;157;97;i2;smith_waterman.c;168
+62.758620689655174;145;91;j2;smith_waterman.c;177
+16.27906976744186;129;21;j;smith_waterman.c;177
+14.285714285714285;147;21;i;smith_waterman.c;168
 
 Variables that caused Crash:
 PVF ;#flips ;#SDCs ;Var name ;file ;line number
-32.599724896836314;727;237;output_file_name;smith_waterman.c;15
-100.0;124;124;str_x;smith_waterman.c;373
-100.0;122;122;str_y;smith_waterman.c;374
-98.23008849557522;113;111;user_entry;../elf/dl-sysdep.c;91
-90.51724137931035;116;105;x_num;smith_waterman.c;156
-84.40366972477065;109;92;i;smith_waterman.c;168
-76.31578947368422;114;87;matrix;smith_waterman.c;166
-76.92307692307693;104;80;y_num;smith_waterman.c;156
-87.35632183908046;87;76;_dl_skip_args;rtld.c;84
-56.60377358490566;106;60;alignmentAcopy;smith_waterman.c;253
-84.7457627118644;59;50;str_x;smith_waterman.c;156
-51.68539325842697;89;46;j;smith_waterman.c;177
-30.508474576271187;118;36;answer;smith_waterman.c;355
-72.72727272727273;44;32;str_y;smith_waterman.c;156
-19.626168224299064;107;21;alignmentB;smith_waterman.c;253
-24.285714285714285;70;17;__GI__dl_argv;rtld.c;83
-8.653846153846153;104;9;_rtld_global;rtld.c;231
-5.405405405405405;74;4;_rtld_global_ro;rtld.c;259
-1.762114537444934;227;4;fpy;smith_waterman.c;366
-1.8604651162790697;215;4;fpx;smith_waterman.c;366
-0.7936507936507936;126;1;height;smith_waterman.c;227
-1.2987012987012987;77;1;library_path;rtld.c;823
+34.25742574257426;1010;346;output_file_name;smith_waterman.c;15
+100.0;163;163;str_y;smith_waterman.c;374
+100.0;161;161;str_x;smith_waterman.c;373
+98.69281045751634;153;151;user_entry;../elf/dl-sysdep.c;91
+92.25806451612904;155;143;x_num;smith_waterman.c;156
+77.77777777777779;162;126;matrix;smith_waterman.c;166
+85.71428571428571;147;126;i;smith_waterman.c;168
+80.95238095238095;147;119;y_num;smith_waterman.c;156
+87.09677419354838;124;108;_dl_skip_args;rtld.c;84
+55.24475524475524;143;79;alignmentAcopy;smith_waterman.c;253
+58.91472868217055;129;76;j;smith_waterman.c;177
+81.52173913043478;92;75;str_x;smith_waterman.c;156
+31.28834355828221;163;51;answer;smith_waterman.c;355
+74.57627118644068;59;44;str_y;smith_waterman.c;156
+20.689655172413794;145;30;alignmentB;smith_waterman.c;253
+21.73913043478261;92;20;__GI__dl_argv;rtld.c;83
+7.857142857142857;140;11;_rtld_global;rtld.c;231
+2.43161094224924;329;8;fpy;smith_waterman.c;366
+6.60377358490566;106;7;_rtld_global_ro;rtld.c;259
+2.0618556701030926;291;6;fpx;smith_waterman.c;366
+0.6097560975609756;164;1;height;smith_waterman.c;227
+0.9174311926605505;109;1;library_path;rtld.c;823
 
 Variables that caused Hang:
 PVF ;#flips ;#SDCs ;Var name ;file ;line number
-13.559322033898304;59;8;str_x;smith_waterman.c;156
-18.181818181818183;44;8;str_y;smith_waterman.c;156
-7.6923076923076925;52;4;d;smith_waterman.c;133
-3.8461538461538463;104;4;y_num;smith_waterman.c;156
-7.6923076923076925;52;4;ans;smith_waterman.c;135
-5.357142857142857;56;3;c;smith_waterman.c;133
-2.4;125;3;diff;smith_waterman.c;194
-4.3478260869565215;46;2;b;smith_waterman.c;133
-0.7633587786259541;131;1;width;smith_waterman.c;228
+15.217391304347828;92;14;str_x;smith_waterman.c;156
+13.559322033898304;59;8;str_y;smith_waterman.c;156
+8.450704225352112;71;6;d;smith_waterman.c;133
+7.894736842105263;76;6;ans;smith_waterman.c;135
+5.555555555555555;72;4;c;smith_waterman.c;133
+2.7210884353741496;147;4;y_num;smith_waterman.c;156
+1.89873417721519;158;3;diff;smith_waterman.c;194
+3.389830508474576;59;2;b;smith_waterman.c;133
+0.5952380952380952;168;1;width;smith_waterman.c;228

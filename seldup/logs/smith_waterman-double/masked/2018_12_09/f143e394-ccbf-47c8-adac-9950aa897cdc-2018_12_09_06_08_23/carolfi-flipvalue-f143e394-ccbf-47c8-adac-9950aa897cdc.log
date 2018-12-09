@@ -1,0 +1,60 @@
+[INFO -- 2018-12-09 06:08:16]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-09 06:08:16]
+Initialization strings:
+[INFO -- 2018-12-09 06:08:16]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-09 06:08:16]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-09 06:08:16]
+initSignal:0
+[INFO -- 2018-12-09 06:08:16]
+endSignal:6
+[INFO -- 2018-12-09 06:08:16]
+faultModel:1
+[EXCEPTION -- 2018-12-09 06:08:16]
+gdbException: No symbol "None" in current context.
+[INFO -- 2018-12-09 06:08:16]
+Backtrace BEGIN:
+#0  malloc (n=20) at dl-minimal.c:50
+#1  <function called from gdb>
+#2  0x00007ffff7dd71ea in elf_machine_rela_relative (reloc_addr_arg=0x7ffff7ffccf8 <tunable_list+888>, reloc=0x7ffff7dd5cb8, l_addr=140737351864320) at ../sysdeps/x86_64/dl-machine.h:540
+#3  elf_dynamic_do_Rela (skip_ifunc=0, lazy=0, nrelative=<optimized out>, relsize=<optimized out>, reladdr=<optimized out>, map=0x7ffff7ffd9f0 <_rtld_global+2448>) at do-rel.h:112
+#4  _dl_start (arg=0x7fffffffdc30) at rtld.c:505
+#5  0x00007ffff7dd6098 in _start () from /lib64/ld-linux-x86-64.so.2
+#6  0x0000000000000009 in ?? ()
+#7  0x00007fffffffe03f in ?? ()
+#8  0x00007fffffffe062 in ?? ()
+#9  0x00007fffffffe065 in ?? ()
+#10 0x00007fffffffe084 in ?? ()
+#11 0x00007fffffffe087 in ?? ()
+#12 0x00007fffffffe0a6 in ?? ()
+#13 0x00007fffffffe0a9 in ?? ()
+#14 0x00007fffffffe0c4 in ?? ()
+#15 0x00007fffffffe0c7 in ?? ()
+#16 0x0000000000000000 in ?? ()
+
+45	dl-minimal.c: No such file or directory.
+
+Backtrace END
+Memory content before bitflip:0x000x000x000x000x000x000x000x00
+Fault Model: Double bit-flip
+base address to flip value: 0x7ffff7ffc730 
+address max offset: 8
+Memory content after  bitflip:0x000x000x000x000x000x000x000x24
+frame name: elf_dynamic_do_Rela
+symbol name: __pointer_chk_guard_local
+symbol filename: rtld.c
+symbol line: 96
+value: 2594073385365405696
+value address: 0x7ffff7ffc730 <__pointer_chk_guard_local>
+Type: The type is an integer type.
+Type sizeof: 8
+
+[INFO -- 2018-12-09 06:08:16]
+Fault Injection Successful after 0.4986991882324219s
+[INFO -- 2018-12-09 06:08:22]
+event type: exit
+[INFO -- 2018-12-09 06:08:22]
+exit code: 0

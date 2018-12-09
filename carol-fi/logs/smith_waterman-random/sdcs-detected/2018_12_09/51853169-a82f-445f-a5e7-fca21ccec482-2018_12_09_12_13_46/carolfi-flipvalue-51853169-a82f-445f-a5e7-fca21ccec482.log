@@ -1,0 +1,53 @@
+[INFO -- 2018-12-09 12:13:43]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-09 12:13:43]
+Initialization strings:
+[INFO -- 2018-12-09 12:13:43]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-09 12:13:43]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-09 12:13:43]
+initSignal:0
+[INFO -- 2018-12-09 12:13:43]
+endSignal:6
+[INFO -- 2018-12-09 12:13:43]
+faultModel:2
+[INFO -- 2018-12-09 12:13:46]
+Backtrace BEGIN:
+#0  0x00005555555553a1 in smith_waterman (x_num=14100, x_num2=14100, y_num=15000, y_num2=15000, str_x=0x5555557586c0 "FFQQMUJJLGUXXFINNXXEEAYUUMHHXZTTPPJXFHRNNDKPCSSNNTTTNURFFFQCSVTHGGRLLYCDZZTEEYRRTMHHNDQIJVVBSSIZZEMEENNZZCCEECWXIIGNZZXIIZJJTTTFPHHJWTTVVWZZSSUCHFRGGOQIIZZCGVWMMZZCBUUZQQQLLKKPHRHZZGJJHNNCCKORRYRTTSSJ"..., str_y=0x55555575bde0 "TFOQLMUJLGUEXMFINKXOEWAYUJMHXCZTKPJXDFHRNDVKPCSFNPTTNURHFFQCHSVTHGRLLYCADZKTECYRTRMHNDQSIJVRBSLIZEVMEZNHZZCFECWXWIGJNZCXIZOJTBTSFPHJQWTPVVWZYSZUCHFRGHOQIFZCGVWOMFZCBSUZQQYQLZKPHRHPZVGJAHNJCKZORYRTTLSJ"...) at smith_waterman.c:203
+#1  0x0000555555556178 in execute (file_x_name=0x7fffffffe065 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe087 "/tmp/smith_waterman/randInputY") at smith_waterman.c:379
+#2  0x0000555555556393 in main (argc=9, argv=0x7fffffffdc38) at smith_waterman.c:425
+
+198	        check_index(i, i2);
+199	        j2 = 1;
+200	        for(j=1; j<y_num+1; j++){
+201	            check_index(j, j2);
+202				test_globals();
+203	            if(str_x[i-1]==str_y[j-1]){diff=match_score;}
+204	            else{diff=mismatch_score;}
+205	            matrix[i][j]=my_maxof(matrix[i-1][j-1]+diff, matrix[i-1][j]+gap_score, matrix[i][j-1]+gap_score,0);
+206	            if(matrix[i][j]>max_score)
+207	                max_score=matrix[i][j];
+
+Backtrace END
+Memory content before bitflip:0x000x000x000x000x000x000xf00x3f
+Fault Model: Random bit-flip
+base address to flip value: 0x555555757010 
+address max offset: 8
+Memory content after  bitflip:0xc40xec0x960xfa0xf40x340xa30xd7
+frame name: execute
+symbol name: match_score
+symbol filename: smith_waterman.c
+symbol line: 7
+value: -1.4781033947739408e+114
+value address: 0x555555757010 <match_score>
+Type: A floating point type.
+Type sizeof: 8
+
+[INFO -- 2018-12-09 12:13:46]
+Fault Injection Successful after 3.5261101722717285s
+[INFO -- 2018-12-09 12:13:46]
+event type: exit
+[INFO -- 2018-12-09 12:13:46]
+exit code: 0

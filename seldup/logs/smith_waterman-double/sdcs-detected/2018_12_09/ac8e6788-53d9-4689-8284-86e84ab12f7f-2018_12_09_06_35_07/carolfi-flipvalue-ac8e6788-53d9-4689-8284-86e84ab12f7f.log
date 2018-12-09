@@ -1,0 +1,54 @@
+[INFO -- 2018-12-09 06:35:06]
+Starting flip_value script
+version: 1.1
+[INFO -- 2018-12-09 06:35:06]
+Initialization strings:
+[INFO -- 2018-12-09 06:35:06]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2018-12-09 06:35:06]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2018-12-09 06:35:06]
+initSignal:0
+[INFO -- 2018-12-09 06:35:06]
+endSignal:6
+[INFO -- 2018-12-09 06:35:06]
+faultModel:1
+[INFO -- 2018-12-09 06:35:07]
+Backtrace BEGIN:
+#0  0x0000555555554cce in test_globals () at smith_waterman.c:76
+#1  0x0000555555555371 in smith_waterman (x_num=15000, x_num2=15000, y_num=13950, y_num2=13950, str_x=0x5555557586c0 "CURXHYKGNIGVHRCAVGLNNTOVQMBTDDBFZUFIUPPKXVFGMHHJNUWANKYDYZWDEZJFVONQFCAEZHMNQTWDOUFBHDFHEDLKFUPAKDSRHSXJBJWRDTWTPCUWHBEMHPYMLOOXTHQCBNLDYIWDDTWSVTREWVSDMRRZFIYAPOCSDQXBAUHFNDZKYQOVNHABYUAFCYHTOLLRBLVD"..., str_y=0x55555575c170 "URXHYKGNIIVHRCCVGGLNTTVQMBTTDBFFZFFUPPPXVFFMHHJNUWANKYYYZWWEZJFVVOQFCAEZZHMNTTWOUFBHDFHEDLKFUPAKDSRHSXJJBWRDDWTTCUWHBEMHHYYLOOXTHQQBNLDYIWDDDWWVTTEWVVDDRRZFFYAPPCSDQXBAUHFNNZKYQOVNHABYYAFCCHTOLLRBLVVF"...) at smith_waterman.c:202
+#2  0x0000555555556178 in execute (file_x_name=0x7fffffffe065 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe087 "/tmp/smith_waterman/randInputY") at smith_waterman.c:379
+#3  0x0000555555556393 in main (argc=9, argv=0x7fffffffdc38) at smith_waterman.c:425
+
+71	
+72	    exit(0); // ocorreu SDC
+73	}
+74	
+75	void test_globals(){
+76		if( (match_score != match_score2) || (gap_score != gap_score2) || (mismatch_score != mismatch_score2) )
+77	    {
+78			sdc_exit();
+79	    }
+80	}
+
+Backtrace END
+Memory content before bitflip:0x000x000x000x000x000x000xf00x3f
+Fault Model: Double bit-flip
+base address to flip value: 0x555555757018 
+address max offset: 8
+Memory content after  bitflip:0x000x000x000x000x180x000xf00x3f
+frame name: main
+symbol name: match_score2
+symbol filename: smith_waterman.c
+symbol line: 8
+value: 1.0000228881835938
+value address: 0x555555757018 <match_score2>
+Type: A floating point type.
+Type sizeof: 8
+
+[INFO -- 2018-12-09 06:35:07]
+Fault Injection Successful after 1.4331562519073486s
+[INFO -- 2018-12-09 06:35:07]
+event type: exit
+[INFO -- 2018-12-09 06:35:07]
+exit code: 0
