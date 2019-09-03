@@ -1,0 +1,54 @@
+[INFO -- 2019-09-03 12:10:12]
+Starting flip_value script
+version: 1.1
+[INFO -- 2019-09-03 12:10:12]
+Initialization strings:
+[INFO -- 2019-09-03 12:10:12]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2019-09-03 12:10:12]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2019-09-03 12:10:12]
+initSignal:0
+[INFO -- 2019-09-03 12:10:12]
+endSignal:6
+[INFO -- 2019-09-03 12:10:12]
+faultModel:0
+[INFO -- 2019-09-03 12:10:14]
+Backtrace BEGIN:
+#0  0x0000555555554cda in test_globals () at smith_waterman.c:76
+#1  0x0000555555555371 in smith_waterman (x_num=12450, x_num2=12450, y_num=15000, y_num2=15000, str_x=0x5555557586c0 "MTXDVVDPAAJWMPARPPSPEEALEALBRRTTKYSNXXQIXGJJICKKUUJNLBBOMIIDHHOHIIBCHLEETTPPCRZCLLRLSSKEEZHKXYYPHBROEESTJJKCAKGVXXZQQRWWNGAAGGPSJJHPPCPPLNNNZXUUEENVTTLHSSMUAMKKNTEXXUUKNNXNCIIKGXZCTQQEEWWHIRRXENCBNNNC"..., str_y=0x55555575b770 "MTXXDVDCPAJWMPARSPSZPEALEALBFRYTKYSNTXQIXBGJQICKYUJNYLBFOMIVDHQOHIBCHTLEWTPPCRZCLLRLWSQKEZHKIXYPHBROXESTYJKCAKGNVXZTQREWQNGALGPSKJHHPBCPLNRNZXDUXENNVTLMHSMUAEMKNTTEXYUKNNXMNCIKGXZCTKQCECWHIIRXENCBNWNC"...) at smith_waterman.c:202
+#2  0x0000555555556178 in execute (file_x_name=0x7fffffffe216 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe238 "/tmp/smith_waterman/randInputY") at smith_waterman.c:379
+#3  0x0000555555556393 in main (argc=9, argv=0x7fffffffde68) at smith_waterman.c:425
+
+71	
+72	    exit(0); // ocorreu SDC
+73	}
+74	
+75	void test_globals(){
+76		if( (match_score != match_score2) || (gap_score != gap_score2) || (mismatch_score != mismatch_score2) )
+77	    {
+78			sdc_exit();
+79	    }
+80	}
+
+Backtrace END
+Memory content before bitflip:0xa20x300x000x000x000x000x000x00
+Fault Model: Single bit-flip
+base address to flip value: 0x7fffffffdd00
+address max offset: 8
+Memory content after  bitflip:0xa20x300x000x000x000x000x800x00
+frame name: execute
+symbol name: x_num
+symbol filename: smith_waterman.c
+symbol line: 369
+value: 36028797018976418
+value address: 0x7fffffffdd00
+Type: The type is an integer type.
+Type sizeof: 8
+
+[INFO -- 2019-09-03 12:10:14]
+Fault Injection Successful after 2.141458034515381s
+[INFO -- 2019-09-03 12:10:15]
+event type: exit
+[INFO -- 2019-09-03 12:10:15]
+exit code: 0

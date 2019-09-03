@@ -1,0 +1,55 @@
+[INFO -- 2019-09-03 12:10:16]
+Starting flip_value script
+version: 1.1
+[INFO -- 2019-09-03 12:10:16]
+Initialization strings:
+[INFO -- 2019-09-03 12:10:16]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2019-09-03 12:10:17]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2019-09-03 12:10:17]
+initSignal:0
+[INFO -- 2019-09-03 12:10:17]
+endSignal:6
+[INFO -- 2019-09-03 12:10:17]
+faultModel:1
+[INFO -- 2019-09-03 12:10:17]
+Backtrace BEGIN:
+#0  0x0000555555554cf2 in test_globals () at smith_waterman.c:76
+#1  0x0000555555555371 in smith_waterman (x_num=12450, x_num2=12450, y_num=15000, y_num2=15000, str_x=0x5555557586c0 "MTXDVVDPAAJWMPARPPSPEEALEALBRRTTKYSNXXQIXGJJICKKUUJNLBBOMIIDHHOHIIBCHLEETTPPCRZCLLRLSSKEEZHKXYYPHBROEESTJJKCAKGVXXZQQRWWNGAAGGPSJJHPPCPPLNNNZXUUEENVTTLHSSMUAMKKNTEXXUUKNNXNCIIKGXZCTQQEEWWHIRRXENCBNNNC"..., str_y=0x55555575b770 "MTXXDVDCPAJWMPARSPSZPEALEALBFRYTKYSNTXQIXBGJQICKYUJNYLBFOMIVDHQOHIBCHTLEWTPPCRZCLLRLWSQKEZHKIXYPHBROXESTYJKCAKGNVXZTQREWQNGALGPSKJHHPBCPLNRNZXDUXENNVTLMHSMUAEMKNTTEXYUKNNXMNCIKGXZCTKQCECWHIIRXENCBNWNC"...) at smith_waterman.c:202
+#2  0x0000555555556178 in execute (file_x_name=0x7fffffffe216 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe238 "/tmp/smith_waterman/randInputY") at smith_waterman.c:379
+#3  0x0000555555556393 in main (argc=9, argv=0x7fffffffde68) at smith_waterman.c:425
+
+71	
+72	    exit(0); // ocorreu SDC
+73	}
+74	
+75	void test_globals(){
+76		if( (match_score != match_score2) || (gap_score != gap_score2) || (mismatch_score != mismatch_score2) )
+77	    {
+78			sdc_exit();
+79	    }
+80	}
+
+Backtrace END
+Fliping a bit of the pointer
+Memory content before bitflip:0x000x000x000x000x000x000x000x00
+Fault Model: Double bit-flip
+base address to flip value: 0x7fffffffdc60
+address max offset: 8
+Memory content after  bitflip:0x000x000x000x000x000x140x000x00
+frame name: smith_waterman
+symbol name: alignmentA
+symbol filename: smith_waterman.c
+symbol line: 253
+value: 0x0
+value address: 0x7fffffffdc60
+Type: The type is a pointer.
+Type sizeof: 8
+
+[INFO -- 2019-09-03 12:10:17]
+Fault Injection Successful after 0.4294612407684326s
+[INFO -- 2019-09-03 12:10:20]
+event type: exit
+[INFO -- 2019-09-03 12:10:20]
+exit code: 0
