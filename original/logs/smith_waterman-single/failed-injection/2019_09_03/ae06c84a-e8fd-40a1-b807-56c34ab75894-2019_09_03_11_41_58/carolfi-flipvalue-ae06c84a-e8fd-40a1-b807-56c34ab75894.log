@@ -1,0 +1,19 @@
+[INFO -- 2019-09-03 11:41:55]
+Starting flip_value script
+version: 1.1
+[INFO -- 2019-09-03 11:41:55]
+Initialization strings:
+[INFO -- 2019-09-03 11:41:55]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2019-09-03 11:41:55]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output
+[INFO -- 2019-09-03 11:41:55]
+initSignal:0
+[INFO -- 2019-09-03 11:41:55]
+endSignal:6
+[INFO -- 2019-09-03 11:41:55]
+faultModel:0
+[INFO -- 2019-09-03 11:41:57]
+event type: exit
+[INFO -- 2019-09-03 11:41:57]
+exit code: 0

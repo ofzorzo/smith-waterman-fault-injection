@@ -1,0 +1,41 @@
+[INFO -- 2019-09-03 11:56:54]
+Starting flip_value script
+version: 1.1
+[INFO -- 2019-09-03 11:56:54]
+Initialization strings:
+[INFO -- 2019-09-03 11:56:54]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2019-09-03 11:56:54]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output
+[INFO -- 2019-09-03 11:56:54]
+initSignal:0
+[INFO -- 2019-09-03 11:56:54]
+endSignal:6
+[INFO -- 2019-09-03 11:56:54]
+faultModel:1
+[INFO -- 2019-09-03 11:56:57]
+Backtrace BEGIN:
+#0  _int_malloc (av=av@entry=0x7ffff7dcfc40 <main_arena>, bytes=bytes@entry=8987) at malloc.c:3752
+#1  0x00007ffff7a7b0fc in __GI___libc_malloc (bytes=8987) at malloc.c:3057
+#2  0x0000555555555474 in smith_waterman (x_num=15000, y_num=13950, str_x=0x5555557586c0 "XMFJGXCAVFUMTHZFFSPVVVKSPXLXIAVFNCQVBSXYXRKQYJYFDPAYLLTAKEXSFUZUYPRCHPAHINZHWZOAPPACCTEMYDHFXGBXYSBFHCOQROZNNNPECSGGLKTLNAQMIRMGKNOTRCJISIYIYPOAHVHVHCIXEZLMSZVEPJYGNJRIURQSIEUSBDNLHVKLWVARVVVKGVSVHLDB"..., str_y=0x55555575c170 "XMFJGXCAFFUMHHZFSSPVVVKSPXLIIAFFNCQVBXXXXRKQYJFFDPALLTTAKEXSUUZYPPRCPPAHINZHWZOAPPACTEEMYHHFXGBXYSBFCCQRRONNNNPECSGLKKTLAAQMIMMKKNOTRCJISIYYYPOAHVVVHIXXZZLMZVVPPJYGNRRIURQIIEUSBDNLHVKWWVARVVKKGVVVHLDE"..., fo=0x555555758260) at smith_waterman.c:150
+#3  0x0000555555555e38 in main (argc=7, argv=0x7fffffffde98) at smith_waterman.c:298
+
+3747	malloc.c: No such file or directory.
+
+Backtrace END
+Memory content before bitflip:0x000x000x000x000x000x000xf00xbf
+Fault Model: Double bit-flip
+base address to flip value: 0x555555757018 
+address max offset: 8
+Memory content after  bitflip:0x000x000x000x000x440x000xf00xbf
+frame name: main
+symbol name: mismatch_score
+symbol filename: smith_waterman.c
+symbol line: 8
+value: -1.0000648498535156
+value address: 0x555555757018 <mismatch_score>
+Type: A floating point type.
+Type sizeof: 8
+
+[INFO -- 2019-09-03 11:56:57]
+Fault Injection Successful after 3.4363012313842773s

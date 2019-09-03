@@ -1,0 +1,50 @@
+[INFO -- 2019-09-03 11:55:54]
+Starting flip_value script
+version: 1.1
+[INFO -- 2019-09-03 11:55:54]
+Initialization strings:
+[INFO -- 2019-09-03 11:55:54]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2019-09-03 11:55:54]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output
+[INFO -- 2019-09-03 11:55:54]
+initSignal:0
+[INFO -- 2019-09-03 11:55:54]
+endSignal:6
+[INFO -- 2019-09-03 11:55:54]
+faultModel:1
+[INFO -- 2019-09-03 11:55:57]
+Backtrace BEGIN:
+#0  __memmove_avx_unaligned_erms () at ../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:487
+#1  0x00007ffff7a724cc in __GI__IO_default_xsputn (f=0x7fffffffd9f0, data=<optimized out>, n=11784) at genops.c:404
+#2  0x00007ffff7a40feb in _IO_vfprintf_internal (s=s@entry=0x7fffffffd9f0, format=format@entry=0x555555555f79 "%s", ap=ap@entry=0x7fffffffdb60) at vfprintf.c:1643
+#3  0x00007ffff7a6c910 in _IO_vsnprintf (string=0x555555795c10 "", maxlen=<optimized out>, format=0x555555555f79 "%s", args=args@entry=0x7fffffffdb60) at vsnprintf.c:114
+#4  0x00007ffff7a48fdf in __GI___snprintf (s=<optimized out>, maxlen=<optimized out>, format=<optimized out>) at snprintf.c:33
+#5  0x0000555555555802 in smith_waterman (x_num=15000, y_num=13800, str_x=0x5555557586c0 "BCOVUASOSBEZBKRDCNBMPLLLDUERABHDFXZAYTOSVTTYFKBKZEYPRJCUFHNGKXJPWIRWEIOZDHXKRAUTGSIZEMVJVIRFHBXELQAPYPQDYPOSPKLXDVWJHTUDCMKLNHPAASSAHIEHYSBPEMPHJLSRHNWLZGWOQMOQEIQNRWWRQYGVKVEWJXNQKJDLRZZHLPZRYSGRODIH"..., str_y=0x55555575c170 "BOOUUASSBEEBKRRDNBMMPLLLDEERAHDDFXAYYOSVTTYFFKKKZYPPRJUFFHGGXJJWWRWEIOZZHXKRAAUTSSZEMVJVIRFFBBXEQAAYPPQYPOOPPLXXVVJJTUDDMKLNNHPAASSHHEHHYSPEMMHJJLRRNWLLGWWOQMQEIINNRWWRQGVKKEWWXNNKJJLRRZZLLPRRYSROODID"..., fo=0x555555758260) at smith_waterman.c:194
+#6  0x0000555555555e38 in main (argc=7, argv=0x7fffffffde98) at smith_waterman.c:298
+
+482	../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S: No such file or directory.
+
+Backtrace END
+Fliping a bit of the value pointed by a pointer
+Fliping value of field: _fileno
+Memory content before bitflip:0x040x000x000x00
+Fault Model: Double bit-flip
+base address to flip value: 0x5555557582d0
+address max offset: 4
+Memory content after  bitflip:0x040x000x000x0a
+frame name: main
+symbol name: fo
+symbol filename: smith_waterman.c
+symbol line: 278
+value: 0x555555758260
+value address: 0x7fffffffdd98
+Type: The type is a pointer.
+Type sizeof: 8
+
+[INFO -- 2019-09-03 11:55:57]
+Fault Injection Successful after 3.184302568435669s
+[INFO -- 2019-09-03 11:55:57]
+event type: exit
+[INFO -- 2019-09-03 11:55:57]
+exit code: 0

@@ -1,0 +1,49 @@
+[INFO -- 2019-09-03 11:44:50]
+Starting flip_value script
+version: 1.1
+[INFO -- 2019-09-03 11:44:50]
+Initialization strings:
+[INFO -- 2019-09-03 11:44:50]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2019-09-03 11:44:50]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output
+[INFO -- 2019-09-03 11:44:50]
+initSignal:0
+[INFO -- 2019-09-03 11:44:50]
+endSignal:6
+[INFO -- 2019-09-03 11:44:50]
+faultModel:0
+[INFO -- 2019-09-03 11:44:51]
+Backtrace BEGIN:
+#0  my_maxof (a=-1, b=-2, c=-2, d=0) at smith_waterman.c:65
+#1  0x00005555555550d7 in smith_waterman (x_num=15000, y_num=15000, str_x=0x5555557586c0 "KFFOCVVLQQSSPWPPFVMMFJJYHHEHHFTPPPJRRFJVFFNNVZAAWZNEYMMIIEPJTLAKUUEDZTXXQMUUPWWLRJVVKXCSDNJOIUSSUUQQNPOOBKRRRGESSSGRRIVXFFFFAATUWJJHBYYJCKWWSIGAAOOSWPPVSCUCBBZZAAJBBJSTTWCEIIYFXZZVBRVQQTPTXGWWGDFOOZJX"..., str_y=0x55555575c170 "KKFOLCVLQQQSPOWPFUVMCFJMYHSEHFITPPJCRFNJVFBNVZEAWZNYEYMEIELPJTLAKUEDZTMXYQMUPQWLRJLVKXCSDNJOIUOSRUXQNJPOBBKRRGEISSGCRIWVXFJFCAZTUWJKHBYJCKCWSIGKAOOSWMPVSACUCBPZZAJJBJSETWCLEIYFXOZVBQRVQTPTXGSWGDFIOZOJ"..., fo=0x555555758260) at smith_waterman.c:98
+#2  0x0000555555555e38 in main (argc=7, argv=0x7fffffffde98) at smith_waterman.c:298
+
+60	}
+61	
+62	double my_maxof(double a, double b, double c, double d)
+63	{
+64	    double ans=a;
+65	    if(ans<b) ans=b;
+66	    if(ans<c) ans=c;
+67	    if(ans<d) ans=d;
+68	    return ans;
+69	}
+
+Backtrace END
+Memory content before bitflip:0x000x000x000x000x000x000x000xc0
+Fault Model: Single bit-flip
+base address to flip value: 0x555555757020 
+address max offset: 8
+Memory content after  bitflip:0x100x000x000x000x000x000x000xc0
+frame name: my_maxof
+symbol name: gap_score
+symbol filename: smith_waterman.c
+symbol line: 9
+value: -2.0000000000000071
+value address: 0x555555757020 <gap_score>
+Type: A floating point type.
+Type sizeof: 8
+
+[INFO -- 2019-09-03 11:44:51]
+Fault Injection Successful after 1.1012606620788574s

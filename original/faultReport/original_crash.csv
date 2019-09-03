@@ -1,0 +1,22 @@
+Variable Name;Variable File;Variable Line;Fault Injection Time(s);Injection Time Interval;Fault Model
+fo;smith_waterman.c;278;1.2222237586975098;0-6;Random bit-flip
+str_y;smith_waterman.c;79;0.6389057636260986;0-6;Random bit-flip
+fo;smith_waterman.c;79;0.9255454540252686;0-6;Random bit-flip
+str_y;smith_waterman.c;79;1.4907455444335938;0-6;Random bit-flip
+fo;smith_waterman.c;79;1.1098971366882324;0-6;Single bit-flip
+i;smith_waterman.c;83;2.279543399810791;0-6;Single bit-flip
+x_num;smith_waterman.c;79;2.4982762336730957;0-6;Single bit-flip
+str_x;smith_waterman.c;285;1.7774546146392822;0-6;Single bit-flip
+fo;smith_waterman.c;79;2.877207040786743;0-6;Single bit-flip
+matrix;smith_waterman.c;81;1.3135621547698975;0-6;Single bit-flip
+str_y;smith_waterman.c;286;0.8586218357086182;0-6;Single bit-flip
+x_num;smith_waterman.c;79;0.2652904987335205;0-6;Single bit-flip
+fo;smith_waterman.c;79;0.7579514980316162;0-6;Single bit-flip
+y_num;smith_waterman.c;79;1.377455711364746;0-6;Double bit-flip
+str_y;smith_waterman.c;286;2.6555118560791016;0-6;Double bit-flip
+fo;smith_waterman.c;278;1.8065059185028076;0-6;Double bit-flip
+str_x;smith_waterman.c;79;0.7336714267730713;0-6;Double bit-flip
+str_x;smith_waterman.c;79;2.3892838954925537;0-6;Double bit-flip
+fo;smith_waterman.c;278;0.8779587745666504;0-6;Double bit-flip
+j;smith_waterman.c;88;1.541977882385254;0-6;Double bit-flip
+x_num;smith_waterman.c;79;1.5972068309783936;0-6;Double bit-flip
