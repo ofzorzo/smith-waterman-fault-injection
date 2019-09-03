@@ -1,0 +1,50 @@
+[INFO -- 2019-09-03 12:14:03]
+Starting flip_value script
+version: 1.1
+[INFO -- 2019-09-03 12:14:03]
+Initialization strings:
+[INFO -- 2019-09-03 12:14:03]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2019-09-03 12:14:03]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2019-09-03 12:14:03]
+initSignal:0
+[INFO -- 2019-09-03 12:14:03]
+endSignal:6
+[INFO -- 2019-09-03 12:14:03]
+faultModel:1
+[INFO -- 2019-09-03 12:14:05]
+Backtrace BEGIN:
+#0  0x0000555555554d71 in my_maxof (a=1495, b=1492, c=1497, d=0) at smith_waterman.c:68
+#1  0x00005555555550d0 in smith_waterman (x_num=12600, y_num=15000, str_x=0x5555557586c0 "KSAVLLDRSWWNAPQVVQQRRQGQWTGGEPUHWACHDDYVVUPVVHHGAAAXQJMMCTTMMZZLLZZUXXASIINNZZFZGGQRPIDHHAANCQAABUGPPPHHXUUAABZZXXQYWQQWWHHMZZMYQJEYOOMNNIKKKPPTOIVVKKCEEQOZBBHKFFKTZZIKKTWWQPYYHTTTTCGUVZLLYYKFGGYYFFIT"..., str_y=0x55555575b810 "KSAHVLDRRSWNSAPQVAQIRQGQWTHGEPUQHWACHDWYVUNPVEHQGAAXQJPMCXTHMPZVLZZUCXSASIRNMZFTZGQRPIDRHYATNCQABPUGPPIHXZULABEZHXQYFWQMWSHMUZMYQJEFYOMXNIKOKPPTOISVEKJCEQOZPBZHKFNKTZJIKTYWKQPYYHTETCGYUVZLYYTKFGUYHFIT"...) at smith_waterman.c:102
+#2  0x0000555555555cbf in execute (file_x_name=0x7fffffffe218 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe23a "/tmp/smith_waterman/randInputY") at smith_waterman.c:263
+#3  0x0000555555555f08 in main (argc=9, argv=0x7fffffffde68) at smith_waterman.c:314
+
+63	}
+64	
+65	double my_maxof(double a, double b, double c, double d)
+66	{
+67	    double ans=a;
+68	    if(ans<b) ans=b;
+69	    if(ans<c) ans=c;
+70	    if(ans<d) ans=d;
+71	    return ans;
+72	}
+
+Backtrace END
+Memory content before bitflip:0x000x000x000x000x000x000x000xc0
+Fault Model: Double bit-flip
+base address to flip value: 0x555555757030 
+address max offset: 8
+Memory content after  bitflip:0x000x000x000x060x000x000x000xc0
+frame name: execute
+symbol name: gap_score
+symbol filename: smith_waterman.c
+symbol line: 11
+value: -2.0000000447034836
+value address: 0x555555757030 <gap_score>
+Type: A floating point type.
+Type sizeof: 8
+
+[INFO -- 2019-09-03 12:14:05]
+Fault Injection Successful after 2.3357181549072266s

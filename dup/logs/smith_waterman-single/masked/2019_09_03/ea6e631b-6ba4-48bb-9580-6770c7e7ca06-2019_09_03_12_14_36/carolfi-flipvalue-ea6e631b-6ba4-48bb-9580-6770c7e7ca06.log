@@ -1,0 +1,54 @@
+[INFO -- 2019-09-03 12:14:29]
+Starting flip_value script
+version: 1.1
+[INFO -- 2019-09-03 12:14:29]
+Initialization strings:
+[INFO -- 2019-09-03 12:14:29]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2019-09-03 12:14:29]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2019-09-03 12:14:29]
+initSignal:0
+[INFO -- 2019-09-03 12:14:29]
+endSignal:6
+[INFO -- 2019-09-03 12:14:29]
+faultModel:0
+[INFO -- 2019-09-03 12:14:30]
+Backtrace BEGIN:
+#0  0x0000555555554daf in my_maxof (a=-1, b=-2, c=-2, d=0) at smith_waterman.c:72
+#1  0x00005555555550d0 in smith_waterman (x_num=12600, y_num=15000, str_x=0x5555557586c0 "KSAVLLDRSWWNAPQVVQQRRQGQWTGGEPUHWACHDDYVVUPVVHHGAAAXQJMMCTTMMZZLLZZUXXASIINNZZFZGGQRPIDHHAANCQAABUGPPPHHXUUAABZZXXQYWQQWWHHMZZMYQJEYOOMNNIKKKPPTOIVVKKCEEQOZBBHKFFKTZZIKKTWWQPYYHTTTTCGUVZLLYYKFGGYYFFIT"..., str_y=0x55555575b810 "KSAHVLDRRSWNSAPQVAQIRQGQWTHGEPUQHWACHDWYVUNPVEHQGAAXQJPMCXTHMPZVLZZUCXSASIRNMZFTZGQRPIDRHYATNCQABPUGPPIHXZULABEZHXQYFWQMWSHMUZMYQJEFYOMXNIKOKPPTOISVEKJCEQOZPBZHKFNKTZJIKTYWKQPYYHTETCGYUVZLYYTKFGUYHFIT"...) at smith_waterman.c:102
+#2  0x0000555555555cbf in execute (file_x_name=0x7fffffffe218 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe23a "/tmp/smith_waterman/randInputY") at smith_waterman.c:263
+#3  0x0000555555555f08 in main (argc=9, argv=0x7fffffffde68) at smith_waterman.c:314
+
+67	    double ans=a;
+68	    if(ans<b) ans=b;
+69	    if(ans<c) ans=c;
+70	    if(ans<d) ans=d;
+71	    return ans;
+72	}
+73	
+74	double matchMisScore(long i, long j, char* str_y, char* str_x)
+75	{
+76	    if (str_y[j] == str_x[i])
+
+Backtrace END
+Memory content before bitflip:0x000x000x000x000x000xc00x840x40
+Fault Model: Single bit-flip
+base address to flip value: 0x7fffffffdc10
+address max offset: 8
+Memory content after  bitflip:0x000x000x000x000x000xc00x840x50
+frame name: smith_waterman
+symbol name: max_score
+symbol filename: smith_waterman.c
+symbol line: 97
+value: 7.6885947253577954e+79
+value address: 0x7fffffffdc10
+Type: A floating point type.
+Type sizeof: 8
+
+[INFO -- 2019-09-03 12:14:30]
+Fault Injection Successful after 1.450221061706543s
+[INFO -- 2019-09-03 12:14:35]
+event type: exit
+[INFO -- 2019-09-03 12:14:35]
+exit code: 0

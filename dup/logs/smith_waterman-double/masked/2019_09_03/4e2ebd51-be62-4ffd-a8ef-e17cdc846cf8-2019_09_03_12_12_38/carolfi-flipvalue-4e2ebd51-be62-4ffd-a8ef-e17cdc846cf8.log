@@ -1,0 +1,58 @@
+[INFO -- 2019-09-03 12:12:33]
+Starting flip_value script
+version: 1.1
+[INFO -- 2019-09-03 12:12:33]
+Initialization strings:
+[INFO -- 2019-09-03 12:12:33]
+(1) file /tmp/smith_waterman/smith_waterman
+[INFO -- 2019-09-03 12:12:33]
+(2) set args -x /tmp/smith_waterman/randInputX -y /tmp/smith_waterman/randInputY -o /tmp/smith_waterman/output -z /tmp/smith_waterman/detected.log
+[INFO -- 2019-09-03 12:12:33]
+initSignal:0
+[INFO -- 2019-09-03 12:12:33]
+endSignal:6
+[INFO -- 2019-09-03 12:12:33]
+faultModel:1
+[EXCEPTION -- 2019-09-03 12:12:35]
+pythonException: invalid literal for int() with base 16: '0x5555557586c0 ...'
+[EXCEPTION -- 2019-09-03 12:12:35]
+pythonException: invalid literal for int() with base 16: '0x55555575c170 ...'
+[INFO -- 2019-09-03 12:12:35]
+Backtrace BEGIN:
+#0  0x0000555555555262 in smith_waterman (x_num=15000, y_num=10200, str_x=0x5555557586c0 "GZUXKTBMWSAVKXKHMHBORTFWDHUZICCQDYOOTPCPICNUBXBNEEBXXGTDPNEXRIQXGENZVPRDREXTDBIJHMGHSBMKQQJHZZEFDTHZIYECEEVHHFQORYXMZJWPAFYZHFGKYNLHNQJRWGYDLORDOPPNANCAUDBBIKMGXZPNRYENGDQSTKXIBOVDBAEVDHXNRLTRMLEELKTS"..., str_y=0x55555575c170 "ZZXKKTMWSAVKXKHMHBBOTFWDHUZICCQDDOOTTPPIINNUXXBEEBBXGTTDNEXXIIXXGNZVPRDDEXTDDIJHMMHSBBKQQJHZZEFDDHZIIECEEEHHHFORRXXMZWPAAYZHFGKYYLHNNQJRGYYDORDOOPNAACAUUBBIKMGXXZNNYENNGDQSTXIBOVDBAEVDHHNNRTTRLLEEKKSS"...) at smith_waterman.c:130
+#1  0x0000555555555cbf in execute (file_x_name=0x7fffffffe218 "/tmp/smith_waterman/randInputX", file_y_name=0x7fffffffe23a "/tmp/smith_waterman/randInputY") at smith_waterman.c:263
+#2  0x0000555555555f08 in main (argc=9, argv=0x7fffffffde68) at smith_waterman.c:314
+
+125	            if(i==0 && j==0){
+126	                maxValue = matrix[i][j];
+127	                y = i;
+128	                x = j;
+129	            }
+130	            if(maxValue < matrix[i][j]){
+131	                maxValue = matrix[i][j];
+132	                y = i;
+133	                x = j;
+134	            }
+
+Backtrace END
+Fliping a bit of the pointer
+Memory content before bitflip:0x600x820x750x550x550x550x000x00
+Fault Model: Double bit-flip
+base address to flip value: 0x7fffffffdc58
+address max offset: 8
+Memory content after  bitflip:0x600x820x750x550x550x550x0a0x00
+frame name: smith_waterman
+symbol name: alignmentAcopy
+symbol filename: smith_waterman.c
+symbol line: 137
+value: 0x555555758260 "\220\204uUUU"
+value address: 0x7fffffffdc58
+Type: The type is a pointer.
+Type sizeof: 8
+
+[INFO -- 2019-09-03 12:12:35]
+Fault Injection Successful after 2.48829984664917s
+[INFO -- 2019-09-03 12:12:37]
+event type: exit
+[INFO -- 2019-09-03 12:12:37]
+exit code: 0
