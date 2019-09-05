@@ -11,4 +11,4 @@ Go to the directory of the implementation you want to inject faults into. From t
 ```shell
 ./run_fi.sh
 ```
-You can edit ***run_fi.sh*** to accomodate the number of iterations you want it to run.
+You can edit ***run_fi.sh*** to accomodate the number of iterations you want it to run. Information about where the faults were injected and which errors they caused can be found in the faultReport folders.
