@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 from __future__ import print_function
 import os
 import sys
@@ -47,7 +47,7 @@ faults = {"masked": 0, "sdc": 0, "crash": 0, "hang": 0, "noOutput": 0, "failed":
 status = ""
 
 # The number of threads that will stop the target program at a random time (each stop is a fault injection tentative)
-# Fault injections tentatives are not always successful, that is why we need to do it more than once. 
+# Fault injections tentatives are not always successful, that is why we need to do it more than once.
 # However, only one fault can be injected
 numThreadsFI=3
 
@@ -114,7 +114,7 @@ class runGDB (threading.Thread):
         startCmd = conf.get(self.section,"gdbExecName")+" --nh --nx -q -batch-silent --return-child-result -x "+"/tmp/flip-"+uniqueID+".py > /dev/null 2> /dev/null &"
         os.system(startCmd)
 
-# Check if app stops execution (otherwise kill it after a time) 
+# Check if app stops execution (otherwise kill it after a time)
 def finish(section):
     isHang = False
     now = int(time.time())
@@ -175,13 +175,12 @@ def saveOutput(section, isHang):
         isDetected = True
     else:
         isDetected = False
-    
+
     dt = datetime.datetime.fromtimestamp(time.time())
     ymd = dt.strftime('%Y_%m_%d')
     ymdhms = dt.strftime('%Y_%m_%d_%H_%M_%S')
     ymdhms = uniqueID+"-"+ymdhms
     dirDT = os.path.join(ymd,ymdhms)
-    masked = False
     if not fiSucc:
         cpDir = os.path.join('logs',section,'failed-injection',dirDT)
         logging.summary(section+" - Fault Injection Failed")
@@ -250,7 +249,11 @@ def checkSDCs(section):
     if not os.path.isfile(outputFile):
         logging.error("outputFile not found: "+str(outputFile))
     if os.path.isfile(goldFile) and os.path.isfile(outputFile):
-        return (not filecmp.cmp(goldFile,outputFile, shallow=False) )
+        return (not filecmp.cmp(goldFile,outputFile, shallow=False))
+    #return compare_matrix.compare_files(goldFile, outputFile, 1e-3)
+    #return True
+
+
     else:
         return False
 
@@ -329,7 +332,7 @@ def genFlipScript(section):
     fp = open("/tmp/flip-"+uniqueID+".py", "w")
     fp.write(pscript.replace("<conf-location>","/tmp/flip-"+uniqueID+".conf"))
     fp.close()
-    os.chmod("/tmp/flip-"+uniqueID+".py", 0775)
+    os.chmod("/tmp/flip-"+uniqueID+".py", 0o775)
 
 ######################## Main ########################
 def checkmd5():
@@ -371,23 +374,23 @@ def main(stdscr):
     parser.add_argument('-i', '--iter', dest="iterations", help='How many times to repeat the programs in the configuration file', required=True, type=int)
     parser.add_argument('-d', '--detect', dest="detectLog", help='Detection Log File. If this file exists after execution, a successful SDC detection will be assumed', required=False, default='')
     #parser.add_argument('-m', '--model', dest="model", help='Fault injection model; all will randomly choose one fault model', required=False, choices=('single', 'double', 'random', 'zeros', 'lsb', 'all'), default='all')
-    
+
     args = parser.parse_args()
     if args.iterations < 1:
         parser.error('Iterations must be greater than zero')
-    
+
     checkmd5()
-    
+
     # Start with a different seed every time to vary the random numbers generated
     random.seed() # the seed will be the current number of second since 01/01/70
-    
+
     # Read the configuration file with data for all the apps that will be executed
     conf.read(args.configFile)
-    
+
     # Set the duplication detection log
     global detectLogFile
     detectLogFile = args.detectLog
-    
+
     try:
 
         avgRoundTime = 0
@@ -424,4 +427,4 @@ def main(stdscr):
 if __name__ == "__main__":
     #main()
     wrapper(main) # ncurses
-print (status)
+    print (status)

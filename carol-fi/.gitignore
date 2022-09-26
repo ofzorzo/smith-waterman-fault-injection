@@ -1,0 +1,20 @@
+# temps
+**/*~
+*.pyc
+
+# gcc outputs
+**/*.out
+**/*.o
+
+# our outputs
+*.txt
+convs/*.txt
+data/*.bin
+
+# carol-fi output
+*.log
+logs
+logs/
+
+# quicksort specific output
+sample-code/quicksort/lastDataCreated
