@@ -19,7 +19,7 @@ install_carol_fi(){
     installation_dir="$PWD"
     cp -a . /tmp/smith-waterman-fault-injection
     cd /tmp/smith-waterman-fault-injection
-    git checkout 0c31c35ccd53fa5485e19de8ee56b658834b44d5 >/dev/null 2>/dev/null
+    git checkout 5dad20b9e >/dev/null 2>/dev/null
     cp -a carol-fi $installation_dir/carol-fi/
     rm -rf /tmp/smith-waterman-fault-injection/
     cd $installation_dir
