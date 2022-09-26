@@ -31,5 +31,5 @@ gen_data: mk_dir
 mv_bin: gen_data
 	cp $(INPUT1) $(INPUT2) $(OUTPUT) $(LASTRUN)
 	mv $(EXEC_INP_GEN) $(EXEC) $(INPUT1) $(INPUT2) $(OUTPUT) $(destDir)
-	@echo "All done, executables should be in the $(destDir) folder. Starting fault injection: "
+	@echo "All done, executables should be in the $(destDir) folder."
 
