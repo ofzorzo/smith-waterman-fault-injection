@@ -1,8 +1,0 @@
-package = []
-
-[metadata]
-lock-version = "1.1"
-python-versions = "^2.7.15"
-content-hash = "0e4068755bd838dc9232ef0c17d2ad8ff9af2490a9b7e2c1cd121d80b3912472"
-
-[metadata.files]

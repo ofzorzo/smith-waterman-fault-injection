@@ -9,7 +9,7 @@ INPUT1 = randInputX
 INPUT2 = randInputY
 REPORT = reportInput
 OUTPUT = goldOutput
-LASTRUN = lastDataCreated
+LASTRUN = data
 DETECTED = /tmp/smith_waterman/detected.log
 
 destDir = /tmp/smith_waterman
@@ -23,7 +23,7 @@ gen_bin: $(SRC) $(INP_GEN_SRC)
 mk_dir: gen_bin
 	mkdir -p $(destDir)
 	mkdir -p $(LASTRUN)
-	
+
 gen_data: mk_dir
 	./$(EXEC_INP_GEN)
 	./$(EXEC) -x $(INPUT1) -y $(INPUT2) -o $(OUTPUT)
@@ -31,5 +31,5 @@ gen_data: mk_dir
 mv_bin: gen_data
 	cp $(INPUT1) $(INPUT2) $(OUTPUT) $(LASTRUN)
 	mv $(EXEC_INP_GEN) $(EXEC) $(INPUT1) $(INPUT2) $(OUTPUT) $(destDir)
-	@echo "All done, executables should be in the $(destDir) folder. Starting fault injection: "
+	@echo "All done, executables should be in the $(destDir) folder."
 

@@ -9,7 +9,7 @@ INPUT1 = randInputX
 INPUT2 = randInputY
 REPORT = reportInput
 OUTPUT = goldOutput
-LASTRUN = lastDataCreated
+LASTRUN = data
 DETECTED = /tmp/smith_waterman/detected.log
 
 destDir = /tmp/smith_waterman
@@ -23,7 +23,7 @@ gen_bin: $(SRC) $(INP_GEN_SRC)
 mk_dir: gen_bin
 	mkdir -p $(destDir)
 	mkdir -p $(LASTRUN)
-	
+
 gen_data: mk_dir
 	./$(EXEC_INP_GEN)
 	./$(EXEC) -x $(INPUT1) -y $(INPUT2) -o $(OUTPUT) -z $(DETECTED)

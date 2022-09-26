@@ -1,3 +1,0 @@
-Variable Name;Variable File;Variable Line;Fault Injection Time(s);Injection Time Interval;Fault Model
-gap_score;smith_waterman.c;11;1.495593547821045;0-6;Random bit-flip
-mismatch_score;smith_waterman.c;9;1.6697380542755127;0-6;Double bit-flip

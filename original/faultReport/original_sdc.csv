@@ -1,5 +1,0 @@
-Variable Name;Variable File;Variable Line;Fault Injection Time(s);Injection Time Interval;Fault Model;Detected
-match_score;smith_waterman.c;7;0.8226132392883301;0-6;Random bit-flip;0
-mismatch_score;smith_waterman.c;8;1.3973774909973145;0-6;Random bit-flip;0
-fo;smith_waterman.c;278;3.184302568435669;0-6;Double bit-flip;0
-fo;smith_waterman.c;278;3.069352149963379;0-6;Double bit-flip;0

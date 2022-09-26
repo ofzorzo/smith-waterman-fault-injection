@@ -1,2 +1,0 @@
-Variable Name;Variable File;Variable Line;Fault Injection Time(s);Injection Time Interval;Fault Model
-str_x;smith_waterman.c;373;1.2976512908935547;0-6;Double bit-flip
