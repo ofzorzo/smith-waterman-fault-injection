@@ -7,7 +7,8 @@ run_injections(){
 
 	make -C $root_dir/$cur_mode
 	mkdir -p $root_dir/output/$cur_mode/data >/dev/null 2>/dev/null
-	mv $root_dir/$cur_mode/data $root_dir/output/$cur_mode/
+	mv $root_dir/$cur_mode/data/* $root_dir/output/$cur_mode/data
+	rm -rf $root_dir/$cur_mode/data
 
 	rm -rf $root_dir/carol-fi/logs
 	cd $root_dir/carol-fi
