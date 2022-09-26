@@ -16,6 +16,7 @@ install_packages(){
 }
 
 install_carol_fi(){
+    echo "Installing carol-fi..."
     installation_dir="$PWD"
     cp -a . /tmp/smith-waterman-fault-injection
     cd /tmp/smith-waterman-fault-injection
@@ -23,10 +24,11 @@ install_carol_fi(){
     cp -a carol-fi $installation_dir/carol-fi/
     rm -rf /tmp/smith-waterman-fault-injection/
     cd $installation_dir
+    echo "Successfully installed carol-fi."
 }
 
 install_all_dependencies(){
-    declare -a REQUIRED_PKGS=("gcc" "gdb" "make")
+    declare -a REQUIRED_PKGS=("gcc" "gdb" "python3" "make")
     install_packages "${REQUIRED_PKGS[@]}"
     install_carol_fi
 }
@@ -35,9 +37,13 @@ while getopts "c" opt
 	do
 		case "$opt" in
 			c ) parameterC=true ;;
-			? ) install_all_dependencies ;;
+			? ) echo "Unknown parameter received. Aborting..." ;;
 		esac
 	done
+
+if (( $OPTIND == 1 )); then
+    install_all_dependencies
+fi
 
 if [ "$parameterC" ]; then
 	install_carol_fi
