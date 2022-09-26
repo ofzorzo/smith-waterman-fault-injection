@@ -25,11 +25,20 @@ install_carol_fi(){
     cd $installation_dir
 }
 
-install_dependencies(){
-    REQUIRED_PKGS=("$@")
+install_all_dependencies(){
+    declare -a REQUIRED_PKGS=("gcc" "gdb" "make")
     install_packages "${REQUIRED_PKGS[@]}"
     install_carol_fi
 }
 
-declare -a REQUIRED_PKGS=("gcc" "gdb" "make")
-install_dependencies "${REQUIRED_PKGS[@]}"
+while getopts "c" opt
+	do
+		case "$opt" in
+			c ) parameterC=true ;;
+			? ) install_all_dependencies ;;
+		esac
+	done
+
+if [ "$parameterC" ]; then
+	install_carol_fi
+fi
