@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "smith-waterman-fault-injection"
+version = "0.1.0"
+description = ""
+authors = ["Felipe Zorzo <felipe.1707@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "smith_waterman_fault_injection"}]
+
+[tool.poetry.dependencies]
+python = "^2.7.15"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
