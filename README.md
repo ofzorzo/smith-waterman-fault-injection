@@ -21,7 +21,7 @@ If you are running other linux distributions, you must install **make**, **gcc**
 
 I strongly recommend you don't install **carol-fi** through means other than the installation script provided by this repository. **carol-fi** is hard to get up and running and has a few bugs; the installation script installs a working version with a few patches made by me.
 
-Finally, if you encounter any problems while injecting faults, I recommend you use [**pyenv**](https://github.com/pyenv/pyenv) to install and use Python 2.7.15. This seems to be the Python version utilized by **carol-fi**'s authors when developing it.
+Finally, if you encounter any problems while injecting faults, I recommend you use [**pyenv**](https://github.com/pyenv/pyenv) to install and use **Python 2.7.15**. This seems to be the Python version utilized by **carol-fi**'s authors when developing it.
 
 ## Usage
 To inject faults you must run the `run_fi.sh` script with the following required arguments:
