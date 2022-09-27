@@ -6,13 +6,13 @@ The folders "**original**", "**dup**" and "**seldup**" contain one of the three 
 ## Installation
 This project's dependencies are: **make**, **gcc**, **gdb**, **python** and [**carol-fi**](https://github.com/UFRGS-CAROL/carol-fi). **carol-fi** is the software responsible for injecting faults in the Smith-Waterman algorithm.
 
-If you are using a Debian-based linux distribution, you can run the installation script without any flags and it will install everything you need:
+If you are using a Debian-based Linux distribution, you can run the installation script without any flags and it will install everything you need:
 
 ```shell
 ./install.sh
 ```
 
-If you are running other linux distributions, you must install **make**, **gcc**, **gdb** and **python** by yourself. After that, install **carol-fi** by passing the `-c` flag to the installation script:
+If you are running other Linux distributions, you must install **make**, **gcc**, **gdb** and **python** by yourself. After that, install **carol-fi** by passing the `-c` flag to the installation script:
 
 
 ```shell
