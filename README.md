@@ -35,4 +35,4 @@ To inject faults you must run the `run_fi.sh` script with the following required
 ./run_fi.sh -i 10 -m "dup"
 ./run_fi.sh -i 10 -m "seldup"
 ```
-After execution, statistics about the faults injected can be found in the output directory.
+After execution, statistics about the faults injected can be found in the output directory. You can find a report that analyzes and compares the three algorithms and how they handled faults [here](/report.pdf). Since it was written for a college project, it's in Portuguese.
