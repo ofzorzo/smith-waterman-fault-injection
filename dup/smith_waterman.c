@@ -81,8 +81,8 @@ double matchMisScore(long i, long j, char* str_y, char* str_x)
 
 char *smith_waterman(long x_num, long y_num, char* str_x, char* str_y)
 {
-	double** matrix=(double**)calloc(x_num+1, sizeof(double*));
-	matrix[0]=(double*)calloc((x_num+1)*(y_num+1), sizeof(double));
+	double** matrix = (double**)calloc(x_num+1, sizeof(double*));
+	matrix[0] = (double*)calloc((x_num+1)*(y_num+1), sizeof(double));
 	long i;
 	for(i=1; i<x_num+1; i++){
 		matrix[i]=matrix[0]+(y_num+1)*i;
@@ -90,29 +90,19 @@ char *smith_waterman(long x_num, long y_num, char* str_x, char* str_y)
 
 	long j;
 
-	for(i=0; i<x_num+1; i++){matrix[i][0]=0.0;}
-	for(i=0; i<y_num+1; i++){matrix[0][i]=0.0;}
+	for(i=0; i<x_num+1; i++) matrix[i][0]=0.0;
+	for(i=0; i<y_num+1; i++) matrix[0][i]=0.0;
 
 	double diff=0.0;
 	double max_score=0.0;
 	for(i=1; i<x_num+1; i++){
 		for(j=1; j<y_num+1; j++){
-			if(str_x[i-1]==str_y[j-1]){diff=match_score;}
-			else{diff=mismatch_score;}
+			if (str_x[i-1]==str_y[j-1]) diff=match_score;
+			else diff=mismatch_score;
 			matrix[i][j]=my_maxof(matrix[i-1][j-1]+diff, matrix[i-1][j]+gap_score, matrix[i][j-1]+gap_score,0);
-			if(matrix[i][j]>max_score)
-				max_score=matrix[i][j];
+			if(matrix[i][j]>max_score) max_score=matrix[i][j];
 		}
 	}
-
-	//Print alignment matrix
-	/*
-	for(i=0; i<x_num+1; i++){
-		for(j=0; j<y_num+1; j++){
-			printf("%.2f ",matrix[i][j]);
-		}
-		printf("\n");
-	}*/
 
 	/*Alignment*/
 	double maxValue = 0;
@@ -135,10 +125,7 @@ char *smith_waterman(long x_num, long y_num, char* str_x, char* str_y)
 		}
 	}
 	char *alignmentA = "", *alignmentAcopy = "", *alignmentB = "", *alignmentBcopy = "";
-	double score;
-	double scoreDiag;
-	double scoreUp;
-	double scoreLeft;
+	double score, scoreDiag, scoreUp, scoreLeft;
 	while((y>0) && (x>0) && (matrix[y][x] != 0)){
 		score = matrix[y][x];
 		scoreDiag = matrix[y-1][x-1];
@@ -254,8 +241,8 @@ char *execute(char *file_x_name, char *file_y_name){
 	sizeof_string(fpx, fpy, &x_num, &y_num);
 	fclose(fpx); fclose(fpy);
 
-	char *str_x=(char*)calloc(x_num+1, sizeof(char));
-	char *str_y=(char*)calloc(y_num+1, sizeof(char));
+	char *str_x = (char*)calloc(x_num+1, sizeof(char));
+	char *str_y = (char*)calloc(y_num+1, sizeof(char));
 	file_open(&fpx, &fpy, file_x_name, file_y_name);
 	file_read(fpx, fpy, x_num, y_num, str_x, str_y);
 	fclose(fpx); fclose(fpy);
@@ -313,7 +300,7 @@ int main(int argc, char* argv[])
 
 	char *answer1 = execute(file_x_name, file_y_name);
 	char *answer2 = execute(file_x_name2, file_y_name2);
-	//printf("Resposta1:\n %s\n-------------\nResposta2:\n %s\n--------------\n", answer1, answer2);
+
 	// detects SDCs
 	if((strcmp(answer1, answer2) != 0) || (match_score != match_score2) || (gap_score != gap_score2) || (mismatch_score != mismatch_score2))
 	{

@@ -162,8 +162,8 @@ char *smith_waterman(long x_num, long x_num2, long y_num, long y_num2, char* str
 		sdc_exit();
 	}
 
-	double** matrix=(double**)calloc(x_num+1, sizeof(double*));
-	matrix[0]=(double*)calloc((x_num+1)*(y_num+1), sizeof(double));
+	double** matrix = (double**)calloc(x_num+1, sizeof(double*));
+	matrix[0] = (double*)calloc((x_num+1)*(y_num+1), sizeof(double));
 	long i, i2;
 	i2 = 1;
 	for(i=1; i<x_num+1; i++){
@@ -172,8 +172,6 @@ char *smith_waterman(long x_num, long x_num2, long y_num, long y_num2, char* str
 		i2++;
 	}
 	check_index(i, i2);
-
-	long j, j2;
 
 	i2 = 0;
 	for(i=0; i<x_num+1; i++){
@@ -190,8 +188,8 @@ char *smith_waterman(long x_num, long x_num2, long y_num, long y_num2, char* str
 	}
 	check_index(i, i2);
 
-	double diff=0.0;
-	double max_score=0.0;
+	double diff=0.0, max_score=0.0;
+	long j, j2;
 	i2 = 1;
 	for(i=1; i<x_num+1; i++){
 		check_index(i, i2);
@@ -210,15 +208,6 @@ char *smith_waterman(long x_num, long x_num2, long y_num, long y_num2, char* str
 	}
 	check_index(j, j2);
 	check_index(i, i2);
-
-	//Print alignment matrix
-	/*
-	for(i=0; i<x_num+1; i++){
-		for(j=0; j<y_num+1; j++){
-			printf("%.2f ",matrix[i][j]);
-		}
-		printf("\n");
-	}*/
 
 	/*Alignment*/
 	double maxValue = 0;
@@ -250,10 +239,7 @@ char *smith_waterman(long x_num, long x_num2, long y_num, long y_num2, char* str
 	check_index(i, i2);
 
 	char *alignmentA = "", *alignmentAcopy = "", *alignmentB = "", *alignmentBcopy = "";
-	double score;
-	double scoreDiag;
-	double scoreUp;
-	double scoreLeft;
+	double score, scoreDiag, scoreUp, scoreLeft;
 	while((y>0) && (x>0) && (matrix[y][x] != 0)){
 		score = matrix[y][x];
 		scoreDiag = matrix[y-1][x-1];
@@ -348,6 +334,7 @@ char *smith_waterman(long x_num, long x_num2, long y_num, long y_num2, char* str
 			y = y-1;
 		}
 	}
+
 	int stringSize = strlen(alignmentA) + strlen(alignmentB);
 	stringSize = stringSize + 76; //nro de caracteres da frase
 	stringSize = stringSize + 1; //considera caractere de fim de string: \0
@@ -369,8 +356,8 @@ char *execute(char *file_x_name, char *file_y_name){
 	sizeof_string(fpx, fpy, &x_num, &y_num);
 	fclose(fpx); fclose(fpy);
 
-	char *str_x=(char*)calloc(x_num+1, sizeof(char));
-	char *str_y=(char*)calloc(y_num+1, sizeof(char));
+	char *str_x = (char*)calloc(x_num+1, sizeof(char));
+	char *str_y = (char*)calloc(y_num+1, sizeof(char));
 	file_open(&fpx, &fpy, file_x_name, file_y_name);
 	file_read(fpx, fpy, x_num, y_num, str_x, str_y);
 	fclose(fpx); fclose(fpy);
