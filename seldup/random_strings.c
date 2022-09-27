@@ -1,5 +1,5 @@
-#include <stdio.h> 
-#include <stdlib.h> 
+#include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 #include <math.h>
 
@@ -25,9 +25,9 @@ int main(){
 	cut = ceil(cut);
 	int cutting_point = cut;
 	str_2[cutting_point] = '\0';
-	
+
 	//change second string a little
-	int percentage_to_change = (rand() % (75 - 20 + 1)) + 20; // muda a segunda string de 20 a 75% 
+	int percentage_to_change = (rand() % (75 - 20 + 1)) + 20; // muda a segunda string de 20 a 75%
 	for(i=0; i<cutting_point-1; i++){
 		int change_current = (rand() % (100 - 0 + 1)) + 0;
 		if(change_current < percentage_to_change){
@@ -41,14 +41,14 @@ int main(){
 		fx = fopen("randInputX", "w");
 		if (fx == NULL)
 		{
-    		printf("Error opening file!\n");
-    		exit(1);
+			printf("Error opening file!\n");
+			exit(1);
 		}
 		fy = fopen("randInputY", "w");
 		if (fy == NULL)
 		{
-    		printf("Error opening file!\n");
-    		exit(1);
+			printf("Error opening file!\n");
+			exit(1);
 		}
 		fprintf(fx, "%s", str_1);
 		fprintf(fy, "%s", str_2);
@@ -57,14 +57,14 @@ int main(){
 		fx = fopen("randInputX", "w");
 		if (fx == NULL)
 		{
-    		printf("Error opening file!\n");
-    		exit(1);
+			printf("Error opening file!\n");
+			exit(1);
 		}
 		fy = fopen("randInputY", "w");
 		if (fy == NULL)
 		{
-    		printf("Error opening file!\n");
-    		exit(1);
+			printf("Error opening file!\n");
+			exit(1);
 		}
 		fprintf(fy, "%s", str_1);
 		fprintf(fx, "%s", str_2);
